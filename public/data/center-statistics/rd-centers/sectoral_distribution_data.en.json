@@ -1,0 +1,292 @@
+[
+  {
+    "name": "Technology and Software",
+    "color": "#e8703e",
+    "children": [
+      {
+        "name": "Software",
+        "value": 128,
+        "showLabel": true
+      },
+      {
+        "name": "Computer and Communication Technologies",
+        "value": 91,
+        "showLabel": true
+      },
+      {
+        "name": "Electrical-Electronics",
+        "value": 79,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Automotive and Supplier Industry",
+    "color": "#8e6f20",
+    "children": [
+      {
+        "name": "Automotive Supplier Industry",
+        "value": 135,
+        "showLabel": true
+      },
+      {
+        "name": "Automotive",
+        "value": 25,
+        "showLabel": true
+      },
+      {
+        "name": "Automotive Design and Engineering",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Machinery and Manufacturing Industry",
+    "color": "#d73027",
+    "children": [
+      {
+        "name": "Machinery and Equipment Manufacturing",
+        "value": 168,
+        "showLabel": true
+      },
+      {
+        "name": "Manufacturing Industry",
+        "value": 43,
+        "showLabel": true
+      },
+      {
+        "name": "HVAC",
+        "value": 17,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Chemistry and Healthcare Sector",
+    "color": "#71ca36",
+    "children": [
+      {
+        "name": "Chemistry",
+        "value": 76,
+        "showLabel": true
+      },
+      {
+        "name": "Pharmaceuticals",
+        "value": 41,
+        "showLabel": true
+      },
+      {
+        "name": "Healthcare",
+        "value": 24,
+        "showLabel": true
+      },
+      {
+        "name": "Medical",
+        "value": 10,
+        "showLabel": false
+      },
+      {
+        "name": "Cosmetics and Cleaning Products",
+        "value": 9,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Consumer and Food Industry",
+    "color": "#006837",
+    "children": [
+      {
+        "name": "Textile",
+        "value": 76,
+        "showLabel": true
+      },
+      {
+        "name": "Food Industry",
+        "value": 62,
+        "showLabel": true
+      },
+      {
+        "name": "Durable Consumer Goods",
+        "value": 22,
+        "showLabel": false
+      },
+      {
+        "name": "Furniture",
+        "value": 15,
+        "showLabel": false
+      },
+      {
+        "name": "Packaging",
+        "value": 11,
+        "showLabel": false
+      },
+      {
+        "name": "Paper and Paper Products",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Defense and Security",
+    "color": "#526313",
+    "children": [
+      {
+        "name": "Defense Industry",
+        "value": 61,
+        "showLabel": true
+      },
+      {
+        "name": "Aviation",
+        "value": 9,
+        "showLabel": false
+      },
+      {
+        "name": "Weapons and Ammunition",
+        "value": 2,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Energy and Infrastructure",
+    "color": "#1a9850",
+    "children": [
+      {
+        "name": "Energy",
+        "value": 38,
+        "showLabel": true
+      },
+      {
+        "name": "Construction",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Engineering/Architecture Activities",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Cement and Cement Products",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Metal and Materials",
+    "color": "#c97a30",
+    "children": [
+      {
+        "name": "Ferrous and Non-Ferrous Metals",
+        "value": 27,
+        "showLabel": true
+      },
+      {
+        "name": "Rubber-Plastic-Rubber",
+        "value": 20,
+        "showLabel": true
+      },
+      {
+        "name": "Ceramic and Refractory",
+        "value": 15,
+        "showLabel": true
+      },
+      {
+        "name": "Foundry",
+        "value": 12,
+        "showLabel": true
+      },
+      {
+        "name": "Glass and Glass Products",
+        "value": 2,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Finance and Communication",
+    "color": "#9b5e3c",
+    "children": [
+      {
+        "name": "Banking and Finance",
+        "value": 17,
+        "showLabel": true
+      },
+      {
+        "name": "Telecommunication",
+        "value": 16,
+        "showLabel": true
+      },
+      {
+        "name": "Media and Communication",
+        "value": 3,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Other Sectors",
+    "color": "#5a8247",
+    "children": [
+      {
+        "name": "Agriculture",
+        "value": 25,
+        "showLabel": true
+      },
+      {
+        "name": "Transportation and Logistics",
+        "value": 16,
+        "showLabel": true
+      },
+      {
+        "name": "Maritime",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Oil and Petroleum Products",
+        "value": 6,
+        "showLabel": false
+      },
+      {
+        "name": "Mining",
+        "value": 5,
+        "showLabel": false
+      },
+      {
+        "name": "Retail",
+        "value": 5,
+        "showLabel": false
+      },
+      {
+        "name": "Forest Products",
+        "value": 3,
+        "showLabel": false
+      },
+      {
+        "name": "Livestock",
+        "value": 2,
+        "showLabel": false
+      },
+      {
+        "name": "Leather Technologies",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Recycling",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Liquefied Petroleum Gas",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  }
+]

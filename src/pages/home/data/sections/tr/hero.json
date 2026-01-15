@@ -1,0 +1,19 @@
+{
+  "title": "Geleceğin Teknolojilerini ARTEK ile Geliştirin",
+  "highlight": "ARTEK",
+  "description": "İşletmeniz için özel sektörel danışmanlık hizmetlerimizden yazılım geliştirme çözümlerine kadar, dijital dönüşüm ve inovasyon yolculuğunuzda yanınızdayız. Mühendislik vizyonuyla teknik ihtiyaçlarınıza bütünsel çözümler sunuyoruz.",
+  "primaryButton": {
+    "text": "Danışmanlık Hizmetlerimiz",
+    "href": "/services/consultancy",
+    "type": "primary"
+  },
+  "secondaryButton": {
+    "text": "Özel Yazılım Geliştirme",
+    "href": "/under-construction",
+    "type": "tertiary"
+  },
+  "video": {
+    "src": "/assets/videos/futuristic-rd-video.mp4",
+    "poster": "/assets/images/futuristic-rd.jpg"
+  }
+}

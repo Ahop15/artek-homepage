@@ -1,0 +1,16 @@
+{
+  "items": [
+    {"label":  "Introduction", "href":  "/services/consultancy"},
+    {"label":  "Center Setup Consultancy", "href":  "/services/consultancy/centers/setup"},
+    {"label":  "Project Consultancy", "href":  "/services/consultancy/project"},
+    {"label":  "Technical Education", "href":  "/services/consultancy/technical-education"},
+    {
+      "label": "Statistics",
+      "defaultExpanded": true,
+      "children": [
+        {"label":  "R&D Centers", "href":  "/services/consultancy/centers/statistics/rd-centers"},
+        {"label":  "Design Centers", "href":  "/services/consultancy/centers/statistics/design-centers"}
+      ]
+    }
+  ]
+}

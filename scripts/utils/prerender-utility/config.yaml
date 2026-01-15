@@ -1,0 +1,23 @@
+production_url: https://www.artek.tc
+preview_port: 5175
+default_locale: tr
+default_theme: white
+locales:
+  - tr
+  - en
+themes:
+  - white
+  - g90
+
+# Playwright Settings
+playwright:
+  # Headless mode
+  headless: true
+  # Concurrency: Number of parallel page renders (default: 5)
+  concurrency: 5
+
+# Page Rendering Timeouts (in seconds)
+page_load_timeout: 30
+wait_for_ready_timeout: 15
+network_idle_timeout: 10
+additional_wait: 2

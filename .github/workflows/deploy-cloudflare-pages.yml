@@ -1,0 +1,124 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Create .env.production file
+        run: |
+          cat > .env.production << EOF
+          # ========================================
+          # Google Maps Configuration
+          # ========================================
+          VITE_GOOGLE_MAPS_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }}
+          VITE_GOOGLE_MAP_ID=${{ secrets.GOOGLE_MAP_ID }}
+
+          # ========================================
+          # ARTEK AI Configuration
+          # ========================================
+          VITE_ARTEK_AI_MODE=prod
+          VITE_ARTEK_AI_URL=${{ secrets.ARTEK_AI_URL }}
+          VITE_ARTEK_AI_TURNSTILE_SITE_KEY=${{ secrets.ARTEK_AI_TURNSTILE_SITE_KEY }}
+
+          # ========================================
+          # Contact Form Configuration
+          # ========================================
+          VITE_MAIL_WORKER_MODE=prod
+          VITE_MAIL_WORKER_ENDPOINT=${{ secrets.MAIL_WORKER_ENDPOINT }}
+          VITE_TURNSTILE_SITE_KEY=${{ secrets.TURNSTILE_SITE_KEY }}
+          EOF
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Install OpenSSL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openssl
+
+      - name: Generate Development Certificate
+        run: node scripts/generate_development_certificate.js
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+
+      - name: Build project
+        run: npm run prod
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy dist --project-name=artek
+
+      - name: Generate timestamp
+        if: success()
+        id: timestamp
+        run: echo "value=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Upload dist artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: artek-dist-${{ steps.timestamp.outputs.value }}
+          path: dist/
+          retention-days: 30
+
+      - name: Generate knowledgebase with render4ai
+        if: success()
+        run: npm run render4ai
+
+      - name: Install rclone
+        if: success()
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone for R2
+        if: success()
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          CLOUDFLARE_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+        run: |
+          mkdir -p ~/.config/rclone
+          cat > ~/.config/rclone/rclone.conf << EOF
+          [r2]
+          type = s3
+          provider = Cloudflare
+          access_key_id = ${CLOUDFLARE_ACCESS_KEY_ID}
+          secret_access_key = ${CLOUDFLARE_SECRET_ACCESS_KEY}
+          endpoint = https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com
+          acl = private
+          EOF
+
+      - name: Upload knowledgebase to R2
+        if: success()
+        run: |
+          echo "Uploading knowledgebase to R2 bucket: artek-rendered-homepage"
+          rclone copy knowledgebase/ r2:artek-rendered-homepage --progress
+          echo "✓ Knowledgebase upload completed"
+
+      - name: Upload knowledgebase artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: artek-knowledgebase-${{ steps.timestamp.outputs.value }}
+          path: knowledgebase/
+          retention-days: 30

@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Hangi destek programlarına başvurabiliriz?",
+    "answer": "TÜBİTAK TEYDEB programları (1501, 1507, 1509, 1505, 1511), KOSGEB destekleri (Ar-Ge ve İnovasyon, Stratejik Ürün, Yeşil Sanayi, KOBİ Teknolojik Ürün Yatırım), Kalkınma Ajansları mali destek programları ve Horizon Europe, EUREKA, Eurostars gibi uluslararası fonlara başvuru süreçlerinde danışmanlık veriyoruz."
+  },
+  {
+    "question": "Ar-Ge veya Tasarım Merkezi olmadan da proje desteği alabilir miyiz?",
+    "answer": "Evet, Ar-Ge veya Tasarım Merkezi belgesi olmayan işletmeler de TÜBİTAK, KOSGEB ve diğer destek programlarına başvurabilir. Proje bazlı destekler, merkez kurulum şartlarını henüz karşılayamayan firmalar için güçlü bir alternatiftir. Hatta bu projeler, ileride merkez kurulumu için gerekli altyapı ve deneyimi oluşturmanıza yardımcı olur."
+  },
+  {
+    "question": "Proje yazım süreci ne kadar sürer?",
+    "answer": "Proje yazım süresi, projenin kapsamına ve başvurulacak programa göre değişmekle birlikte ortalama 4-8 hafta arasındadır. Bu süre; proje fikrinin netleştirilmesi, teknik içeriğin oluşturulması, bütçe planlaması ve başvuru dokümanlarının hazırlanmasını kapsar. Acil çağrılarda bu süreç hızlandırılabilir."
+  },
+  {
+    "question": "Başvuru reddedilirse ne olur?",
+    "answer": "Başvuru reddedilse bile süreç bitmez. Hakem değerlendirme raporlarını detaylı analiz eder, eksik veya zayıf görülen noktaları tespit ederiz. Projenizi güçlendirerek bir sonraki çağrı döneminde yeniden başvuru yapmanızı sağlarız. Başarılı projelerin önemli bir kısmı ikinci veya üçüncü denemede kabul almaktadır."
+  },
+  {
+    "question": "Proje kabul edildikten sonra da destek veriyor musunuz?",
+    "answer": "Evet, kabul edilen projelerde yürütme sürecinde de teknik destek sağlıyoruz. Dönemsel raporların hazırlanması, bütçe revizyonları, değişiklik taleplerinin yönetimi, denetim süreçlerine hazırlık ve proje kapanış işlemlerinde rehberlik ediyoruz."
+  },
+  {
+    "question": "Hangi maliyetler desteklenir?",
+    "answer": "Destek programlarına göre değişmekle birlikte genel olarak personel giderleri, malzeme ve sarf malzemesi, hizmet alımları (test, analiz, danışmanlık), makine-teçhizat, yazılım, seyahat ve konaklama giderleri desteklenmektedir. Her programın kendine özgü bütçe kalemleri ve limitleri bulunur, başvuru öncesinde bunları detaylı şekilde planlıyoruz."
+  },
+  {
+    "question": "Üniversite işbirliği zorunlu mu?",
+    "answer": "Çoğu program için zorunlu değildir ancak bazı programlarda avantaj sağlar. TÜBİTAK 1505 programı özellikle üniversite-sanayi işbirliğine yöneliktir ve üniversite ortaklığı gerektirir. Diğer programlarda üniversite işbirliği, projenin bilimsel derinliğini artırarak değerlendirmede olumlu etki yaratabilir. Akademik bağlantılarımız sayesinde uygun işbirliği ortakları bulmanıza yardımcı oluyoruz."
+  },
+  {
+    "question": "Birden fazla programa aynı anda başvurabilir miyiz?",
+    "answer": "Evet, farklı projeler için birden fazla programa eş zamanlı başvuru yapılabilir. Ancak aynı proje için mükerrer destek alınamaz. İşletmenizin proje portföyüne göre hangi projenin hangi programa uygun olduğunu belirleyerek, eş zamanlı başvuru stratejisi oluşturuyoruz."
+  },
+  {
+    "question": "Uluslararası fonlara da başvurabilir miyiz?",
+    "answer": "Evet, Horizon Europe, EUREKA ve Eurostars gibi uluslararası programlara başvuru süreçlerinde de danışmanlık veriyoruz. Bu programlar genellikle yurtdışı ortaklık gerektirdiğinden, konsorsiyum oluşturma ve uluslararası partner bulma konularında da destek sağlıyoruz."
+  },
+  {
+    "question": "Proje danışmanlığı ücretiniz nasıl belirleniyor?",
+    "answer": "Ücretlendirme projenin kapsamına, başvurulacak programa ve talep edilen hizmet düzeyine göre belirlenir. Sadece proje yazımı, yazım ve başvuru takibi, veya uçtan uca tam kapsamlı danışmanlık gibi farklı paketler sunuyoruz. İlk görüşmede ihtiyaçlarınızı değerlendirdikten sonra size özel bir teklif sunuyoruz. İlk tanışma görüşmemiz ücretsizdir."
+  }
+]

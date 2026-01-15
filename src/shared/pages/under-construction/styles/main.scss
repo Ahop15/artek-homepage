@@ -1,0 +1,129 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for Under Construction
+@use '@carbon/react/scss/components/button';
+
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/breakpoint' as breakpoint;
+
+// Layout
+.under-construction-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: spacing.$spacing-05;
+}
+
+.under-construction-content {
+  max-width: 42rem;
+  text-align: center;
+}
+
+// Visual Elements
+.under-construction-icon-wrapper {
+  display: inline-block;
+  margin-bottom: spacing.$spacing-06;
+
+  svg {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+}
+
+.under-construction-icon {
+  color: var(--cds-support-warning);
+  opacity: 0.9;
+}
+
+// Typography
+.under-construction-code {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: spacing.$spacing-03;
+  color: var(--cds-text-primary);
+}
+
+.under-construction-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: spacing.$spacing-05;
+  color: var(--cds-text-primary);
+}
+
+.under-construction-description {
+  margin-bottom: spacing.$spacing-07;
+  color: var(--cds-text-secondary);
+}
+
+// Game Area
+.under-construction-game-area {
+  margin-block: spacing.$spacing-07;
+  padding: spacing.$spacing-05;
+}
+
+// Actions
+.under-construction-actions {
+  display: flex;
+  gap: spacing.$spacing-05;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Responsive Breakpoints
+@include breakpoint.breakpoint-down(md) {
+  .under-construction-code {
+    font-size: 1.75rem;
+  }
+
+  .under-construction-title {
+    font-size: 1.25rem;
+  }
+
+  .under-construction-icon-wrapper {
+    svg {
+      width: 4.5rem !important;
+      height: 4.5rem !important;
+    }
+  }
+
+  .under-construction-actions {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+    }
+  }
+}

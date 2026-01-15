@@ -1,0 +1,82 @@
+import ContentTabs from "@shared/components/content/ContentTabs";
+
+import CenterStatistics from "../_shared/components/CentersStatistics";
+import CentersDataTable from "../_shared/components/CentersDataTable";
+
+import SectoralDistributionTab1 from './_components/SectoralDistributionTab1';
+import SectoralDistributionTab2 from './_components/SectoralDistributionTab2';
+import RegionalDistributionTab1 from './_components/RegionalDistributionTab1';
+import RegionalDistributionTab2 from './_components/RegionalDistributionTab2';
+
+import { getCenterStatistics, getCenters } from "../_shared/utils/statisticsDataFetcher";
+
+# Design Centers Statistics
+
+---
+
+## General Information
+
+With the changes made within the scope of the R&D Reform Package, which was enacted and published in the Official
+Gazette on February 26, 2016, many regulations have been introduced to develop our country's R&D and innovation
+ecosystem, primarily Law No. 5746 on Supporting Research, Development and Design Activities.
+
+At the forefront of these regulations is the inclusion of design activities within the scope of support, just like R&D
+activities. As a result, the production of high value-added technological products will be realized. Within the scope of
+this law, the concept of Design Centers has been introduced into legislation, and many important supports have been
+provided to Design Centers.
+
+Private Sector Design Centers are established and operate within the scope of Law No. 5746, which was prepared with the
+understanding that investments made in design, technology and human resources return as technological advancement, high
+competitiveness and high welfare level.
+
+For detailed information, please visit <a href="https://agtm.sanayi.gov.tr/Tasarim/TasarimDetay" target="_blank" rel="noopener noreferrer">here</a>.
+
+---
+
+# Key Statistics
+
+<CenterStatistics centerType="design" centerStatisticsData={() => getCenterStatistics('design-centers')} client:load />
+
+---
+
+## Sectoral Distribution of Design Centers
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "Graphical View",
+        content: SectoralDistributionTab1
+    },
+    {
+        label: "Table View",
+        content: SectoralDistributionTab2
+    }
+]} />
+
+---
+
+# Regional Distribution of Design Centers
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "Graphical View",
+        content: RegionalDistributionTab1
+    },
+    {
+        label: "Table View",
+        content: RegionalDistributionTab2
+    }
+]} />
+
+---
+
+## List of Design Centers
+
+<CentersDataTable centersData={() => getCenters('design-centers', 'en')} client:load />
+
+---
+
+## Data Sources
+
+**Statistics Data:** <a href="https://www.sanayi.gov.tr/assets/pdf/istatistik/TasarimMerkezi2025.pdf" target="_blank" rel="noopener noreferrer">Design Center Statistics 2025 (PDF)</a> - Ministry of Industry and Technology of the Republic of Turkey (*Statistics are compiled as of October 31, 2025.*)
+
+**Map Data:** <a href="https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6" target="_blank" rel="noopener noreferrer">District Boundaries (GeoJSON)</a> - Ministry of Environment, Urbanization and Climate Change of the Republic of Turkey (<a href="https://ulasav.csb.gov.tr/license" target="_blank" rel="noopener noreferrer">License</a>)

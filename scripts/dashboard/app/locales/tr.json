@@ -1,0 +1,107 @@
+{
+  "app": {
+    "title": "ARTEK AI Worker Dashboard",
+    "pageIcon": "🤖"
+  },
+  "language": {
+    "title": "🌍 Dil Seçimi",
+    "turkish": "🇹🇷 Türkçe",
+    "english": "🇬🇧 English"
+  },
+  "actions": {
+    "refresh": "Verileri Yenile",
+    "logout": "Çıkış Yap"
+  },
+  "ipFilter": {
+    "title": "🔍 IP Hash Filtresi",
+    "selectLabel": "IP Hash Seçin:",
+    "allSessions": "📊 Tüm Oturumlar",
+    "ipPrefix": "🔒",
+    "sessionsCount": "oturum",
+    "blocksCount": "blok"
+  },
+  "sessions": {
+    "title": "Konuşma Oturumları",
+    "select": "Bir oturum seçin:",
+    "noData": "Veritabanında oturum bulunamadı.",
+    "timeline": "Konuşma Zaman Çizelgesi",
+    "blocks": "blok"
+  },
+  "metrics": {
+    "messages": "Mesajlar",
+    "inputTokens": "Giriş Token",
+    "outputTokens": "Çıkış Token",
+    "totalInputTokens": "Toplam Giriş Token",
+    "totalOutputTokens": "Toplam Çıkış Token",
+    "timestamp": "🕐",
+    "blockMetadata": "📊 Blok Metadata",
+    "tokens": "Token'lar",
+    "input": "Giriş",
+    "output": "Çıkış",
+    "performance": "Performans",
+    "latency": "Gecikme",
+    "searchQueries": "Arama Sorguları",
+    "model": "Model",
+    "blockchain": "Blockchain",
+    "blockIndex": "Blok İndeksi",
+    "blockHash": "Blok Hash",
+    "prevHash": "Önceki Hash",
+    "contextHash": "Context Hash",
+    "genesis": "Genesis"
+  },
+  "tools": {
+    "knowledgeSearch": "🔍 Bilgi Arama",
+    "toolDetails": "Araç Detayları",
+    "tool": "Araç",
+    "inputQuery": "Sorgu",
+    "outputPreview": "Çıktı Önizleme",
+    "outputFull": "📄 Tam Çıktıyı Görüntüle"
+  },
+  "blockchain": {
+    "integrityCheck": "Zincir Bütünlük Kontrolü",
+    "validateButton": "Seçili Zinciri Doğrula",
+    "validating": "Blockchain doğrulanıyor...",
+    "chainValid": "✅ Zincir geçerli",
+    "chainInvalid": "❌ Zincir bozuk"
+  },
+  "sidebar": {
+    "privacy": "🔒 Gizlilik & Güvenlik",
+    "privacyInfo": "Bu dashboard sadece veri okur. Değişiklik yapılamaz.",
+    "database": "Veritabanı",
+    "mode": "Mod",
+    "remoteDev": "Remote D1"
+  },
+  "export": {
+    "title": "📥 Dışa Aktar",
+    "markdown": "Markdown (.md)",
+    "json": "JSON (.json)",
+    "markdownTooltip": "Okunabilir formatta indir",
+    "jsonTooltip": "Makine tarafından okunabilir formatta indir",
+    "includeHashes": "Blockchain hash'lerini dahil et",
+    "success": "Dosya hazır!",
+    "noSession": "Önce bir oturum seçin"
+  },
+  "bulkExport": {
+    "exportAll": "Toplu Export",
+    "title": "Komple Veritabanı Dışa Aktarımı",
+    "description": "Tüm IP Hash'lerdeki tüm oturumları klasörlenmiş ZIP olarak indir",
+    "totalIPs": "Toplam IP",
+    "totalSessions": "Toplam Oturum",
+    "totalBlocks": "Toplam Blok",
+    "estimatedSize": "Tahmini Boyut",
+    "warning": "⚠️ Bu işlem tüm veritabanını dışarıya aktarır ve birkaç dakika sürebilir.",
+    "startExport": "Dışa Aktarmayı Başlat",
+    "success": "Export başarıyla tamamlandı!",
+    "error": "Export sırasında hata oluştu",
+    "download": "ZIP'i İndir",
+    "close": "Kapat",
+    "progress": {
+      "overall": "Genel İlerleme",
+      "currentIP": "Mevcut IP Hash",
+      "processing": "İşleniyor",
+      "exporting": "Export ediliyor",
+      "elapsed": "Geçen süre",
+      "remaining": "Kalan süre"
+    }
+  }
+}

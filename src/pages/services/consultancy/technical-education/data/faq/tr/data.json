@@ -1,0 +1,30 @@
+[
+  {
+    "question": "Eğitimler sonunda sertifika veriliyor mu?",
+    "answer": "Hayır, eğitimlerimiz sonunda resmi sertifika verilmemektedir. Biz resmi bir sertifikasyon kurumu veya sürekli eğitim merkezi değiliz. Talep halinde katılım belgesi düzenleyebiliriz ancak bu belge resmi bir sertifikasyon yerine geçmez. Resmi sertifikasyon gerektiren eğitimler için yetkili kuruluşlara yönlendirme yapıyoruz."
+  },
+  {
+    "question": "Eğitimleriniz mevzuat zorunlu eğitimler mi?",
+    "answer": "Hayır, sunduğumuz eğitimler yasal zorunluluk kapsamındaki eğitimler değildir. İş sağlığı ve güvenliği, çevre mevzuatı gibi zorunlu eğitimler için yetkili kuruluşlarla çalışmanız gerekmektedir. Bizim eğitimlerimiz tamamen gönüllü katılıma dayalı, yetkinlik geliştirme amaçlı programlardır."
+  },
+  {
+    "question": "Eğitim programları hazır paketler mi?",
+    "answer": "Hayır, her eğitim programı işletmenizin spesifik ihtiyaçlarına göre özelleştirilir. Ön görüşmede ihtiyaçlarınızı, mevcut yetkinlik düzeyinizi ve hedeflerinizi değerlendirdikten sonra size özel bir program tasarlıyoruz. Bu sayede gerçekten ihtiyaç duyduğunuz konulara odaklanıyoruz."
+  },
+  {
+    "question": "Uzaktan eğitim mümkün mü?",
+    "answer": "Evet, eğitimlerimizin büyük bölümünü online platformlar üzerinden gerçekleştirebiliyoruz. Canlı oturumlar, ekran paylaşımı ve interaktif uygulamalarla uzaktan da etkili bir öğrenme deneyimi sunuyoruz. Atölye çalışmaları ve uygulamalı eğitimler için gerektiğinde yüz yüze oturumlar planlayabiliriz."
+  },
+  {
+    "question": "Minimum katılımcı sayısı var mı?",
+    "answer": "Kurum içi eğitimler ve atölye çalışmaları için minimum katılımcı sayısı önerilmekle birlikte zorunlu değildir. Birebir mentorluk programlarımız tek kişiyle de yürütülebilir. Katılımcı sayısına göre eğitim formatını ve içeriğini uyarlıyoruz."
+  },
+  {
+    "question": "Eğitim içerikleri hangi kaynaklara dayanıyor?",
+    "answer": "Eğitim içeriklerimiz akademik birikimimiz, sektörel deneyimimiz ve güncel uygulamalara dayanmaktadır. TÜBİTAK, KOSGEB gibi kurumların güncel mevzuat ve kılavuzlarını takip ediyoruz. Ayrıca kendi proje deneyimlerimizden ve danışmanlık süreçlerimizden edindiğimiz pratik bilgileri aktarıyoruz."
+  },
+  {
+    "question": "Eğitim ücretlendirmesi nasıl yapılıyor?",
+    "answer": "Ücretlendirme eğitimin formatına, süresine, katılımcı sayısına ve içerik kapsamına göre belirlenir. İhtiyaç analizi sonrasında size özel bir teklif sunuyoruz. İlk tanışma görüşmemiz ücretsizdir ve bu görüşmede ihtiyaçlarınızı detaylı şekilde değerlendiriyoruz."
+  }
+]

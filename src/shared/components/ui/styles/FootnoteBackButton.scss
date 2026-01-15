@@ -1,0 +1,90 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for FootnoteBackButton
+@use '@carbon/styles/scss/components/button';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/motion' as motion;
+
+// ===================================
+// FOOTNOTE BACK BUTTON
+// ===================================
+// Floating button for returning to reading position after viewing footnote
+
+.footnote-back-button {
+  position: fixed;
+  bottom: spacing.$spacing-09;
+  left: spacing.$spacing-07;
+  z-index: 8000; // Below AI chat (9000) but above content
+
+  // Fade in animation
+  animation: footnote-fade-in motion.$duration-moderate-01 motion.$standard-easing;
+
+  &__icon {
+    // Subtle shadow for floating effect
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    // Hover enhancement
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    // Hide tooltip (label is kept for accessibility/screen readers)
+    .cds--popover {
+      display: none;
+    }
+  }
+}
+
+// Fade in keyframes
+@keyframes footnote-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ===================================
+// RESPONSIVE ADJUSTMENTS
+// ===================================
+@media (max-width: 672px) {
+  .footnote-back-button {
+    bottom: spacing.$spacing-09;
+    left: spacing.$spacing-07;
+  }
+}

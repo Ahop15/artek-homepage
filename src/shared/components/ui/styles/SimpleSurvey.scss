@@ -1,0 +1,293 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for SimpleSurvey
+@use '@carbon/styles/scss/components/radio-button';
+@use '@carbon/styles/scss/components/button';
+@use '@carbon/styles/scss/components/notification';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/theme' as theme;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.simple-survey {
+  padding: spacing.$spacing-07 0;
+  .cds--col {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: spacing.$spacing-05;
+    padding-right: spacing.$spacing-05;
+
+    @include bp.breakpoint-down(sm) {
+      padding-left: spacing.$spacing-04;
+      padding-right: spacing.$spacing-04;
+    }
+  }
+
+  // Progress Indicator Section
+  .survey-progress {
+    margin-bottom: spacing.$spacing-07;
+    text-align: center;
+    padding: spacing.$spacing-05;
+    background-color: theme.$layer-01;
+    border-radius: 4px;
+
+    .progress-text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: theme.$text-primary;
+
+      @include bp.breakpoint-down(md) {
+        font-size: 1.25rem;
+      }
+
+      @include bp.breakpoint-down(sm) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  // Question Section
+  .survey-question {
+    margin-bottom: spacing.$spacing-07;
+    padding: spacing.$spacing-06;
+    background-color: theme.$layer-01;
+    border-left: 4px solid theme.$border-interactive;
+    border-radius: 4px;
+
+    .question-text {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: theme.$text-primary;
+      margin: 0;
+      line-height: 1.5;
+
+      @include bp.breakpoint-down(md) {
+        font-size: 1.125rem;
+      }
+
+      @include bp.breakpoint-down(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Answer Section
+  .survey-answers {
+    margin-bottom: spacing.$spacing-07;
+    padding: spacing.$spacing-06;
+
+    .cds--radio-button-group {
+      display: flex;
+      gap: spacing.$spacing-07;
+      justify-content: center;
+
+      @include bp.breakpoint-down(sm) {
+        flex-direction: column;
+        gap: spacing.$spacing-05;
+        align-items: flex-start;
+      }
+    }
+
+    .cds--radio-button-wrapper {
+      .cds--radio-button__label {
+        font-size: 1rem;
+        font-weight: 500;
+
+        @include bp.breakpoint-down(sm) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+
+  // Navigation Section
+  .survey-navigation {
+    display: flex;
+    gap: spacing.$spacing-05;
+    justify-content: space-between;
+    padding: spacing.$spacing-05 0;
+
+    @include bp.breakpoint-down(sm) {
+      flex-direction: column;
+      gap: spacing.$spacing-04;
+    }
+
+    .nav-button {
+      min-width: 120px;
+
+      @include bp.breakpoint-down(sm) {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  }
+
+  // Result Section
+  .survey-result {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .cds--inline-notification {
+      margin-bottom: spacing.$spacing-06;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    .survey-message-content {
+      flex: 1;
+      padding: 0;
+      margin-bottom: spacing.$spacing-06;
+
+      @include bp.breakpoint-down(sm) {
+        padding: spacing.$spacing-05;
+      }
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: spacing.$spacing-05;
+      }
+
+      p {
+        margin-bottom: spacing.$spacing-04;
+        line-height: 1.6;
+      }
+
+      ul {
+        margin-left: spacing.$spacing-06;
+        margin-bottom: spacing.$spacing-04;
+
+        li {
+          margin-bottom: spacing.$spacing-03;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .survey-restart {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding-top: spacing.$spacing-06;
+
+      .restart-button {
+        min-width: 200px;
+
+        @include bp.breakpoint-down(sm) {
+          width: 100%;
+          min-width: unset;
+        }
+      }
+    }
+  }
+}
+
+.simple-survey {
+  .cds--radio-button:focus + .cds--radio-button__label::before {
+    outline: 2px solid theme.$focus;
+    outline-offset: 2px;
+  }
+
+  .cds--btn:focus {
+    outline: 2px solid theme.$focus;
+    outline-offset: 2px;
+  }
+}
+
+.survey-question,
+.survey-answers {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@include bp.breakpoint(md) {
+  .simple-survey {
+    .survey-progress {
+      padding: spacing.$spacing-06;
+    }
+
+    .survey-question {
+      padding: spacing.$spacing-07;
+    }
+
+    .survey-answers {
+      padding: spacing.$spacing-07;
+    }
+  }
+}
+
+@include bp.breakpoint(lg) {
+  .simple-survey {
+    padding: spacing.$spacing-09 0;
+
+    .survey-progress {
+      padding: spacing.$spacing-07;
+
+      .progress-text {
+        font-size: 1.75rem;
+      }
+    }
+
+    .survey-question {
+      padding: spacing.$spacing-08;
+
+      .question-text {
+        font-size: 1.5rem;
+      }
+    }
+
+    .survey-answers {
+      padding: spacing.$spacing-08;
+
+      .cds--radio-button-group {
+        gap: spacing.$spacing-09;
+      }
+    }
+  }
+}

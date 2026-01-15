@@ -1,0 +1,47 @@
+{
+  "brand": {
+    "shortTitle": "ARTEK",
+    "tagline": "Ar-Ge İnovasyon",
+    "homeLink": "/"
+  },
+  "navigation": [
+    { "label": "Anasayfa", "href": "/" },
+    {
+      "label": "Hizmetlerimiz",
+      "children": [
+        {
+          "label":  "Danışmanlık",
+          "href": "/services/consultancy"
+        },
+        {
+          "label":  "Yazılım Geliştirme",
+          "href": "/under-construction"
+        }
+      ]
+    },
+    { "label":  "Kurumsal",
+      "href": "/company"
+    },
+    { "label": "İletişim", "href": "/contact" }
+  ],
+  "theme": {
+    "defaultTheme": "white",
+    "toggleLabels": {
+      "light": "Koyu temaya geç",
+      "dark": "Açık temaya geç"
+    }
+  },
+  "mobile": {
+    "menuLabel": "Menüyü aç",
+    "menuCloseLabel": "Menüyü kapat"
+  },
+  "accessibility": {
+    "skipToContent": "İçeriğe geç",
+    "skipToContentTarget": "#main-content",
+    "ariaLabels": {
+      "mainNavigation": "Ana navigasyon",
+      "mobileNavigation": "Mobil navigasyon",
+      "themeToggle": "Tema değiştir"
+    }
+  }
+}

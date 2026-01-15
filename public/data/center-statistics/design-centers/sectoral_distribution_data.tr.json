@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Teknoloji ve Yazılım",
+    "color": "#e8703e",
+    "children": [
+      {
+        "name": "Elektronik",
+        "value": 7,
+        "showLabel": true
+      },
+      {
+        "name": "Bilgisayar ve İletişim Teknolojileri",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Yazılım",
+        "value": 3,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Otomotiv ve Yan Sanayi",
+    "color": "#8e6f20",
+    "children": [
+      {
+        "name": "Otomotiv Yan Sanayi",
+        "value": 22,
+        "showLabel": true
+      },
+      {
+        "name": "Otomotiv",
+        "value": 13,
+        "showLabel": true
+      },
+      {
+        "name": "Otomotiv Tasarımı ve Mühendislik",
+        "value": 3,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Makine ve İmalat Endüstrisi",
+    "color": "#d73027",
+    "children": [
+      {
+        "name": "İmalat Sanayi",
+        "value": 43,
+        "showLabel": true
+      },
+      {
+        "name": "Makine ve Teçhizat İmalatı",
+        "value": 39,
+        "showLabel": true
+      },
+      {
+        "name": "İklimlendirme",
+        "value": 5,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Kimya ve Sağlık Sektörü",
+    "color": "#71ca36",
+    "children": []
+  },
+  {
+    "name": "Tüketim ve Gıda Endüstrisi",
+    "color": "#006837",
+    "children": [
+      {
+        "name": "Tekstil",
+        "value": 53,
+        "showLabel": true
+      },
+      {
+        "name": "Mobilya",
+        "value": 14,
+        "showLabel": true
+      },
+      {
+        "name": "Konfeksiyon ve Hazır Giyim",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Dayanıklı Tüketim Malları",
+        "value": 4,
+        "showLabel": false
+      },
+      {
+        "name": "Gıda Sanayi",
+        "value": 2,
+        "showLabel": false
+      },
+      {
+        "name": "Kağıt ve Kağıt Ürünleri",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Savunma ve Güvenlik",
+    "color": "#526313",
+    "children": [
+      {
+        "name": "Savunma Sanayi",
+        "value": 9,
+        "showLabel": true
+      },
+      {
+        "name": "Havacılık",
+        "value": 3,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Enerji ve Altyapı",
+    "color": "#1a9850",
+    "children": [
+      {
+        "name": "Mühendislik/Mimarlık",
+        "value": 48,
+        "showLabel": true
+      },
+      {
+        "name": "İnşaat",
+        "value": 14,
+        "showLabel": true
+      },
+      {
+        "name": "Enerji",
+        "value": 4,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Metal ve Malzeme",
+    "color": "#c97a30",
+    "children": [
+      {
+        "name": "Dökümcülük",
+        "value": 5,
+        "showLabel": true
+      },
+      {
+        "name": "Demir ve Demir Dışı Metaller",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Seramik ve Refrakter",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Cam ve Cam Ürünleri",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Lastik-Plastik",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Finans ve İletişim",
+    "color": "#9b5e3c",
+    "children": [
+      {
+        "name": "Medya ve İletişim",
+        "value": 17,
+        "showLabel": true
+      },
+      {
+        "name": "Telekomünikasyon",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Diğer Sektörler",
+    "color": "#5a8247",
+    "children": [
+      {
+        "name": "Denizcilik",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Perakendecilik",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Madencilik",
+        "value": 2,
+        "showLabel": true
+      },
+      {
+        "name": "Kuyumculuk",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Tarım",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  }
+]

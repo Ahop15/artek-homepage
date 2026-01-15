@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Ar-Ge Merkezi nedir?",
+    "answer": "Ar-Ge Merkezi, işletmenin organizasyon yapısı içinde ayrı bir birim şeklinde örgütlenmiş, münhasıran yurtiçinde araştırma ve geliştirme faaliyetlerinde bulunan ve en az 15 tam zaman eşdeğer Ar-Ge personeli istihdam eden, yeterli Ar-Ge birikimi ve yeteneği olan, aynı bina veya aynı yerleşke içinde yer alan birimlerdir."
+  },
+  {
+    "question": "Tasarım Merkezi nedir?",
+    "answer": "Tasarım Merkezi, tasarım projelerini veya sözleşme çerçevesinde siparişe dayalı olarak yürütülen tasarım faaliyetlerini gerçekleştirmek üzere kurulan, organizasyon yapısı içinde ayrı bir birim şeklinde örgütlenmiş, münhasıran yurtiçinde tasarım faaliyetlerinde bulunan ve en az 10 tam zaman eşdeğer tasarım personeli istihdam eden birimlerdir."
+  },
+  {
+    "question": "Ar-Ge Merkezi başvurusunda aranan temel şartlar nelerdir?",
+    "answer": "Ar-Ge Merkezi başvurusu için en az 15 tam zaman eşdeğer Ar-Ge personeli istihdam edilmesi, faaliyetlerin yurt içinde gerçekleştirilmesi, yeterli Ar-Ge yönetimi ve teknolojik varlıkların bulunması, personelin fiziki kontrolünü yapacak mekanizmaların olması, tanımlanmış Ar-Ge projelerin bulunması ve merkezin ayrı bir birim olarak tek bir yerleşke içinde yer alması gerekmektedir."
+  },
+  {
+    "question": "Tasarım Merkezi başvurusunda aranan temel şartlar nelerdir?",
+    "answer": "Tasarım Merkezi başvurusu için en az 10 tam zaman eşdeğer tasarım personeli istihdam edilmesi, faaliyetlerin yurt içinde gerçekleştirilmesi, yeterli tasarım yönetimi ve teknolojik varlıkların bulunması, personelin fiziki kontrolünü yapacak mekanizmaların olması, tanımlanmış tasarım projelerinin bulunması ve merkezin ayrı bir birim olarak tek bir yerleşke içinde yer alması gerekmektedir."
+  },
+  {
+    "question": "Tam zaman eşdeğer (TZE) personel sayısı nasıl hesaplanır?",
+    "answer": "Tam zaman eşdeğer personel sayısı, çalışan personelin çalışma sürelerine göre üçer aylık dönemler itibarıyla toplam çalışma süresinin, bir kişinin üç aylık tam zamanlı çalışma süresine bölünmesiyle hesaplanır. Haftada 45 saatin üzerindeki ve ek çalışma süreleri bu hesaplamada dikkate alınmaz."
+  },
+  {
+    "question": "Araştırmacı kimdir?",
+    "answer": "Araştırmacı, Ar-Ge faaliyetleri ile yenilik tanımı kapsamındaki projelerde yeni bilgi, ürün, süreç, yöntem ve sistemlerin tasarım veya oluşturulması ve ilgili projelerin yönetilmesi süreçlerinde yer alan en az lisans mezunu uzmanlardır."
+  },
+  {
+    "question": "Tasarımcı kimdir?",
+    "answer": "Tasarımcı, tasarım faaliyetleri kapsamındaki projelerin gerçekleştirilmesi ve yönetilmesi süreçlerinde yer alan, üniversitelerin mühendislik, mimarlık veya tasarım ile ilgili bölümlerinden mezun en az lisans derecesine sahip kişiler ile tasarım alanlarından herhangi birinde en az lisansüstü eğitim derecesine sahip diğer kişilerdir."
+  },
+  {
+    "question": "Teknisyen kimdir?",
+    "answer": "Teknisyen, meslek lisesi veya meslek yüksekokullarının tasarım, teknik, fen veya sağlık bölümlerinden mezun, teknik bilgi ve deneyim sahibi kişilerdir."
+  },
+  {
+    "question": "Destek personeli kimdir?",
+    "answer": "Destek personeli, Ar-Ge ve yenilik veya tasarım faaliyetlerine katılan veya bu faaliyetlerle doğrudan ilişkili yönetici, teknik eleman, laborant, sekreter, işçi ve benzeri personeldir."
+  },
+  {
+    "question": "5746 sayılı Kanun kapsamında sağlanan teşvik ve destekler nelerdir?",
+    "answer": "Kanun kapsamında; Ar-Ge harcamalarının %100'ü için vergi indirimi, Ar-Ge personeli ücretleri üzerinden gelir vergisi stopajı teşviki, sigorta primi işveren hissesinin yarısı için destek, damga vergisi istisnası, gümrük vergisi istisnası, desteklenecek programlar desteği ve yeni makine-teçhizat alımlarında KDV istisnası sağlanmaktadır."
+  },
+  {
+    "question": "Ar-Ge ve yenilik sayılmayan faaliyetler nelerdir?",
+    "answer": "Pazarlama faaliyetleri, kalite kontrol, sosyal bilimlerdeki araştırmalar, maden arama ve sondaj faaliyetleri, Ar-Ge projesi kapsamında olmayan mevcut süreçlerin kullanımı, estetik ve görsel değişiklikler, mevcut yazılımlarla yapılan web sitesi geliştirme, üretim altyapısına yönelik yatırımlar ve reklam amaçlı tüketici testleri Ar-Ge sayılmaz."
+  },
+  {
+    "question": "Tasarım sayılmayan faaliyetler nelerdir?",
+    "answer": "Pazarlama faaliyetleri, kalite kontrol, tasarım projesi kapsamında olmayan mevcut süreçlerin kullanımı, kuruluş ve örgütlenme araştırma giderleri, üretim altyapısına yönelik yatırımlar, reklam amaçlı tüketici testleri, kamu düzenine veya genel ahlaka aykırı tasarım faaliyetleri tasarım kapsamında değerlendirilmez."
+  },
+  {
+    "question": "Siparişe dayalı Ar-Ge ve tasarım faaliyetleri nedir?",
+    "answer": "Ar-Ge veya tasarım merkezlerinin sözleşme çerçevesinde siparişe dayalı olarak yürüttükleri faaliyetlerdir. Bu faaliyetlere ilişkin harcamaların %50'si merkez tarafından, kalan %50'si siparişi veren mükellef tarafından Ar-Ge ve tasarım indirimi olarak dikkate alınabilir."
+  },
+  {
+    "question": "Desteklenecek program desteğinden kimler yararlanabilir?",
+    "answer": "Yükseköğretim kurumlarının matematik, fizik, kimya, biyoloji lisans programları ile biyokimya, biyoteknoloji, endüstriyel tasarım, endüstriyel tasarım mühendisliği, metalurji ve malzeme mühendisliği, moleküler biyoloji ve genetik programlarından mezun Ar-Ge personeli bu destekten yararlanabilir."
+  },
+  {
+    "question": "Öğretim elemanları Ar-Ge merkezlerinde görev yapabilir mi?",
+    "answer": "Evet, öğretim elemanları Ar-Ge veya tasarım merkezlerinde araştırmacı, tasarımcı ya da idari personel olarak üniversite yönetim kurullarının izniyle tam zamanlı veya yarı zamanlı olarak görevlendirilebilirler."
+  },
+  {
+    "question": "Ar-Ge projesi nedir?",
+    "answer": "Ar-Ge projesi; amacı, kapsamı, genel ve teknik tanımı, süresi, bütçesi, özel şartları, destek tutarları ve fikri mülkiyet haklarının paylaşım esasları tespit edilmiş, Ar-Ge faaliyetlerinin her safhasını belirleyecek mahiyette bilimsel esaslar çerçevesinde araştırmacı tarafından yürütülen projelerdir."
+  },
+  {
+    "question": "Tasarım projesi nedir?",
+    "answer": "Tasarım projesi; amacı, kapsamı, genel ve teknik tanımı, süresi, bütçesi, özel şartları, destek tutarları ve fikri mülkiyet haklarının paylaşım esasları tespit edilmiş, tasarım faaliyetlerinin her safhasını belirleyecek mahiyette bilimsel esaslar çerçevesinde tasarımcı tarafından yürütülen projelerdir."
+  },
+  {
+    "question": "Tasarım faaliyeti nedir?",
+    "answer": "Tasarım faaliyeti, sanayi alanında ve Cumhurbaşkanının uygun göreceği diğer alanlarda katma değer ve rekabet avantajı yaratma potansiyelini haiz, ürün veya ürünlerin işlevselliğini artırma, geliştirme, iyileştirme ve farklılaştırmaya yönelik yenilikçi faaliyetlerin tümüdür."
+  }
+]

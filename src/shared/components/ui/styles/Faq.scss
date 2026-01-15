@@ -1,0 +1,155 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for Faq
+@use '@carbon/styles/scss/components/accordion';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/type' as type;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.faq-section {
+  padding: spacing.$spacing-10 0;
+  background: linear-gradient(135deg,
+    var(--cds-layer-01) 0%,
+    var(--cds-layer-accent-01) 100%
+  );
+  transition: background 0.25s ease;
+
+  @include bp.breakpoint-down('md') {
+    padding: spacing.$spacing-08 0;
+  }
+}
+
+.faq-grid-container {
+  width: 100%;
+}
+
+// Section Header
+.faq-header-column {
+  margin-bottom: spacing.$spacing-09;
+
+  @include bp.breakpoint-down('md') {
+    margin-bottom: spacing.$spacing-07;
+  }
+}
+
+.faq-header {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.faq-badge {
+  display: inline-block;
+  padding: spacing.$spacing-02 spacing.$spacing-05;
+  background: var(--cds-layer-accent-01);
+  color: var(--cds-link-primary);
+  @include type.type-style('label-01');
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  margin-bottom: spacing.$spacing-05;
+}
+
+.faq-title {
+  @include type.type-style('heading-04');
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cds-text-primary);
+  margin-bottom: spacing.$spacing-05;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('heading-03');
+  }
+}
+
+.faq-description {
+  @include type.type-style('body-long-02');
+  line-height: 1.6;
+  color: var(--cds-text-secondary);
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('body-long-01');
+  }
+}
+
+.faq-accordion-column {
+  @include bp.breakpoint-down('md') {
+    padding: 0;
+  }
+}
+
+.faq-accordion {
+  background: transparent;
+}
+
+.faq-accordion-item {
+  border: none;
+  border-bottom: 1px solid var(--cds-border-subtle);
+
+  &:first-child {
+    border-top: 1px solid var(--cds-border-subtle);
+  }
+
+  @include bp.breakpoint-down('md') {
+    padding-block: spacing.$spacing-03;
+  }
+
+  .cds--accordion__title {
+    @include bp.breakpoint-down('md') {
+      padding-inline-start: 0 !important;
+    }
+  }
+  .cds--accordion__content {
+    @include bp.breakpoint-down('md') {
+      padding-inline-start: 0 !important;
+    }
+  }
+}
+
+.faq-answer {
+  @include type.type-style('body-long-01');
+  line-height: 1.6;
+  color: var(--cds-text-secondary);
+  padding: spacing.$spacing-05 0;
+  margin: 0;
+
+  @include bp.breakpoint-down('md') {
+    @include type.type-style('body-compact-01');
+    padding: spacing.$spacing-04 0;
+  }
+}
+
+

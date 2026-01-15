@@ -1,0 +1,157 @@
+import {Button} from "@carbon/react";
+import { Link } from "react-router-dom";
+import SimpleFaq from "@shared/components/ui/SimpleFaq";
+import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
+
+import faqData from "./data/faq/en/data.json";
+
+# Technical Training
+
+We share our academic expertise and industry experience with your organization's technical teams. We do not offer formal certification programs; our goal is knowledge transfer and practical competency development.
+
+**Not certification, knowledge transfer. Not theory, practice.**
+
+---
+
+## Our Training Approach
+
+As ARTEK, our training programs are based on practice-oriented knowledge transfer, drawing from our academic background and industry experience.
+
+Key characteristics of our training:
+
+- **Knowledge Transfer Focused:** Content that combines theoretical knowledge with practical applications, directly contributing to your business processes
+- **Customized Programs:** Training programs designed according to your organization's sector, current competency level, and specific needs
+- **Application-Oriented:** Workshop sessions conducted through your own projects and real-world scenarios
+- **Mentoring Support:** Continuous communication opportunity where you can get answers to your questions even after the training
+
+> **Note:** For training requiring formal certification (ISO certification, mandatory regulatory training, etc.), we provide referrals to authorized institutions.
+
+---
+
+## Our Training Areas
+
+### R&D and Project Management
+
+We enhance your teams' competencies in planning, executing, and reporting R&D and design projects.
+
+- R&D project cycle and methodologies
+- TÜBİTAK and KOSGEB project writing techniques
+- Project budgeting and cost management
+- Periodic reporting and audit preparation
+- Intellectual property awareness
+
+### Technical Documentation
+
+We transfer systematic approaches for preparing project documents, technical reports, and application files.
+
+- Technical report writing standards
+- Project file preparation techniques
+- Scientific and technical content structuring
+- Visualization and presentation techniques
+- Version control and document management
+
+### Engineering Processes
+
+We provide knowledge transfer on systematic execution and quality management of engineering projects.
+
+- R&D and innovation process management
+- Technological feasibility assessment
+- Risk analysis and management
+- Quality control approaches
+- Process optimization fundamentals
+
+---
+
+## Our Training Formats
+
+We offer flexible formats suitable for your organization's needs and working arrangements.
+
+### In-House Training
+
+Group training programs conducted at your organization for your entire team or specific departments. Hands-on learning opportunity in your own environment, working on your own projects.
+
+### Workshop Sessions
+
+Intensive and interactive working sessions focused on a specific topic or skill. Opportunity to gain hands-on experience working on real projects.
+
+### One-on-One Mentoring
+
+Personalized mentoring programs for project managers or technical leaders. Knowledge transfer at a flexible pace, focusing on specific challenges you face.
+
+### Remote Training
+
+Live training sessions conducted through online platforms. Participation opportunity with flexible scheduling, without geographical constraints.
+
+---
+
+## Who Is It For?
+
+Our training is designed for professionals seeking to develop their technical knowledge and skills.
+
+### R&D and Design Center Teams
+
+Project management, reporting, and documentation training for center managers, project leaders, and R&D personnel.
+
+### Project Managers
+
+Project writing, budgeting, and execution training for professionals managing TÜBİTAK, KOSGEB, and other grant-funded projects.
+
+### Technical Personnel
+
+Technical documentation, digital tools, and process management training for engineers, designers, and researchers.
+
+### Recent Graduates and Interns
+
+Basic competency development and orientation programs for new employees joining R&D teams.
+
+---
+
+## How Does the Process Work?
+
+<InlineNotificationWrapper
+    kind="info"
+    subtitle="Each training program is customized according to your organization's specific needs. Instead of ready-made package programs, we offer content designed together with you."
+    lowContrast
+    hideCloseButton
+/>
+
+### 1. Needs Analysis
+
+We assess your organization's current competency level, goals, and training needs together. We identify which areas require development and set priorities.
+
+### 2. Program Design
+
+We design a customized training program based on the needs analysis. We consider your preferences regarding content, format, duration, and scheduling.
+
+### 3. Training Implementation
+
+We conduct training according to the established program. We reinforce theoretical knowledge with practical applications and work on real projects.
+
+### 4. Evaluation and Follow-up
+
+After training, we evaluate the outcomes and plan additional sessions if necessary. We provide mentoring support for your questions.
+
+<InlineNotificationWrapper
+    kind="warning"
+    subtitle="No formal certificate is awarded at the end of our training. We can issue a certificate of attendance upon request, but this certificate does not substitute for formal certification."
+    lowContrast
+    hideCloseButton
+/>
+
+---
+
+To discuss your technical training needs and design a program suitable for you, please contact us.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button size="sm" kind="primary">
+            Contact Us
+        </Button>
+    </Link>
+</div>
+
+---
+
+## Frequently Asked Questions
+
+<SimpleFaq content={faqData} />

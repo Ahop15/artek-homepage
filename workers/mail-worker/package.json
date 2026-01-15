@@ -1,0 +1,23 @@
+{
+	"name": "artek-mail-worker",
+	"version": "1.0.0",
+	"description": "Serverless contact form email handler built on Cloudflare Workers with Resend API and Turnstile bot protection",
+	"author": "Rıza Emre ARAS",
+	"license": "AGPL-3.0-or-later",
+	"scripts": {
+		"deploy": "dotenv -- wrangler deploy",
+		"dev": "dotenv -- wrangler dev --port 8788",
+		"start": "dotenv -- wrangler dev --port 8788",
+		"cf-typegen": "dotenv -- wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"dotenv-cli": "^11.0.0",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.49.0"
+	},
+	"dependencies": {
+		"resend": "^6.5.2"
+	}
+}

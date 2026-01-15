@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Ar-Ge veya Tasarım Merkezi kurmak için danışmanlık hizmeti almak zorunlu mu?",
+    "answer": "Hayır, Ar-Ge veya Tasarım Merkezi başvurusu için herhangi bir danışmanlık firmasıyla çalışmak zorunlu değildir. Başvuruyu doğrudan Sanayi ve Teknoloji Bakanlığı'na kendiniz yapabilirsiniz. Ancak süreç; proje portföyü oluşturma, personel yetkinlik değerlendirmesi, fiziksel altyapı gereksinimleri ve başvuru dokümantasyonu gibi teknik detaylar içerir. Danışmanlık desteği, bu süreçlerin daha sağlam temellere oturmasını ve olası eksikliklerin önceden tespit edilmesini sağlar."
+  },
+  {
+    "question": "Teknik danışmanlık kapsamınız nedir?",
+    "answer": "Mühendislik bilgisi ve teknik uzmanlık gerektiren tüm süreçlerde danışmanlık veriyoruz. Bu kapsamda Ar-Ge ve Tasarım Merkezi kurulum süreçleri, TÜBİTAK/KOSGEB/Kalkınma Ajansı proje hazırlık ve yönetimi, teknik fizibilite çalışmaları, süreç ve sistem tasarımı, proje dokümantasyonu ve kurumsal teknik eğitimler yer alıyor. Mali müşavirlik, muhasebe, vergi hesaplamaları, hukuki danışmanlık veya insan kaynakları yönetimi gibi konular ise kapsamımız dışındadır — bu alanlarda mevcut danışmanlarınızla tamamlayıcı şekilde çalışıyoruz."
+  },
+  {
+    "question": "Akademik meşruiyet ne demek?",
+    "answer": "Ar-Ge ve inovasyon kavramları tanımları gereği bilimsel yöntemlere dayanan faaliyetlerdir. Projelerinizin teknolojik belirsizliği ve yenilik unsurunu tespit etmek akademik bakış açısı gerektirir. ARTEK olarak akademik geçmişimiz ve bilgi birikimimiz sayesinde, projelerinizi bilimsel temelleri üzerinden değerlendirebiliyor, üniversite-sanayi işbirliği fırsatlarını daha etkin koordine edebiliyoruz. Bu perspektif, özellikle denetim süreçlerinde ve proje değerlendirmelerinde projenizin teknik tutarlılığını güçlendirir."
+  },
+  {
+    "question": "Uzaktan çalışabiliyor musunuz?",
+    "answer": "Evet, hizmetlerimizin büyük bölümünü uzaktan yürütebiliyoruz. Proje değerlendirme, dokümantasyon desteği ve eğitimler online yapılabiliyor. Fiziksel altyapı değerlendirmesi veya yerinde eğitim gibi durumlar için gerektiğinde saha ziyareti planlıyoruz."
+  },
+  {
+    "question": "Hizmet ücretlendirmeniz nasıl işliyor?",
+    "answer": "Proje bazlı veya danışmanlık süresi bazlı çalışıyoruz. İlk görüşmede ihtiyaçlarınızı değerlendirdikten sonra kapsamı ve ücreti netleştiriyoruz. İlk tanışma görüşmemiz ücretsizdir."
+  }
+]

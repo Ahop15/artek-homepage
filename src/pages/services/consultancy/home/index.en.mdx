@@ -1,0 +1,147 @@
+import { Link } from "react-router-dom";
+import {Button} from "@carbon/react";
+// noinspection ES6UnusedImports
+import {Checkmark, Close, Industry, Building, Rocket, Enterprise, Chemistry, Education, Idea} from "@carbon/icons-react";
+import SimpleFaq from "@shared/components/ui/SimpleFaq";
+import ArtekBilingualLogo from "@shared/components/ui/ArtekBilingualLogo";
+import DinoGame from "@shared/components/games/DinoGame";
+
+import faqData from "./data/faq/en/data.json";
+
+# Introduction
+
+With our engineering vision, we provide solutions for the technical consultancy needs of industrial enterprises. We offer **technically focused consultancy** services across a wide spectrum, from R&D and innovation processes to project management, and from digital transformation to publicly funded projects.
+
+**Academic depth. Engineering precision. Independent perspective.**
+
+---
+
+<ArtekBilingualLogo className="artek-logo" />
+
+---
+
+<DinoGame.Lazy theme="consultancy" />
+
+---
+
+## Our Service Approach
+
+At ARTEK, we address your technical consultancy needs with our engineering vision.
+
+We guide industrial enterprises on technical matters by combining our expertise in *mechanical engineering*, *industrial engineering*, and *computer engineering* with academic experience. We do not provide financial advisory, legal consultancy, or auditing services — we focus on **technical processes that require engineering knowledge**.
+
+With the critical advantage of **focused expertise** that this approach provides, we deliver in-depth services on technical matters requiring engineering knowledge.
+
+---
+
+## What We Do
+
+### <Checkmark size={20} /> Technical Project Evaluation
+
+We analyze the technical feasibility, R&D characteristics, and innovation aspects of your projects from an engineering perspective. We evaluate technological uncertainty, originality, and applicability criteria.
+
+### <Checkmark size={20} /> Publicly Funded Project Consultancy
+
+We provide technical guidance for project preparation, application, and management processes for support programs from TÜBİTAK, KOSGEB, Development Agencies, and other public institutions.
+
+### <Checkmark size={20} /> R&D and Design Center Consultancy
+
+We provide consultancy on the technical aspects of establishing R&D or Design Centers under Law No. 5746. We assist with project portfolio, personnel competency, and physical infrastructure planning.
+
+### <Checkmark size={20} /> Process and System Design
+
+We provide engineering support for the design and optimization of production processes, quality management systems, project management infrastructure, and technical documentation systems.
+
+### <Checkmark size={20} /> Technical Training and Capacity Building
+
+We organize corporate training programs on R&D management, project documentation, technical writing, engineering processes, and digital tools.
+
+### <Checkmark size={20} /> University-Industry Collaboration Coordination
+
+Through our academic connections, we facilitate your introduction to partners who can provide academic support for your projects, help you develop joint R&D projects, and enable you to benefit from research infrastructures.
+
+### <Checkmark size={20} /> Technical Feasibility and Preliminary Assessment
+
+We evaluate the technical feasibility of your new product, process, or investment ideas, conduct risk analyses, and provide engineering input to your decision-making processes.
+
+---
+
+## What We Don't Do
+
+### <Close size={20} /> Financial Advisory and Accounting
+
+We do not provide consultancy on accounting for R&D expenditures, cost calculations, financial statements, or tax declarations.
+
+### <Close size={20} /> Tax Calculations and Incentive Applications
+
+R&D deductions, income tax withholding incentives, social security premium support calculations, or tax optimization are not within our area of expertise.
+
+### <Close size={20} /> Certified Public Accountant Reports and Auditing
+
+We do not prepare certified public accountant attestation reports. We do not provide independent auditing or financial statement auditing services.
+
+### <Close size={20} /> Legal Consultancy
+
+We do not provide legal consultancy on intellectual property rights, contract law, labor law, or commercial law.
+
+### <Close size={20} /> Human Resources Management
+
+We do not establish personnel recruitment processes, payroll management, personnel affairs, or performance evaluation systems.
+
+### <Close size={20} /> Production and Manufacturing Operations
+
+We do not manage operational processes such as factory management, production planning operations, or supply chain management.
+
+---
+
+## Who Do We Serve?
+
+### <Industry size={20} /> Industrial Enterprises
+
+Industrial organizations of all sizes that manufacture, conduct R&D activities, or plan to do so.
+
+### <Building size={20} /> R&D and Design Centers
+
+Enterprises operating under Law No. 5746 or aiming to establish a center.
+
+### <Rocket size={20} /> Technology Ventures
+
+Start-ups and scale-ups developing technology-focused products or services and seeking to benefit from public support.
+
+### <Enterprise size={20} /> Technopark Companies
+
+Enterprises operating in technology development zones and conducting R&D and innovation projects.
+
+---
+
+## Why ARTEK?
+
+### <Chemistry size={20} /> Engineering Perspective
+
+With our expertise in mechanical engineering, industrial engineering, and computer engineering, we evaluate the technical aspects of your projects and processes. We combine theoretical knowledge with practical applications.
+
+### <Education size={20} /> Academic Credibility
+
+Our academic background provides you with a strong foundation for evaluating the scientific basis of your projects and establishing university-industry collaborations.
+
+### <Idea size={20} /> Ecosystem Experience
+
+As a company operating in a technology development zone, we view things from within the R&D and innovation ecosystem. We have firsthand knowledge of public support mechanisms and sector dynamics.
+
+---
+
+To discuss your technical consultancy needs and evaluate how we can assist you, please contact us.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button size="sm" kind="primary">
+            Contact Us
+        </Button>
+    </Link>
+</div>
+
+---
+
+## Frequently Asked Questions
+
+<SimpleFaq content={faqData} />

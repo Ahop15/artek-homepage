@@ -1,0 +1,21 @@
+@use '@carbon/react/scss/breakpoint' as breakpoint;
+@use '@carbon/react/scss/spacing' as spacing;
+
+.artek-logo {
+  display: block;
+  max-width: 460px;
+  height: auto;
+  margin-block: spacing.$spacing-05;
+  @include breakpoint.breakpoint-down(md) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.chrome-dino-container {
+  display: none;
+
+  @include breakpoint.breakpoint-up(lg) {
+    display: block;
+  }
+}

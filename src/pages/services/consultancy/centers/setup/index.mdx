@@ -1,0 +1,92 @@
+import ContentTabs from "@shared/components/content/ContentTabs";
+import {Button} from "@carbon/react";
+import { Link } from "react-router-dom";
+
+import SurveyRD from './_components/SurveyRD';
+import SurveyDesign from './_components/SurveyDesign';
+import FlowChart from './_components/FlowChart';
+import SimpleFaq from "@shared/components/ui/SimpleFaq";
+import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
+
+import faqData from "./data/faq/tr/data.json";
+
+# Merkez Kurulum Danışmanlığı
+
+5746 sayılı kanun kapsamında Ar-Ge veya Tasarım Merkezi kurmak, yalnızca başvuru formu
+doldurmaktan ibaret değildir. Gerçek bir merkez; doğru tanımlanmış projeler, yetkin personel
+yapısı, uygun fiziksel altyapı ve sürdürülebilir bir yönetim sistemi gerektirir.
+
+**Mühendislik perspektifiyle kurulum, akademik güvenceyle danışmanlık.**
+
+## Kurulum Süreci Akış Diyagramı
+
+Ar-Ge veya Tasarım Merkezi kurulumu, sistematik bir planlama ve uygulama süreci gerektirir.
+Aşağıdaki akış diyagramı, başvurudan operasyona kadar geçen sürecin ana adımlarını göstermektedir.
+
+<InlineNotificationWrapper
+    kind="info"
+    subtitle="Her aşamada teknik ve idari gereksinimlerin eksiksiz karşılanması, başvurunuzun onay sürecini
+                  hızlandırır ve olası revizyonları minimize eder."
+    lowContrast
+    hideCloseButton
+/>
+
+<FlowChart />
+
+---
+
+## Ar-Ge / Tasarım Merkezi İstatistikleri
+
+T.C. Sanayi ve Teknoloji Bakanlığı'nın resmi raporlarına dayanan kapsamlı veri analizlerinden oluşan Türkiye'deki
+Ar-Ge ve Tasarım merkezlerinin güncel istatistiklerini keşfedin. İl bazlı coğrafi dağılım, sektörel yoğunluk
+analizleri ve detaylı grafik gösterimler ile sektörünüzde öne çıkabileceğiniz bölgeleri ve fırsatları belirleyin.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+    <Link to="/services/consultancy/centers/statistics/rd-centers" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button kind="primary">
+            Ar-Ge Merkezleri
+        </Button>
+    </Link>
+    <Link to="/services/consultancy/centers/statistics/design-centers" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button kind="secondary">
+            Tasarım Merkezleri
+        </Button>
+    </Link>
+</div>
+
+---
+
+## İşletmenizi Değerlendirin
+
+İşletmenizin *Ar-Ge* veya *Tasarım* merkezi olma kriterlerine uygun olup olmadığını **T.C. Sanayi ve Teknoloji
+Bakanlığı** tarafından hazırlanmış 6 sorudan oluşan kısa anket ile değerlendirin.
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "Ar-Ge",
+        content: SurveyRD
+    },
+    {
+        label: "Tasarım",
+        content: SurveyDesign
+    }
+]} />
+
+---
+
+Teknik danışmanlık ihtiyaçlarınızı konuşmak ve size nasıl yardımcı
+olabileceğimizi değerlendirmek için bizimle iletişime geçin.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button size="sm"  kind="primary">
+            İletişime Geçin
+        </Button>
+    </Link>
+</div>
+
+---
+
+## Sıkça Sorulan Sorular
+
+<SimpleFaq content={faqData} />

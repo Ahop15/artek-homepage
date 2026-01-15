@@ -1,0 +1,72 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for HeroVideoPlaceholder
+@use '@carbon/styles/scss/components/skeleton-styles';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/theme' as theme;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.hero-video-placeholder {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+
+  // Mobile/tablet sizing - matches hero-visual-image
+  max-height: 400px;
+
+  @include bp.breakpoint-up(md) {
+    max-height: 450px;
+  }
+
+  @include bp.breakpoint-up(lg) {
+    max-height: 500px;
+  }
+
+  // Desktop sizing - matches hero-visual-image
+  @include bp.breakpoint-up(xlg) {
+    height: 100%;
+    min-height: 500px;
+    max-height: none;
+  }
+
+  // Carbon Skeleton fills the entire placeholder
+  .hero-video-skeleton {
+    width: 100%;
+    height: 100%;
+  }
+}

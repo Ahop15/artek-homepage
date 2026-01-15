@@ -1,0 +1,100 @@
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/type/index' as type;
+@use '@carbon/react/scss/breakpoint' as bp;
+@use '@carbon/react/scss/theme' as theme;
+
+.center-statistics-grid-container {
+  width: 100%;
+}
+
+.center-statistics-grid-column {
+  margin-bottom: spacing.$spacing-09;
+
+  @include bp.breakpoint-down(md) {
+    margin-bottom: spacing.$spacing-07;
+  }
+}
+
+.statistic-tile {
+  height: 100%;
+  padding: spacing.$spacing-05;
+
+  &--primary {
+    background: theme.$layer-accent-01;
+    border-left: 4px solid theme.$border-interactive;
+  }
+
+  &--accent {
+    background: theme.$background;
+    border: 1px solid theme.$border-subtle-01;
+  }
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$spacing-03;
+
+  &__value {
+    @include type.type-style('productive-heading-06');
+    color: theme.$text-primary;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__label {
+    @include type.type-style('label-01');
+    color: theme.$text-secondary;
+  }
+
+  // Highlighted variant
+  &--highlighted {
+    .statistic-item__value {
+      color: theme.$link-primary;
+    }
+  }
+}
+
+.statistic-group {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$spacing-05;
+  margin-top: calc(-1 * #{spacing.$spacing-07});  // Tile padding'ini telafi et
+
+  &__title {
+    @include type.type-style('productive-heading-02');
+    color: theme.$text-primary;
+    margin: 0 0 spacing.$spacing-04 0;  // Alt margin ekle
+    padding-bottom: spacing.$spacing-03;
+    border-bottom: 1px solid theme.$border-subtle-01;
+    display: flex;
+    align-items: center;
+    gap: spacing.$spacing-03;
+  }
+
+  &__title-icon {
+    color: theme.$icon-secondary;
+    flex-shrink: 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.$spacing-05;
+
+    @include bp.breakpoint(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: spacing.$spacing-06;
+    }
+
+    .statistic-item {
+      flex: 1 1 auto;
+      min-width: 0;
+
+      @include bp.breakpoint(md) {
+        flex: 1 1 calc(33.333% - #{spacing.$spacing-06});
+      }
+    }
+  }
+}

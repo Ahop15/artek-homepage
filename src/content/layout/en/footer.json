@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Company Information",
+      "href": "/company"
+    },
+    {
+      "label": "Privacy Notice",
+      "href": "/kvkk"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "copyright": {
+    "text": "© 2025 Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi, All rights reserved.",
+    "additionalText": "Rıza Emre ARAS - <a href='https://github.com/remrearas' target='_blank' rel='noopener noreferrer'>@remrearas</a>"
+  }
+}

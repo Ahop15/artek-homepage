@@ -1,0 +1,183 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/type/index' as type;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.footer {
+  background: var(--cds-layer-01);
+  transition: background 0.25s ease;
+  position: relative;
+  z-index: 8001; // Higher than SideNav (8000) to appear above it
+}
+
+.footer-separator {
+  width: 100%;
+  height: 1px;
+  background: var(--cds-border-subtle);
+  margin: 0 0 spacing.$spacing-07 0;
+
+  @include bp.breakpoint-down(md) {
+    margin-bottom: spacing.$spacing-06;
+  }
+}
+
+.footer-grid {
+  width: 100%;
+  align-items: center;
+  padding: 0 0 spacing.$spacing-07 0;
+
+  @include bp.breakpoint-down(md) {
+    padding-bottom: spacing.$spacing-06;
+  }
+}
+
+.footer-logo-column {
+  display: flex;
+  align-items: center;
+
+  @include bp.breakpoint-up(lg) {
+    justify-content: flex-start;
+  }
+
+  @include bp.breakpoint-down(lg) {
+    justify-content: center;
+    margin-bottom: spacing.$spacing-06;
+
+    @include bp.breakpoint-down(md) {
+      margin-bottom: spacing.$spacing-05;
+    }
+  }
+}
+
+.footer-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$spacing-06;
+
+  @include bp.breakpoint-up(lg) {
+    align-items: flex-start;
+  }
+
+  @include bp.breakpoint-down(lg) {
+    align-items: center;
+    gap: spacing.$spacing-05;
+  }
+}
+
+.footer-nav {
+  width: 100%;
+}
+
+.footer-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: spacing.$spacing-06;
+
+  @include bp.breakpoint-up(lg) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @include bp.breakpoint-down(lg) {
+    flex-direction: column;
+    align-items: center;
+    gap: spacing.$spacing-03;
+  }
+}
+
+.footer-nav-item {
+  margin: 0;
+}
+
+.footer-nav-link {
+  color: var(--cds-link-primary);
+  text-decoration: none !important;
+  @include type.type-style('label-01');
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+
+  &:hover {
+    color: var(--cds-text-primary);
+    text-decoration: none !important;
+  }
+
+  [data-carbon-theme='g90'] &,
+  [data-carbon-theme='g100'] & {
+    color: var(--cds-text-secondary);
+
+    &:hover {
+      color: var(--cds-text-primary);
+    }
+  }
+}
+
+.footer-nav-separator {
+  width: 100%;
+  height: 1px;
+  background: var(--cds-border-subtle);
+  margin: spacing.$spacing-04 0;
+}
+
+.footer-copyright {
+  width: 100%;
+
+  // Desktop: Left aligned
+  @include bp.breakpoint-up(lg) {
+    text-align: left;
+  }
+
+  // Mobile: Centered
+  @include bp.breakpoint-down(lg) {
+    text-align: center;
+  }
+}
+
+.footer-copyright-text {
+  @include type.type-style('label-01');
+  color: var(--cds-text-secondary);
+  margin: 0 0 spacing.$spacing-02 0;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('label-01');
+  }
+}
+
+.footer-copyright-additional {
+  @include type.type-style('helper-text-01');
+  color: var(--cds-text-disabled);
+  margin: 0;
+  line-height: 1.5;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('helper-text-01');
+  }
+}

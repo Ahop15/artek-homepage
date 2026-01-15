@@ -1,0 +1,198 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for Hero
+@use '@carbon/styles/scss/components/button';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/type/index' as type;
+@use '@carbon/react/scss/theme' as theme;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.hero-section {
+  min-height: calc(100vh - 3rem);
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg,
+    var(--cds-layer-01) 0%,
+    var(--cds-layer-accent-01) 100%
+  );
+  padding: spacing.$spacing-10 0;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease;
+
+  @include bp.breakpoint-down(md) {
+    min-height: auto;
+    padding: spacing.$spacing-08 0;
+  }
+}
+
+.hero-grid {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  padding: spacing.$spacing-07 0;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  @include type.type-style('heading-05');
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cds-text-primary);
+  margin-bottom: spacing.$spacing-07;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('heading-04');
+  }
+}
+
+.hero-title-gradient {
+  background: linear-gradient(135deg,
+    var(--cds-link-primary) 0%,
+    var(--cds-link-primary-hover) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.hero-description {
+  @include type.type-style('body-long-02');
+  line-height: 1.6;
+  color: var(--cds-text-secondary);
+  max-width: 42rem;
+  margin-bottom: spacing.$spacing-08;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('body-long-01');
+  }
+}
+
+.hero-actions {
+  display: flex;
+  gap: spacing.$spacing-05;
+  margin-bottom: spacing.$spacing-09;
+  flex-wrap: wrap;
+
+  @include bp.breakpoint-down(md) {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+
+  button {
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.hero-visual {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  :global(.cds--white) & {
+    background: var(--cds-layer-01);
+  }
+}
+
+// Hero Visual Image styling
+.hero-visual-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+  // Mobile/tablet sizing
+  max-height: 400px;
+
+  @include bp.breakpoint-up(md) {
+    max-height: 450px;
+  }
+
+  @include bp.breakpoint-up(lg) {
+    max-height: 500px;
+  }
+
+  // Desktop sizing
+  @include bp.breakpoint-up(xlg) {
+    height: 100%;
+    min-height: 500px;
+    max-height: none;
+  }
+
+  :global(.cds--g90) &,
+  :global(.cds--g100) & {
+    opacity: 0.95;
+    filter: brightness(0.9);
+  }
+}
+
+// Single visual column with responsive positioning via CSS Grid order
+.hero-visual-column {
+  margin-bottom: spacing.$spacing-08;
+
+  // Mobile/tablet: Show on top (order: -1)
+  order: -1;
+
+  @include bp.breakpoint-down(sm) {
+    margin-bottom: spacing.$spacing-06;
+  }
+
+  // Desktop: Show on right side (order: 1, after content)
+  @include bp.breakpoint-up(xlg) {
+    order: 1;
+    margin-bottom: 0;
+    padding-left: spacing.$spacing-07;
+  }
+}
+

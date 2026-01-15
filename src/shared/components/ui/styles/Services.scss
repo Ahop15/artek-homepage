@@ -1,0 +1,230 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for Services
+@use '@carbon/styles/scss/components/tile';
+@use '@carbon/styles/scss/components/button';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/type/index' as type;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.services-section {
+  padding: spacing.$spacing-10 0;
+  background: var(--cds-layer-01);
+  transition: background 0.25s ease;
+
+  @include bp.breakpoint-down(md) {
+    padding: spacing.$spacing-08 0;
+  }
+}
+
+.services-grid-container {
+  width: 100%;
+}
+
+// Section Header
+.services-header-column {
+  margin-bottom: spacing.$spacing-09;
+
+  @include bp.breakpoint-down(md) {
+    margin-bottom: spacing.$spacing-07;
+  }
+}
+
+.services-header {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.services-badge {
+  display: inline-block;
+  padding: spacing.$spacing-02 spacing.$spacing-05;
+  background: var(--cds-layer-accent-01);
+  color: var(--cds-link-primary);
+  @include type.type-style('label-01');
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  margin-bottom: spacing.$spacing-05;
+}
+
+.services-title {
+  @include type.type-style('heading-04');
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cds-text-primary);
+  margin-bottom: spacing.$spacing-05;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('heading-03');
+  }
+}
+
+.services-description {
+  @include type.type-style('body-long-02');
+  line-height: 1.6;
+  color: var(--cds-text-secondary);
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('body-long-01');
+  }
+  margin-bottom: spacing.$spacing-07;
+}
+
+.service-card-column {
+  margin-bottom: spacing.$spacing-07;
+
+  @include bp.breakpoint-down(md) {
+    margin-bottom: spacing.$spacing-06;
+  }
+}
+
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: spacing.$spacing-07;
+  border: 1px solid var(--cds-border-strong-01);
+
+  @include bp.breakpoint-down(md) {
+    padding: spacing.$spacing-06;
+  }
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--cds-layer-accent-01);
+  border-radius: 4px;
+  margin-bottom: spacing.$spacing-06;
+  color: var(--cds-link-primary);
+
+  svg {
+    fill: currentColor;
+    width: 32px;
+    height: 32px;
+  }
+
+  @include bp.breakpoint-down(md) {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: spacing.$spacing-05;
+  }
+}
+
+.service-title {
+  @include type.type-style('heading-compact-01');
+  font-weight: 600;
+  color: var(--cds-text-primary);
+  margin-bottom: spacing.$spacing-04;
+  line-height: 1.3;
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('body-long-02');
+  }
+}
+
+.service-description {
+  @include type.type-style('body-long-01');
+  line-height: 1.6;
+  color: var(--cds-text-secondary);
+  margin-bottom: spacing.$spacing-06;
+  min-height: 8rem;
+
+  @include bp.breakpoint-down(lg) {
+    min-height: 7.5rem;
+  }
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('body-compact-01');
+    line-height: 1.5;
+    min-height: 8rem;
+    margin-bottom: spacing.$spacing-05;
+  }
+}
+
+.service-features {
+  list-style: none;
+  padding: spacing.$spacing-05 0 0 0;
+  margin: 0 0 spacing.$spacing-06 0;
+  border-top: 1px solid var(--cds-border-subtle);
+  min-height: 5.9375rem; // padding (1rem) + 3 feature (4.9375rem)
+
+  @include bp.breakpoint-down(md) {
+    margin-bottom: spacing.$spacing-05;
+    padding: spacing.$spacing-04 0 0 0;
+    min-height: 5.40625rem; // padding (0.75rem) + 3 feature (4.65625rem)
+  }
+}
+
+.service-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: spacing.$spacing-03;
+  margin-bottom: spacing.$spacing-03;
+  @include type.type-style('label-01');
+  color: var(--cds-text-secondary);
+  line-height: 1.5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include bp.breakpoint-down(md) {
+    @include type.type-style('label-01');
+  }
+}
+
+.service-feature-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  fill: var(--cds-support-success);
+}
+
+// Service Button Wrapper
+.service-button-wrapper {
+  margin-top: auto;
+  padding-top: spacing.$spacing-05;
+  border-top: 1px solid var(--cds-border-subtle);
+
+  @include bp.breakpoint-down(md) {
+    padding-top: spacing.$spacing-04;
+  }
+}

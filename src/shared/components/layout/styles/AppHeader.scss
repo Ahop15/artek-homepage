@@ -1,0 +1,114 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for AppHeader
+@use '@carbon/styles/scss/components/ui-shell';
+
+// ===================================
+// UTILITY IMPORTS
+// ===================================
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/breakpoint' as bp;
+
+.theme-switcher {
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover:not(.theme-transitioning) {
+    svg {
+      transform: rotate(20deg);
+    }
+  }
+
+  // Spinner animation for theme transition
+  &.theme-transitioning {
+    pointer-events: none;
+
+    .spinner-icon {
+      animation: spin 0.8s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Language Switcher
+.language-switcher {
+  display: flex !important;
+  align-items: center;
+  gap: 0.375rem; // 6px space between code and flag
+  padding: 0 0.75rem;
+
+  .lang-code {
+    font-size: 0.75rem; // 12px
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--cds-text-primary);
+    line-height: 1;
+  }
+
+  .flag-icon {
+    flex-shrink: 0;
+  }
+
+  // Hover effect
+  &:hover {
+    .lang-code {
+      color: var(--cds-link-primary);
+    }
+  }
+
+  // Smooth transition
+  .lang-code,
+  .flag-icon {
+    transition: all 0.2s ease;
+  }
+}
+
+// Main Content Layout with SideNav
+.main-content-with-sidenav {
+  // Carbon SideNav default width is 16rem (256px)
+  // Add left margin on large screens when SideNav is persistent
+  @include bp.breakpoint-up(lg) {
+    margin-left: 16rem;
+    transition: margin-left 0.11s cubic-bezier(0.2, 0, 1, 0.9);
+  }
+}
+
+//// SideNav Spacing
+//.cds--side-nav {
+//  padding-top: spacing.$spacing-05; // 1rem (16px)
+//}
+

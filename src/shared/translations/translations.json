@@ -1,0 +1,653 @@
+{
+  "_default": "tr",
+  "tr": {
+    "_meta": {
+      "code": "tr",
+      "nativeName": "Türkçe",
+      "flag": "/assets/flags/tr.svg"
+    },
+    "language": {
+      "switchTo": "Switch to English",
+      "key": "Anahtar",
+      "value": "Değer"
+    },
+    "centerType": {
+      "rd": "Ar-Ge",
+      "design": "Tasarım"
+    },
+    "dataTable": {
+      "searchPlaceholder": "Ara...",
+      "exportCSV": "CSV olarak indir"
+    },
+    "loadingSpinner": {
+      "loading": "Yükleniyor...",
+      "pageLoading": "Sayfa yükleniyor..."
+    },
+    "pagination": {
+      "backwardText": "Önceki sayfa",
+      "forwardText": "Sonraki sayfa",
+      "itemsPerPageText": "Sayfa başına öğe",
+      "itemsText": "öğe",
+      "ofText": "/",
+      "pagesText": "sayfa"
+    },
+    "chart": {
+      "loadingChart": "Grafik yükleniyor...",
+      "locale": {
+        "code": "tr-TR",
+        "tabularRep": {
+          "title": "Tablo Sunumu",
+          "downloadAsCSV": "CSV olarak indir"
+        },
+        "toolbar": {
+          "exportAsJPG": "JPG olarak indir",
+          "showAsTable": "Tablo olarak göster",
+          "moreOptions": "Daha fazla seçenek"
+        }
+      }
+    },
+    "footnoteBackButton": {
+      "label": "Geri Dön"
+    },
+    "mermaid": {
+      "loading": {
+        "title": "Diyagram Yükleniyor",
+        "subtitle": "Lütfen bekleyin...",
+        "description": "Yükleniyor..."
+      },
+      "error": {
+        "title": "Diyagram Yüklenemedi",
+        "subtitle": "Diyagram render edilirken bir hata oluştu",
+        "containerNotReady": "Diyagram konteyneri hazır değil",
+        "emptyContent": "Boş diyagram içeriği",
+        "svgNotFound": "SVG elementi bulunamadı",
+        "svgEmpty": "SVG içeriği boş",
+        "renderFailed": "Diyagram render edilemedi",
+        "syntaxError": "Diyagram sözdizimi hatalı. Lütfen kontrol edin.",
+        "unsupportedType": "Desteklenmeyen diyagram türü veya komut.",
+        "helpTitle": "Mermaid diyagram sözdizimini kontrol edin. Yaygın hatalar",
+        "commonErrors": {
+          "arrows": "Eksik veya hatalı ok işaretleri",
+          "specialChars": "Düğüm adlarında özel karakterler",
+          "indentation": "Hatalı girintileme veya boşluk kullanımı",
+          "unsupported": "Desteklenmeyen diyagram türü"
+        },
+        "codeTitle": "Diyagram Kodu",
+        "retry": "Tekrar Dene",
+        "copyCode": "Kodu Kopyala"
+      },
+      "controls": {
+        "zoomIn": "Yakınlaştır",
+        "zoomOut": "Uzaklaştır",
+        "resetZoom": "Sıfırla",
+        "fullscreen": "Tam Ekran",
+        "copyCode": "Kodu Kopyala",
+        "download": "SVG İndir",
+        "refresh": "Yenile"
+      },
+      "modal": {
+        "close": "Kapat"
+      }
+    },
+    "centersDataTable": {
+      "headers": {
+        "companyName": "Şirketin Adı",
+        "city": "Şehir",
+        "sector": "Sektör"
+      },
+      "searchPlaceholder": "Şirket, şehir veya sektör ara..."
+    },
+    "centersStatistics": {
+      "activeCenters": "Faaliyette Olan {centerType} Merkezi Sayısı",
+      "totalPersonnel": "Toplam Personel Sayısı (Destek personeli dahil)",
+      "educationLevel": {
+        "title": "Eğitim Seviyesine Göre Personel Dağılımı",
+        "bachelor": "Lisans",
+        "master": "Yüksek Lisans",
+        "doctorate": "Doktora ve Üstü"
+      },
+      "projects": {
+        "title": "Proje İstatistikleri",
+        "completed": "Tamamlanan Projeler",
+        "ongoing": "Devam Eden Projeler"
+      },
+      "patents": {
+        "title": "Patent İstatistikleri",
+        "total": "Toplam Patent",
+        "registered": "Tescilli Patent",
+        "applied": "Başvuru Aşaması"
+      },
+      "foreignPartnership": "Yabancı/Yabancı Ortaklı {centerType} Merkezi Sayısı"
+    },
+    "regionalDistributionDataTable": {
+      "headers": {
+        "city": "Şehir",
+        "centerCount": "{centerType} Merkezi Sayısı"
+      },
+      "searchPlaceholder": "Şehir ara..."
+    },
+    "sectoralDistributionDataTable": {
+      "headers": {
+        "sector": "Sektör",
+        "centerCount": "{centerType} Merkezi Sayısı"
+      },
+      "searchPlaceholder": "Sektör ara..."
+    },
+    "errorPages": {
+      "notFound": {
+        "code": "404",
+        "title": "Sayfa Bulunamadı",
+        "description": "Aradığınız sayfa mevcut değil, taşınmış veya silinmiş olabilir.",
+        "backHome": "Ana Sayfaya Dön",
+        "goBack": "Geri Dön"
+      },
+      "serverError": {
+        "code": "500",
+        "title": "Sunucu Hatası",
+        "description": "Üzgünüz, sunucu tarafında bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+        "backHome": "Ana Sayfaya Dön",
+        "reload": "Sayfayı Yenile"
+      },
+      "generic": {
+        "code": "Hata",
+        "title": "Bir Şeyler Yanlış Gitti",
+        "defaultMessage": "Beklenmeyen bir hata oluştu!",
+        "technicalDetails": "Teknik Detaylar"
+      },
+      "underConstruction": {
+        "code": "Yapım Aşamasında",
+        "title": "Bu Sayfa Henüz Hazır Değil",
+        "description": "İçerikler hazırlanıyor. Çok yakında burada olacağız!",
+        "backHome": "Ana Sayfaya Dön",
+        "goBack": "Geri Dön"
+      }
+    },
+    "contactPage": {
+      "title": "İletişim",
+      "lead": "Hizmetlerimiz hakkında bilgi almak için bizimle iletişime geçin",
+      "mapLoading": "Harita Yükleniyor...",
+      "getDirections": "Yol Tarifi Al",
+      "form": {
+        "title": "Bize Ulaşın",
+        "name": {
+          "label": "Ad Soyad",
+          "placeholder": "Adınızı ve soyadınızı girin"
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "ornek@email.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "0 (5XX) XXX XX XX"
+        },
+        "company": {
+          "label": "Firma",
+          "placeholder": "Firma adınız"
+        },
+        "subject": {
+          "label": "Konu",
+          "placeholder": "Mesajınızın konusu"
+        },
+        "message": {
+          "label": "Mesajınız",
+          "placeholder": "Hizmetleriniz hakkında detaylı bilgi almak istiyorum..."
+        },
+        "submit": "Gönder",
+        "submitting": "Gönderiliyor...",
+        "success": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+        "error": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+        "successTitle": "Başarılı",
+        "errorTitle": "Hata",
+        "validation": {
+          "nameMinLength": "Ad Soyad en az 2 karakter olmalıdır",
+          "invalidEmail": "Geçersiz e-posta adresi",
+          "phoneRequired": "Telefon numarası gereklidir",
+          "companyRequired": "Firma adı gereklidir",
+          "subjectMinLength": "Konu en az 3 karakter olmalıdır",
+          "messageMinLength": "Mesaj en az 10 karakter olmalıdır",
+          "securityCheck": "Lütfen güvenlik kontrolünü tamamlayın"
+        }
+      },
+      "info": {
+        "title": "İletişim Bilgileri",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "address": "Adres"
+      },
+      "workingHours": {
+        "title": "Çalışma Saatleri",
+        "weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
+        "saturday": "Cumartesi: 10:00 - 14:00",
+        "sunday": "Pazar: Kapalı"
+      }
+    },
+    "simpleSurvey": {
+      "answers": {
+        "yes": "Evet",
+        "no": "Hayır"
+      },
+      "navigation": {
+        "back": "Geri",
+        "next": "İleri",
+        "complete": "Tamamla"
+      },
+      "results": {
+        "success": {
+          "title": "Değerlendirme Başarılı",
+          "subtitle": "Tüm kriterleri sağladınız!"
+        },
+        "failure": {
+          "title": "Değerlendirme Başarısız",
+          "subtitle": "Bazı kriterleri sağlayamadınız."
+        }
+      },
+      "restart": {
+        "success": "Başka Bir Değerlendirme Yap",
+        "failure": "Anketi Tekrar Dene"
+      }
+    },
+    "dinoGame": {
+      "startMessage": "Başlamak için DOKUNUN",
+      "gameOver": "OYUN BİTTİ",
+      "restartMessage": "Tekrar oynamak için DOKUNUN",
+      "score": "Skor"
+    },
+    "teamMember": {
+      "imageAlt": "{name} profil fotoğrafı",
+      "socialLinks": "Sosyal Medya Bağlantıları"
+    },
+    "chatAI": {
+      "locale": "tr",
+      "assistantName": "ARTEK AI Asistanı",
+      "welcomeMessage": "Merhaba! 👋\n\nARTEK AI Asistanı'na hoş geldiniz, size nasıl yardımcı olabilirim?",
+      "input": {
+        "placeholder": "ARTEK AI Asistanına soru sorun...",
+        "buttonLabel": "Gönder",
+        "ariaLabel": "Mesaj giriş alanı",
+        "stopResponse": "Yanıtı durdur"
+      },
+      "launcher": {
+        "chatNow": "Sohbet Başlat",
+        "isOpen": "Sohbet penceresi açık",
+        "isClosed": "Sohbet penceresi kapalı",
+        "desktopGreeting": "Merhaba! Size nasıl yardımcı olabilirim?",
+        "mobileGreeting": "ARTEK AI Asistanınız",
+        "closeButton": "Kapat"
+      },
+      "message": {
+        "labelYou": "Sen"
+      },
+      "messages": {
+        "youSaid": "Siz sordunuz",
+        "assistantSaid": "ARTEK AI yanıtladı",
+        "assistantIsLoading": "ARTEK AI yanıt hazırlıyor...",
+        "responseStopped": "Yanıt durduruldu"
+      },
+      "errors": {
+        "communicating": "Bağlantı hatası oluştu. Lütfen tekrar deneyin.",
+        "somethingWrong": "Bir şeyler yanlış gitti",
+        "generalContent": "Üzgünüm, şu anda bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+      },
+      "buttons": {
+        "restart": "Yeniden Başlat",
+        "cancel": "İptal",
+        "retry": "Tekrar Dene"
+      },
+      "feedback": {
+        "positiveLabel": "Faydalı",
+        "negativeLabel": "Faydasız",
+        "defaultTitle": "Geri Bildirim",
+        "defaultPrompt": "Bu yanıtı nasıl değerlendirirsiniz?",
+        "submitLabel": "Gönder",
+        "cancelLabel": "İptal"
+      },
+      "window": {
+        "ariaChatRegion": "ARTEK AI Asistan sohbet bölgesi",
+        "ariaWindowOpened": "ARTEK AI Asistan penceresi açıldı",
+        "ariaWindowClosed": "ARTEK AI Asistan penceresi kapandı"
+      },
+      "header": {
+        "title": "AI"
+      },
+      "aiSlug": {
+        "label": "AI Asistan",
+        "title": "ARTEK AI Asistanı Hakkında",
+        "description": "Claude Sonnet 4 ve Cloudflare ekosistemi ile desteklenmektedir. Website içeriğini veri bankası olarak kullanan ARTEK AI, sorularınıza akıllı yanıtlar verir."
+      },
+      "table": {
+        "filterPlaceholder": "Tabloyu filtrele",
+        "previousPage": "Önceki sayfa",
+        "nextPage": "Sonraki sayfa",
+        "itemsPerPage": "Sayfa başına öğe:",
+        "paginationSupplementalText": "{pagesCount, number} {pagesCount, plural, one {sayfa} other {sayfa}} içinden",
+        "paginationStatus": "{start, number}–{end, number} / {count, number} {count, plural, one {öğe} other {öğe}}"
+      }
+    }
+  },
+  "en": {
+    "_meta": {
+      "code": "en",
+      "nativeName": "English",
+      "flag": "/assets/flags/en.svg"
+    },
+    "language": {
+      "switchTo": "Türkçe'ye geç",
+      "key": "Key",
+      "value": "Value"
+    },
+    "centerType": {
+      "rd": "R&D",
+      "design": "Design"
+    },
+    "dataTable": {
+      "searchPlaceholder": "Search...",
+      "exportCSV": "Export as CSV"
+    },
+    "loadingSpinner": {
+      "loading": "Loading...",
+      "pageLoading": "Loading page..."
+    },
+    "pagination": {
+      "backwardText": "Previous page",
+      "forwardText": "Next page",
+      "itemsPerPageText": "Items per page",
+      "itemsText": "items",
+      "ofText": "of",
+      "pagesText": "pages"
+    },
+    "chart": {
+      "loadingChart": "Loading chart...",
+      "locale": {
+        "code": "en-US",
+        "tabularRep": {
+          "title": "Table View",
+          "downloadAsCSV": "Download as CSV"
+        },
+        "toolbar": {
+          "exportAsJPG": "Export as JPG",
+          "showAsTable": "Show as table",
+          "moreOptions": "More options"
+        }
+      }
+    },
+    "footnoteBackButton": {
+      "label": "Return"
+    },
+    "mermaid": {
+      "loading": {
+        "title": "Loading Diagram",
+        "subtitle": "Please wait...",
+        "description": "Loading..."
+      },
+      "error": {
+        "title": "Diagram Failed to Load",
+        "subtitle": "An error occurred while rendering the diagram",
+        "containerNotReady": "Diagram container is not ready",
+        "emptyContent": "Empty diagram content",
+        "svgNotFound": "SVG element not found",
+        "svgEmpty": "SVG content is empty",
+        "renderFailed": "Failed to render diagram",
+        "syntaxError": "Diagram syntax error. Please check.",
+        "unsupportedType": "Unsupported diagram type or command.",
+        "helpTitle": "Check Mermaid diagram syntax. Common errors",
+        "commonErrors": {
+          "arrows": "Missing or incorrect arrow notation",
+          "specialChars": "Special characters in node names",
+          "indentation": "Incorrect indentation or spacing",
+          "unsupported": "Unsupported diagram type"
+        },
+        "codeTitle": "Diagram Code",
+        "retry": "Try Again",
+        "copyCode": "Copy Code"
+      },
+      "controls": {
+        "zoomIn": "Zoom In",
+        "zoomOut": "Zoom Out",
+        "resetZoom": "Reset",
+        "fullscreen": "Fullscreen",
+        "copyCode": "Copy Code",
+        "download": "Download SVG",
+        "refresh": "Refresh"
+      },
+      "modal": {
+        "close": "Close"
+      }
+    },
+    "centersDataTable": {
+      "headers": {
+        "companyName": "Company Name",
+        "city": "City",
+        "sector": "Sector"
+      },
+      "searchPlaceholder": "Search company, city or sector..."
+    },
+    "centersStatistics": {
+      "activeCenters": "Number of Active {centerType} Centers",
+      "totalPersonnel": "Total Personnel (Including support staff)",
+      "educationLevel": {
+        "title": "Personnel Distribution by Education Level",
+        "bachelor": "Bachelor's Degree",
+        "master": "Master's Degree",
+        "doctorate": "Doctorate and Above"
+      },
+      "projects": {
+        "title": "Project Statistics",
+        "completed": "Completed Projects",
+        "ongoing": "Ongoing Projects"
+      },
+      "patents": {
+        "title": "Patent Statistics",
+        "total": "Total Patents",
+        "registered": "Registered Patents",
+        "applied": "In Application"
+      },
+      "foreignPartnership": "Foreign/Foreign Partnership {centerType} Centers"
+    },
+    "regionalDistributionDataTable": {
+      "headers": {
+        "city": "City",
+        "centerCount": "Number of {centerType} Centers"
+      },
+      "searchPlaceholder": "Search city..."
+    },
+    "sectoralDistributionDataTable": {
+      "headers": {
+        "sector": "Sector",
+        "centerCount": "Number of {centerType} Centers"
+      },
+      "searchPlaceholder": "Search sector..."
+    },
+    "errorPages": {
+      "notFound": {
+        "code": "404",
+        "title": "Page Not Found",
+        "description": "The page you are looking for does not exist, may have been moved or deleted.",
+        "backHome": "Back to Home",
+        "goBack": "Go Back"
+      },
+      "serverError": {
+        "code": "500",
+        "title": "Server Error",
+        "description": "Sorry, a server error occurred. Please try again later.",
+        "backHome": "Back to Home",
+        "reload": "Reload Page"
+      },
+      "generic": {
+        "code": "Error",
+        "title": "Something Went Wrong",
+        "defaultMessage": "An unexpected error occurred!",
+        "technicalDetails": "Technical Details"
+      },
+      "underConstruction": {
+        "code": "Under Construction",
+        "title": "This Page Is Not Ready Yet",
+        "description": "Content is being prepared. We'll be here very soon!",
+        "backHome": "Back to Home",
+        "goBack": "Go Back"
+      }
+    },
+    "contactPage": {
+      "title": "Contact",
+      "lead": "Contact us to get information about our services.",
+      "mapLoading": "Loading Map...",
+      "getDirections": "Get Directions",
+      "form": {
+        "title": "Contact Us",
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your name and surname"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "example@email.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "0 (5XX) XXX XX XX"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company name"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Subject of your message"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "I would like to get detailed information about your services..."
+        },
+        "submit": "Send",
+        "submitting": "Sending...",
+        "success": "Your message has been sent successfully. We will get back to you soon.",
+        "error": "Failed to send message. Please try again later.",
+        "successTitle": "Success",
+        "errorTitle": "Error",
+        "validation": {
+          "nameMinLength": "Name must be at least 2 characters",
+          "invalidEmail": "Invalid email address",
+          "phoneRequired": "Phone number is required",
+          "companyRequired": "Company name is required",
+          "subjectMinLength": "Subject must be at least 3 characters",
+          "messageMinLength": "Message must be at least 10 characters",
+          "securityCheck": "Please complete the security check"
+        }
+      },
+      "info": {
+        "title": "Contact Information",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address"
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday: 09:00 - 18:00",
+        "saturday": "Saturday: 10:00 - 14:00",
+        "sunday": "Sunday: Closed"
+      }
+    },
+    "simpleSurvey": {
+      "answers": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "navigation": {
+        "back": "Back",
+        "next": "Next",
+        "complete": "Complete"
+      },
+      "results": {
+        "success": {
+          "title": "Evaluation Successful",
+          "subtitle": "You meet all the criteria!"
+        },
+        "failure": {
+          "title": "Evaluation Failed",
+          "subtitle": "You do not meet some criteria."
+        }
+      },
+      "restart": {
+        "success": "Take Another Evaluation",
+        "failure": "Retry Survey"
+      }
+    },
+    "dinoGame": {
+      "startMessage": "TAP to start",
+      "gameOver": "GAME OVER",
+      "restartMessage": "TAP to play again",
+      "score": "Score"
+    },
+    "teamMember": {
+      "imageAlt": "{name} profile picture",
+      "socialLinks": "Social Media Links"
+    },
+    "chatAI": {
+      "locale": "en",
+      "assistantName": "ARTEK AI Assistant",
+      "welcomeMessage": "Hello! 👋\n\nWelcome to ARTEK AI Assistant, how can I help you?",
+      "input": {
+        "placeholder": "Ask ARTEK AI Assistant...",
+        "buttonLabel": "Send",
+        "ariaLabel": "Message input field",
+        "stopResponse": "Stop response"
+      },
+      "launcher": {
+        "chatNow": "Start Chat",
+        "isOpen": "Chat window is open",
+        "isClosed": "Chat window is closed",
+        "desktopGreeting": "Hello! How can I help you?",
+        "mobileGreeting": "Your ARTEK AI Assistant",
+        "closeButton": "Close"
+      },
+      "message": {
+        "labelYou": "You"
+      },
+      "messages": {
+        "youSaid": "You asked",
+        "assistantSaid": "ARTEK AI responded",
+        "assistantIsLoading": "ARTEK AI is preparing a response...",
+        "responseStopped": "Response stopped"
+      },
+      "errors": {
+        "communicating": "Connection error occurred. Please try again.",
+        "somethingWrong": "Something went wrong",
+        "generalContent": "Sorry, an error occurred. Please try again later."
+      },
+      "buttons": {
+        "restart": "Restart",
+        "cancel": "Cancel",
+        "retry": "Try Again"
+      },
+      "feedback": {
+        "positiveLabel": "Helpful",
+        "negativeLabel": "Not Helpful",
+        "defaultTitle": "Feedback",
+        "defaultPrompt": "How would you rate this response?",
+        "submitLabel": "Submit",
+        "cancelLabel": "Cancel"
+      },
+      "window": {
+        "ariaChatRegion": "ARTEK AI Assistant chat region",
+        "ariaWindowOpened": "ARTEK AI Assistant window opened",
+        "ariaWindowClosed": "ARTEK AI Assistant window closed"
+      },
+      "header": {
+        "title": "AI"
+      },
+      "aiSlug": {
+        "label": "AI Assistant",
+        "title": "About ARTEK AI Assistant",
+        "description": "Powered by Claude Sonnet 4 and the Cloudflare ecosystem. ARTEK AI uses website content as its knowledge base to provide intelligent answers to your questions."
+      },
+      "table": {
+        "filterPlaceholder": "Filter table",
+        "previousPage": "Previous page",
+        "nextPage": "Next page",
+        "itemsPerPage": "Items per page:",
+        "paginationSupplementalText": "of {pagesCount, number} {pagesCount, plural, one {page} other {pages}}",
+        "paginationStatus": "{start, number}–{end, number} of {count, number} {count, plural, one {item} other {items}}"
+      }
+    }
+  }
+}

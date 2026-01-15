@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "shortTitle": "ARTEK",
+    "tagline": "R&D Innovation",
+    "homeLink": "/"
+  },
+  "navigation": [
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Our Services",
+      "children": [
+        {
+          "label":  "Consultancy",
+          "href": "/services/consultancy"
+        },
+        {
+          "label":  "Software Development",
+          "href": "/under-construction"
+        }
+      ]
+    },
+    { "label":  "Company",
+      "href": "/company"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "theme": {
+    "toggleLabels": {
+      "light": "Switch to dark theme",
+      "dark": "Switch to light theme"
+    }
+  },
+  "mobile": {
+    "menuLabel": "Open menu",
+    "menuCloseLabel": "Close menu"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "skipToContentTarget": "#main-content",
+    "ariaLabels": {
+      "mainNavigation": "Main navigation",
+      "mobileNavigation": "Mobile navigation",
+      "themeToggle": "Toggle theme"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "badge": "FAQ",
+  "title": "Frequently Asked Questions",
+  "description": "What you wonder about our services",
+  "faqs": [
+    {
+      "question": "What services do you offer?",
+      "answer": "We offer services in two main categories: Our consultancy services include R&D and Design Center establishment consultancy, TÜBİTAK/KOSGEB/Development Agency project consultancy, and technical training programs. Our software development services include enterprise software solutions, web and mobile applications, and data analytics and artificial intelligence solutions."
+    },
+    {
+      "question": "What is the process for getting your services?",
+      "answer": "First, we evaluate your needs and goals through a free initial consultation. Then we analyze your current situation and technical requirements. Based on this analysis, we provide a customized solution and proposal. After approval, we start the project together and stay by your side throughout the process."
+    },
+    {
+      "question": "Can your consultancy and software services be combined?",
+      "answer": "Yes, our services are designed to complement each other. For example, while receiving R&D Center establishment consultancy, we can also develop your center's project management system or data analytics infrastructure together. Integrated solutions enable your enterprise to achieve faster results in digital transformation and innovation processes."
+    },
+    {
+      "question": "Do you provide remote services?",
+      "answer": "Yes, we can conduct most of our services remotely. Project evaluation, consultancy meetings, software development, and training can be done online. For situations such as physical infrastructure assessment, on-site training, or installation support, we schedule site visits when necessary."
+    },
+    {
+      "question": "How does your service pricing work?",
+      "answer": "We offer flexible models on a project basis or consultancy duration basis. For software projects, pricing is based on scope and technology requirements, while for consultancy services, it's based on duration and content. Our initial consultation is free, and after evaluating your needs in this meeting, we provide you with a customized proposal."
+    }
+  ]
+}

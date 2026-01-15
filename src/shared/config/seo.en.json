@@ -1,0 +1,47 @@
+{
+  "name": "ARTEK R&D Innovation",
+  "title": "ARTEK - R&D Center Setup Consultancy",
+  "description": "We provide R&D solutions across a wide range of sectors from Space-Tech and defense industry to software and biotechnology.",
+  "url": "https://artek.com.tr",
+  "locale": "en_US",
+  "author": {
+    "name": "ARTEK R&D Innovation",
+    "url": "https://artek.com.tr"
+  },
+  "social": {
+    "twitter": null,
+    "linkedin": null,
+    "github": "https://github.com/remrearas"
+  },
+  "defaultImage": "/assets/images/og-image-en.png",
+  "logo": "/assets/images/logo-en.png",
+  "email": "info@artek.tc",
+  "localBusiness": {
+    "address": {
+      "street": "Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218",
+      "city": "Kütahya",
+      "region": "Kütahya",
+      "postalCode": "43100",
+      "country": "TR"
+    },
+    "telephone": "+905335253773",
+    "priceRange": "$$",
+    "image": "/assets/images/logo.png",
+    "geo": {
+      "latitude": 39.4414677,
+      "longitude": 29.9819526
+    },
+    "openingHours": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "days": ["Saturday"],
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+import ArtekBilingualLogo from "@shared/components/ui/ArtekBilingualLogo";
+import TeamMember from "@shared/components/ui/TeamMember";
+import { Link } from "react-router-dom";
+import {Button} from "@carbon/react";
+
+# Company Information
+
+<ArtekBilingualLogo height={"180px"}></ArtekBilingualLogo>
+
+---
+
+## Company Details
+
+| Information               | Details                                                              |
+|---------------------------|----------------------------------------------------------------------|
+| **Trade Name**            | ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi              |
+| **Business Address**      | Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218 Merkez - Kütahya / Türkiye  |
+| **Tax Number**            | 0851408248                                                           |
+| **Tax Office**            | ÇİNİLİ TAX OFFICE                                                    |
+| **Mersis No**             | 0085140824800001                                                     |
+| **Trade Registry Office** | Kütahya Trade Registry Office                                        |
+| **KEP Address**           | artekinovasyon@hs01.kep.tr                                           |
+
+### Bank Account Information
+
+| Information          | Details                                                |
+|----------------------|--------------------------------------------------------|
+| **Bank**             | Türkiye Halk Bankası A.Ş.                              |
+| **Account Holder**   | Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi |
+| **TL**               | TR80 0001 2009 5270 0010 2626 09                       |
+| **USD**              | TR20 0001 2009 5270 0053 0008 22                       |
+| **EUR**              | TR95 0001 2009 5270 0058 0005 01                       |
+
+---
+
+## Our Team
+
+<TeamMember
+    name="Prof. Dr. Haydar ARAS"
+    title="General Manager"
+    image="/assets/images/team/haydar-aras.jpeg"
+    links={[
+        { text: "LinkedIn", url: "https://tr.linkedin.com/in/haydararas" },
+        { text: "Google Scholar", url: "https://scholar.google.com/citations?user=wIm8ZRcAAAAJ" },
+        { text: "Scopus", url: "https://www.scopus.com/authid/detail.uri?authorId=6603029093" },
+        { text: "ORCID", url: "https://orcid.org/0000-0001-8131-6426" },
+        { text: "Medium", url: "https://medium.com/@profdrharas" },
+    ]}
+/>
+
+<TeamMember
+    name="Rıza Emre ARAS"
+    title="R&D Director"
+    image="/assets/images/team/riza-emre-aras.jpeg"
+    links={[
+        { text: "LinkedIn", url: "https://www.linkedin.com/" },
+        { text: "Github", url: "https://github.com/remrearas" }
+    ]}
+/>
+
+---
+
+## Get in Touch
+
+Contact us to discuss your projects and collaboration opportunities.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button size="sm"  kind="primary">
+            Contact Us
+        </Button>
+    </Link>
+</div>

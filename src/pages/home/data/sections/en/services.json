@@ -1,0 +1,91 @@
+{
+  "badge": "OUR SERVICES",
+  "title": "Technical Solutions for Industrial Enterprises",
+  "description": "We deliver sectoral consultancy services and custom software development solutions tailored to your enterprise's technical needs with an engineering vision.",
+  "services": [
+    {
+      "title": "Center Establishment Consultancy",
+      "description": "End-to-end professional consultancy for preparing your R&D or Design Center establishment application under Law No. 5746, building the necessary infrastructure, and successfully completing the certification process.",
+      "icon": "rocket",
+      "features": [
+        "Feasibility Analysis",
+        "Application File Preparation",
+        "Organizational Design"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/services/consultancy/centers/setup"
+      }
+    },
+    {
+      "title": "Project Consultancy",
+      "description": "Technical guidance and professional support for project preparation, application, and management processes for TÜBİTAK, KOSGEB, Development Agencies, and international funds.",
+      "icon": "clipboard-list",
+      "features": [
+        "Grant Programs Expertise",
+        "Project Writing and Application",
+        "Project Management and Reporting"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/services/consultancy/project"
+      }
+    },
+    {
+      "title": "Technical Training",
+      "description": "Corporate training programs that strengthen your personnel's competencies in R&D management, project documentation, technical writing, and engineering processes.",
+      "icon": "graduation-cap",
+      "features": [
+        "Competency Mapping",
+        "Technical Training Programs",
+        "Mentorship Support"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/services/consultancy/technical-education"
+      }
+    },
+    {
+      "title": "Enterprise Software Solutions",
+      "description": "Custom enterprise software development services that digitize your operational processes, increase efficiency, and provide competitive advantage.",
+      "icon": "building",
+      "features": [
+        "ERP Integrations",
+        "Business Process Automation",
+        "Enterprise Portal Solutions"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/under-construction"
+      }
+    },
+    {
+      "title": "Web & Mobile Applications",
+      "description": "Scalable web and mobile application solutions developed with modern technologies, focused on user experience.",
+      "icon": "devices",
+      "features": [
+        "Responsive Web Applications",
+        "iOS & Android Applications",
+        "Progressive Web Apps (PWA)"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/under-construction"
+      }
+    },
+    {
+      "title": "Data Analytics & Artificial Intelligence",
+      "description": "Analytical solutions that strengthen your data-driven decision-making processes, supported by business intelligence and artificial intelligence technologies.",
+      "icon": "brain-circuit",
+      "features": [
+        "Business Intelligence Dashboards",
+        "Machine Learning Models",
+        "Predictive Analytics"
+      ],
+      "link": {
+        "text": "Learn More",
+        "href": "/under-construction"
+      }
+    }
+  ]
+}

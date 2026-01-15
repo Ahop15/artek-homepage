@@ -1,0 +1,292 @@
+[
+  {
+    "name": "Teknoloji ve Yazılım",
+    "color": "#e8703e",
+    "children": [
+      {
+        "name": "Yazılım",
+        "value": 128,
+        "showLabel": true
+      },
+      {
+        "name": "Bilgisayar ve İletişim Teknolojileri",
+        "value": 91,
+        "showLabel": true
+      },
+      {
+        "name": "Elektrik-Elektronik",
+        "value": 79,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Otomotiv ve Yan Sanayi",
+    "color": "#8e6f20",
+    "children": [
+      {
+        "name": "Otomotiv Yan Sanayi",
+        "value": 135,
+        "showLabel": true
+      },
+      {
+        "name": "Otomotiv",
+        "value": 25,
+        "showLabel": true
+      },
+      {
+        "name": "Otomotiv Tasarımı ve Mühendislik",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Makine ve İmalat Endüstrisi",
+    "color": "#d73027",
+    "children": [
+      {
+        "name": "Makine ve Teçhizat İmalatı",
+        "value": 168,
+        "showLabel": true
+      },
+      {
+        "name": "İmalat Sanayi",
+        "value": 43,
+        "showLabel": true
+      },
+      {
+        "name": "İklimlendirme",
+        "value": 17,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Kimya ve Sağlık Sektörü",
+    "color": "#71ca36",
+    "children": [
+      {
+        "name": "Kimya",
+        "value": 76,
+        "showLabel": true
+      },
+      {
+        "name": "İlaç",
+        "value": 41,
+        "showLabel": true
+      },
+      {
+        "name": "Sağlık",
+        "value": 24,
+        "showLabel": true
+      },
+      {
+        "name": "Medikal",
+        "value": 10,
+        "showLabel": false
+      },
+      {
+        "name": "Kozmetik ve Temizlik Ürünleri",
+        "value": 9,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Tüketim ve Gıda Endüstrisi",
+    "color": "#006837",
+    "children": [
+      {
+        "name": "Tekstil",
+        "value": 76,
+        "showLabel": true
+      },
+      {
+        "name": "Gıda Sanayi",
+        "value": 62,
+        "showLabel": true
+      },
+      {
+        "name": "Dayanıklı Tüketim Malları",
+        "value": 22,
+        "showLabel": false
+      },
+      {
+        "name": "Mobilya",
+        "value": 15,
+        "showLabel": false
+      },
+      {
+        "name": "Ambalaj",
+        "value": 11,
+        "showLabel": false
+      },
+      {
+        "name": "Kağıt ve Kağıt Ürünleri",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Savunma ve Güvenlik",
+    "color": "#526313",
+    "children": [
+      {
+        "name": "Savunma Sanayi",
+        "value": 61,
+        "showLabel": true
+      },
+      {
+        "name": "Havacılık",
+        "value": 9,
+        "showLabel": false
+      },
+      {
+        "name": "Silah ve Mühimmat",
+        "value": 2,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Enerji ve Altyapı",
+    "color": "#1a9850",
+    "children": [
+      {
+        "name": "Enerji",
+        "value": 38,
+        "showLabel": true
+      },
+      {
+        "name": "İnşaat",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Mühendislik/Mimarlık Faaliyetleri",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Çimento ve Çimento Ürünleri",
+        "value": 6,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Metal ve Malzeme",
+    "color": "#c97a30",
+    "children": [
+      {
+        "name": "Demir ve Demir Dışı Metaller",
+        "value": 27,
+        "showLabel": true
+      },
+      {
+        "name": "Lastik-Plastik-Kauçuk",
+        "value": 20,
+        "showLabel": true
+      },
+      {
+        "name": "Seramik ve Refrakter",
+        "value": 15,
+        "showLabel": true
+      },
+      {
+        "name": "Dökümcülük",
+        "value": 12,
+        "showLabel": true
+      },
+      {
+        "name": "Cam ve Cam Ürünleri",
+        "value": 2,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Finans ve İletişim",
+    "color": "#9b5e3c",
+    "children": [
+      {
+        "name": "Bankacılık ve Finans",
+        "value": 17,
+        "showLabel": true
+      },
+      {
+        "name": "Telekomünikasyon",
+        "value": 16,
+        "showLabel": true
+      },
+      {
+        "name": "Medya ve İletişim",
+        "value": 3,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Diğer Sektörler",
+    "color": "#5a8247",
+    "children": [
+      {
+        "name": "Tarım",
+        "value": 25,
+        "showLabel": true
+      },
+      {
+        "name": "Ulaştırma ve Lojistik",
+        "value": 16,
+        "showLabel": true
+      },
+      {
+        "name": "Denizcilik",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Petrol ve Petrol Ürünleri",
+        "value": 6,
+        "showLabel": false
+      },
+      {
+        "name": "Madencilik",
+        "value": 5,
+        "showLabel": false
+      },
+      {
+        "name": "Perakendecilik",
+        "value": 5,
+        "showLabel": false
+      },
+      {
+        "name": "Orman Ürünleri",
+        "value": 3,
+        "showLabel": false
+      },
+      {
+        "name": "Hayvancılık",
+        "value": 2,
+        "showLabel": false
+      },
+      {
+        "name": "Deri Teknolojileri",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Geri Dönüşüm",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Sıvılaştırılmış Likit Petrol Gazı",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  }
+]

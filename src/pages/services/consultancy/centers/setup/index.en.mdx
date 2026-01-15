@@ -1,0 +1,94 @@
+import ContentTabs from "@shared/components/content/ContentTabs";
+import {Button} from "@carbon/react";
+import { Link } from "react-router-dom";
+
+import SurveyRD from './_components/SurveyRD';
+import SurveyDesign from './_components/SurveyDesign';
+import FlowChart from './_components/FlowChart';
+import SimpleFaq from "@shared/components/ui/SimpleFaq";
+import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
+
+import faqData from "./data/faq/en/data.json";
+
+# Center Setup Consultancy
+
+Establishing an R&D or Design Center under Law No. 5746 is not merely about filling out
+an application form. A genuine center requires properly defined projects, competent personnel
+structure, suitable physical infrastructure, and a sustainable management system.
+
+**Setup with engineering perspective, consultancy with academic assurance.**
+
+## Setup Process Flow Diagram
+
+Establishing an R&D or Design Center requires a systematic planning and implementation process.
+The flow diagram below illustrates the main steps from application to operation.
+
+<InlineNotificationWrapper
+    kind="info"
+    subtitle="Ensuring complete fulfillment of technical and administrative requirements at each stage
+                  accelerates your application's approval process and minimizes potential revisions."
+    lowContrast
+    hideCloseButton
+/>
+
+<FlowChart />
+
+---
+
+## R&D / Design Center Statistics
+
+Explore the current statistics of R&D and Design Centers in Turkey, based on comprehensive data
+analyses from official reports by the Republic of Turkey Ministry of Industry and Technology.
+Identify regions and opportunities where you can stand out in your sector through province-based
+geographical distribution, sectoral concentration analyses, and detailed graphical representations.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+    <Link to="/services/consultancy/centers/statistics/rd-centers" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button kind="primary">
+            R&D Centers
+        </Button>
+    </Link>
+    <Link to="/services/consultancy/centers/statistics/design-centers" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button kind="secondary">
+            Design Centers
+        </Button>
+    </Link>
+</div>
+
+---
+
+## Evaluate Your Enterprise
+
+Assess whether your enterprise meets the criteria to become an *R&D* or *Design* center
+through a brief survey consisting of 6 questions prepared by the **Republic of Turkey
+Ministry of Industry and Technology**.
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "R&D",
+        content: SurveyRD
+    },
+    {
+        label: "Design",
+        content: SurveyDesign
+    }
+]} />
+
+---
+
+Contact us to discuss your technical consultancy needs and evaluate
+how we can assist you.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+        <Button size="sm"  kind="primary">
+            Contact Us
+        </Button>
+    </Link>
+</div>
+
+---
+
+## Frequently Asked Questions
+
+<SimpleFaq content={faqData} />

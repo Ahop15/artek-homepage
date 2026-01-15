@@ -1,0 +1,27 @@
+{
+  "badge": "SSS",
+  "title": "Sıkça Sorulan Sorular",
+  "description": "Hizmetlerimiz hakkında merak ettikleriniz",
+  "faqs": [
+    {
+      "question": "Hangi hizmetleri sunuyorsunuz?",
+      "answer": "İki ana kategoride hizmet sunuyoruz: Danışmanlık hizmetlerimiz kapsamında Ar-Ge ve Tasarım Merkezi kurulum danışmanlığı, TÜBİTAK/KOSGEB/Kalkınma Ajansı proje danışmanlığı ve teknik eğitim programları yer alıyor. Yazılım geliştirme hizmetlerimizde ise kurumsal yazılım çözümleri, web ve mobil uygulamalar ile veri analitiği ve yapay zeka çözümleri sunuyoruz."
+    },
+    {
+      "question": "Hizmet almak için nasıl bir süreç izlenir?",
+      "answer": "Öncelikle ücretsiz bir ön görüşme ile ihtiyaçlarınızı ve hedeflerinizi değerlendiriyoruz. Ardından mevcut durumunuzu ve teknik gereksinimlerinizi analiz ediyoruz. Bu analizin sonucunda ihtiyaçlarınıza özel bir çözüm ve teklif sunuyoruz. Onay sonrası projeyi birlikte başlatıyor ve süreç boyunca yanınızda oluyoruz."
+    },
+    {
+      "question": "Danışmanlık ve yazılım hizmetleriniz birlikte alınabilir mi?",
+      "answer": "Evet, hizmetlerimiz birbirini tamamlayıcı şekilde tasarlanmıştır. Örneğin Ar-Ge Merkezi kurulum danışmanlığı alırken, merkezinizin proje yönetim sistemini veya veri analitiği altyapısını da birlikte geliştirebiliriz. Entegre çözümler, işletmenizin dijital dönüşüm ve inovasyon süreçlerinde daha hızlı sonuç almanızı sağlar."
+    },
+    {
+      "question": "Uzaktan hizmet veriyor musunuz?",
+      "answer": "Evet, hizmetlerimizin büyük bölümünü uzaktan yürütebiliyoruz. Proje değerlendirme, danışmanlık toplantıları, yazılım geliştirme ve eğitimler online olarak gerçekleştirilebilir. Fiziksel altyapı değerlendirmesi, yerinde eğitim veya kurulum desteği gibi durumlar için gerektiğinde saha ziyareti planlıyoruz."
+    },
+    {
+      "question": "Hizmet ücretlendirmeniz nasıl işliyor?",
+      "answer": "Proje bazlı veya danışmanlık süresi bazlı esnek modeller sunuyoruz. Yazılım projelerinde kapsam ve teknoloji gereksinimlerine göre, danışmanlık hizmetlerinde ise süre ve içeriğe göre fiyatlandırma yapıyoruz. İlk tanışma görüşmemiz ücretsizdir ve bu görüşmede ihtiyaçlarınızı değerlendirdikten sonra size özel bir teklif sunuyoruz."
+    }
+  ]
+}

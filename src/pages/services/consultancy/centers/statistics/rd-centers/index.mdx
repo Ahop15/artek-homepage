@@ -1,0 +1,83 @@
+import ContentTabs from "@shared/components/content/ContentTabs";
+
+import CenterStatistics from "../_shared/components/CentersStatistics";
+import CentersDataTable from "../_shared/components/CentersDataTable";
+
+import SectoralDistributionTab1 from './_components/SectoralDistributionTab1';
+import SectoralDistributionTab2 from './_components/SectoralDistributionTab2';
+import RegionalDistributionTab1 from './_components/RegionalDistributionTab1';
+import RegionalDistributionTab2 from './_components/RegionalDistributionTab2';
+
+import { getCenterStatistics, getCenters } from "../_shared/utils/statisticsDataFetcher";
+
+# Ar-Ge Merkezleri İstatistikleri
+
+---
+
+
+## Genel Bilgiler
+
+5746 sayılı Kanun ile, yenilikçiliğe odaklanmış, nitelikli istihdamı gelişmiş, katma değeri yüksek ürünler üreten,
+verimliliği ve rekabet gücü yüksek bir ekonomik ortamın oluşturulması sağlanarak; ülkemizin, uluslararası rekabet
+gücünün artırılması, yenilikçilik kapasitesinin geliştirilmesi ve dünyadaki gelişmelere uygun bir sanayi altyapısının
+oluşturulması ve ayrıca yabancı sermaye şirketlerinin Ar-Ge birimlerini ülkemizde yapılandırarak yeni teknolojileri
+ülkemizde geliştirmelerine imkan sağlanması amaçlanmaktadır.
+
+Özel Sektör Ar-Ge Merkezleri; Ar-Ge, teknoloji ve insan kaynaklarına yapılan yatırımların, teknolojik gelişmişlik,
+yüksek rekabet gücü ve yüksek refah seviyesi olarak geri döndüğü anlayışıyla hazırlanan 5746 sayılı Kanun kapsamında
+kurulmakta ve faaliyet göstermektedir.
+
+Ayrıntılı bilgilere <a href="http://agtm.sanayi.gov.tr" target="_blank" rel="noopener noreferrer">buradan</a> ulaşabilirsiniz.
+
+---
+
+## Temel İstatistikler
+
+<CenterStatistics centerType="rd" centerStatisticsData={() => getCenterStatistics('rd-centers')} client:load />
+
+---
+
+
+
+
+## Ar-Ge Merkezlerinin Sektörel Dağılımı
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "Grafik Gösterimi",
+        content: SectoralDistributionTab1
+    },
+    {
+        label: "Tablo Gösterimi",
+        content: SectoralDistributionTab2
+    }
+]} />
+
+---
+
+## Ar-Ge Merkezlerinin Bölgesel Dağılımı
+
+<ContentTabs contained={false} tabs={[
+    {
+        label: "Grafik Gösterimi",
+        content: RegionalDistributionTab1
+    },
+    {
+        label: "Tablo Gösterimi",
+        content: RegionalDistributionTab2
+    }
+]} />
+
+---
+
+## Ar-Ge Merkezleri Listesi
+
+<CentersDataTable centersData={() => getCenters('rd-centers', 'tr')} client:load />
+
+---
+
+## Veri Kaynakları
+
+**İstatistik Verisi:** <a href="https://www.sanayi.gov.tr/assets/pdf/istatistik/ArGeMerkeziIstatistik2025.pdf" target="_blank" rel="noopener noreferrer">Ar-Ge Merkezi İstatistik 2025 (PDF)</a> - T.C. Sanayi ve Teknoloji Bakanlığı (*İstatistikler 31 Ekim 2025 tarihi itibarıyla derlenmiştir.*)
+
+**Harita Verisi:** <a href="https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6" target="_blank" rel="noopener noreferrer">İlçe Sınırları (GeoJSON)</a> - T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (<a href="https://ulasav.csb.gov.tr/license" target="_blank" rel="noopener noreferrer">Lisans</a>)

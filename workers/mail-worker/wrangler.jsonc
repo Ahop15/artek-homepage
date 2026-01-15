@@ -1,0 +1,37 @@
+/**
+ * ARTEK Mail Worker Configuration
+ * For more details: https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "artek-mail-worker",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-11-05",
+	"workers_dev": false,
+	"preview_urls": false,
+	"observability": {
+		"enabled": true
+	},
+	/**
+	 * Rules for importing HTML files as text
+	 */
+	"rules": [
+		{
+			"type": "Text",
+			"globs": ["**/*.html"],
+			"fallthrough": true
+		}
+	]
+	/**
+	 * Production Secrets (set via CLI):
+	 * npx wrangler secret put RESEND_API_KEY
+	 * npx wrangler secret put TURNSTILE_SECRET_KEY
+	 * npx wrangler secret put RECIPIENT_EMAILS // email1@example.com,email2@example.com
+	 */
+	/**
+	 * Development: Use .dev.vars file for local environment variables
+	 * See .dev.vars.example for required variables
+	 */
+}
+
+

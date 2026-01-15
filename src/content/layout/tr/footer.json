@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "label": "Ana Sayfa",
+      "href": "/"
+    },
+    {
+      "label": "Kurumsal",
+      "href": "/company"
+    },
+    {
+      "label": "KVKK Aydınlatma Metni",
+      "href": "/kvkk"
+    },
+    {
+      "label": "İletişim",
+      "href": "/contact"
+    }
+  ],
+  "copyright": {
+    "text": "© 2025 Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi, Tüm hakları saklıdır.",
+    "additionalText": "Rıza Emre ARAS - <a href='https://github.com/remrearas' target='_blank' rel='noopener noreferrer'>@remrearas</a>"
+  }
+}

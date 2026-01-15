@@ -1,0 +1,70 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+// ===================================
+// COMPONENT CSS IMPORTS
+// ===================================
+// Import Carbon component styles needed for Simple Faq
+@use '@carbon/styles/scss/components/accordion';
+@use '@carbon/styles/scss/components/pagination-nav';
+@use '@carbon/react/scss/spacing' as spacing;
+
+// ===================================
+// CUSTOM STYLES
+// ===================================
+// Accordion wrapper with dynamic height
+
+// Reset MDX styles for accordion content to prevent interference
+.simple-faq-accordion {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+
+}
+
+.simple-faq-accordion-item {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// Pagination styles
+.simple-faq-pagination {
+  display: flex;
+  justify-content: right;
+  margin-top: spacing.$spacing-06;
+  nav, .cds--pagination-nav {
+    ul, ol {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin: 0 !important;
+    }
+    li {
+      padding-left: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+}

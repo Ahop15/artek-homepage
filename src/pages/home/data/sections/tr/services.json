@@ -1,0 +1,91 @@
+{
+  "badge": "HİZMETLERİMİZ",
+  "title": "Sanayi İşletmeleri için Teknik Çözümlerimiz",
+  "description": "Mühendislik vizyonuyla sektörel danışmanlık hizmetlerimizi ve özel yazılım geliştirme çözümlerimizi işletmenizin teknik ihtiyaçlarına göre sunuyoruz.",
+  "services": [
+    {
+      "title": "Merkez Kurulum Danışmanlığı",
+      "description": "5746 sayılı Kanun kapsamında Ar-Ge veya Tasarım Merkezi kuruluş başvurunuzun hazırlanması, gerekli altyapının oluşturulması ve belge alım sürecinin başarıyla tamamlanmasında uçtan uca profesyonel danışmanlık.",
+      "icon": "rocket",
+      "features": [
+        "Fizibilite Analizi",
+        "Başvuru Dosyası Hazırlama",
+        "Organizasyonel Tasarım"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/services/consultancy/centers/setup"
+      }
+    },
+    {
+      "title": "Proje Danışmanlığı",
+      "description": "TÜBİTAK, KOSGEB, Kalkınma Ajansları ve uluslararası fonlara yönelik proje hazırlama, başvuru ve yönetim süreçlerinde teknik rehberlik ve profesyonel destek.",
+      "icon": "clipboard-list",
+      "features": [
+        "Destek Programları Uzmanlığı",
+        "Proje Yazımı ve Başvuru",
+        "Proje Yönetimi ve Raporlama"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/services/consultancy/project"
+      }
+    },
+    {
+      "title": "Teknik Eğitim",
+      "description": "Ar-Ge yönetimi, proje dokümantasyonu, teknik yazım ve mühendislik süreçleri konularında personelinizin yetkinliklerini güçlendiren kurumsal eğitim programları.",
+      "icon": "graduation-cap",
+      "features": [
+        "Yetkinlik Haritalaması",
+        "Teknik Eğitim Programları",
+        "Mentörlük Desteği"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/services/consultancy/technical-education"
+      }
+    },
+    {
+      "title": "Kurumsal Yazılım Çözümleri",
+      "description": "İşletmenizin operasyonel süreçlerini dijitalleştiren, verimliliği artıran ve rekabet avantajı sağlayan özel kurumsal yazılım geliştirme hizmetleri.",
+      "icon": "building",
+      "features": [
+        "ERP Entegrasyonları",
+        "İş Süreçleri Otomasyonu",
+        "Kurumsal Portal Çözümleri"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/under-construction"
+      }
+    },
+    {
+      "title": "Web & Mobil Uygulamalar",
+      "description": "Modern teknolojilerle geliştirilen, kullanıcı deneyimi odaklı, ölçeklenebilir web ve mobil uygulama çözümleri.",
+      "icon": "devices",
+      "features": [
+        "Responsive Web Uygulamaları",
+        "iOS & Android Uygulamalar",
+        "Progressive Web Apps (PWA)"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/under-construction"
+      }
+    },
+    {
+      "title": "Veri Analitiği & Yapay Zeka",
+      "description": "Veriye dayalı karar alma süreçlerinizi güçlendiren, iş zekası ve yapay zeka teknolojileriyle desteklenen analitik çözümler.",
+      "icon": "brain-circuit",
+      "features": [
+        "İş Zekası Dashboardları",
+        "Makine Öğrenmesi Modelleri",
+        "Prediktif Analitik"
+      ],
+      "link": {
+        "text": "Detaylı Bilgi",
+        "href": "/under-construction"
+      }
+    }
+  ]
+}

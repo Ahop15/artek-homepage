@@ -1,0 +1,123 @@
+@use '@carbon/react/scss/spacing' as spacing;
+@use '@carbon/react/scss/breakpoint' as bp;
+@use '@carbon/react/scss/type' as type;
+
+// Carbon Component Styles - Selective Import
+@use '@carbon/react/scss/components/button';
+@use '@carbon/react/scss/components/text-input';
+@use '@carbon/react/scss/components/text-area';
+@use '@carbon/react/scss/components/form';
+@use '@carbon/react/scss/components/skeleton-styles';
+@use '@carbon/react/scss/components/notification';
+
+
+.contact-page {
+  min-height: 100vh;
+  padding: spacing.$spacing-10 0;
+
+  h1 {
+    @include type.type-style('heading-04');
+    margin-bottom: spacing.$spacing-06;
+    color: var(--cds-text-primary);
+  }
+
+  .lead {
+    line-height: 1.6;
+    margin-bottom: spacing.$spacing-09;
+  }
+
+  .map-container {
+    margin-bottom: spacing.$spacing-09;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form {
+    background: var(--cds-layer-01);
+    padding: spacing.$spacing-08;
+    border-radius: 8px;
+    margin-bottom: spacing.$spacing-08;
+
+    h2 {
+      @include type.type-style('heading-03');
+      margin-bottom: spacing.$spacing-07;
+      color: var(--cds-text-primary);
+    }
+
+    form {
+      > div {
+        margin-bottom: spacing.$spacing-06;
+      }
+    }
+  }
+
+  .contact-info {
+    background: var(--cds-layer-accent-01);
+    padding: spacing.$spacing-08;
+    border-radius: 8px;
+
+    h3 {
+      @include type.type-style('heading-compact-01');
+      margin-bottom: spacing.$spacing-07;
+      color: var(--cds-text-primary);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: spacing.$spacing-05;
+      margin-bottom: spacing.$spacing-06;
+
+      svg {
+        color: var(--cds-link-primary);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .label {
+        @include type.type-style('label-01');
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--cds-text-secondary);
+        margin-bottom: spacing.$spacing-02;
+      }
+
+      .value {
+        @include type.type-style('body-01');
+        color: var(--cds-text-primary);
+      }
+    }
+
+    .working-hours {
+      margin-top: spacing.$spacing-08;
+      padding-top: spacing.$spacing-07;
+      border-top: 1px solid var(--cds-border-subtle);
+
+      h4 {
+        @include type.type-style('body-02');
+        font-weight: 500;
+        margin-bottom: spacing.$spacing-05;
+        color: var(--cds-text-primary);
+      }
+
+      p {
+        @include type.type-style('body-01');
+        color: var(--cds-text-secondary);
+        margin-bottom: spacing.$spacing-03;
+      }
+    }
+  }
+
+  @include bp.breakpoint-down(md) {
+    .contact-form,
+    .contact-info {
+      margin-bottom: spacing.$spacing-07;
+    }
+  }
+}

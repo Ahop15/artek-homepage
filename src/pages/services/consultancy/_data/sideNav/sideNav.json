@@ -1,0 +1,16 @@
+{
+  "items": [
+    {"label":  "Giriş", "href":  "/services/consultancy"},
+    {"label":  "Merkez Kurulum Danışmanlığı", "href":  "/services/consultancy/centers/setup"},
+    {"label":  "Proje Danışmanlığı", "href":  "/services/consultancy/project"},
+    {"label":  "Teknik Eğitim", "href":  "/services/consultancy/technical-education"},
+    {
+      "label": "İstatistikler",
+      "defaultExpanded": true,
+      "children": [
+        {"label":  "Ar-Ge Merkezleri", "href":  "/services/consultancy/centers/statistics/rd-centers"},
+        {"label":  "Tasarım Merkezleri", "href":  "/services/consultancy/centers/statistics/design-centers"}
+      ]
+    }
+  ]
+}

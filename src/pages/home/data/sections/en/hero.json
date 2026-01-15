@@ -1,0 +1,19 @@
+{
+  "title": "Develop Future Technologies with ARTEK",
+  "highlight": "ARTEK",
+  "description": "From specialized sectoral consultancy services to custom software development solutions, we stand by your side throughout your digital transformation and innovation journey. We deliver comprehensive solutions to your technical needs with an engineering vision.",
+  "primaryButton": {
+    "text": "Our Consultancy Services",
+    "href": "/services/consultancy",
+    "type": "primary"
+  },
+  "secondaryButton": {
+    "text": "Custom Software Development",
+    "href": "/under-construction",
+    "type": "tertiary"
+  },
+  "video": {
+    "src": "/assets/videos/futuristic-rd-video.mp4",
+    "poster": "/assets/images/futuristic-rd.jpg"
+  }
+}

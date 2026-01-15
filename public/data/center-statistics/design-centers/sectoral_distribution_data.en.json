@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Technology and Software",
+    "color": "#e8703e",
+    "children": [
+      {
+        "name": "Electronics",
+        "value": 7,
+        "showLabel": true
+      },
+      {
+        "name": "Computer and Communication Technologies",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Software",
+        "value": 3,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Automotive and Supplier Industry",
+    "color": "#8e6f20",
+    "children": [
+      {
+        "name": "Automotive Supplier Industry",
+        "value": 22,
+        "showLabel": true
+      },
+      {
+        "name": "Automotive",
+        "value": 13,
+        "showLabel": true
+      },
+      {
+        "name": "Automotive Design and Engineering",
+        "value": 3,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Machinery and Manufacturing Industry",
+    "color": "#d73027",
+    "children": [
+      {
+        "name": "Manufacturing Industry",
+        "value": 43,
+        "showLabel": true
+      },
+      {
+        "name": "Machinery and Equipment Manufacturing",
+        "value": 39,
+        "showLabel": true
+      },
+      {
+        "name": "HVAC",
+        "value": 5,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Chemistry and Healthcare Sector",
+    "color": "#71ca36",
+    "children": []
+  },
+  {
+    "name": "Consumer and Food Industry",
+    "color": "#006837",
+    "children": [
+      {
+        "name": "Textile",
+        "value": 53,
+        "showLabel": true
+      },
+      {
+        "name": "Furniture",
+        "value": 14,
+        "showLabel": true
+      },
+      {
+        "name": "Apparel and Ready-to-Wear",
+        "value": 7,
+        "showLabel": false
+      },
+      {
+        "name": "Durable Consumer Goods",
+        "value": 4,
+        "showLabel": false
+      },
+      {
+        "name": "Food Industry",
+        "value": 2,
+        "showLabel": false
+      },
+      {
+        "name": "Paper and Paper Products",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Defense and Security",
+    "color": "#526313",
+    "children": [
+      {
+        "name": "Defense Industry",
+        "value": 9,
+        "showLabel": true
+      },
+      {
+        "name": "Aviation",
+        "value": 3,
+        "showLabel": true
+      }
+    ]
+  },
+  {
+    "name": "Energy and Infrastructure",
+    "color": "#1a9850",
+    "children": [
+      {
+        "name": "Engineering/Architecture",
+        "value": 48,
+        "showLabel": true
+      },
+      {
+        "name": "Construction",
+        "value": 14,
+        "showLabel": true
+      },
+      {
+        "name": "Energy",
+        "value": 4,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Metal and Materials",
+    "color": "#c97a30",
+    "children": [
+      {
+        "name": "Foundry",
+        "value": 5,
+        "showLabel": true
+      },
+      {
+        "name": "Ferrous and Non-Ferrous Metals",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Ceramic and Refractory",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Glass and Glass Products",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Rubber-Plastic",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Finance and Communication",
+    "color": "#9b5e3c",
+    "children": [
+      {
+        "name": "Media and Communication",
+        "value": 17,
+        "showLabel": true
+      },
+      {
+        "name": "Telecommunication",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  },
+  {
+    "name": "Other Sectors",
+    "color": "#5a8247",
+    "children": [
+      {
+        "name": "Maritime",
+        "value": 4,
+        "showLabel": true
+      },
+      {
+        "name": "Retail",
+        "value": 3,
+        "showLabel": true
+      },
+      {
+        "name": "Mining",
+        "value": 2,
+        "showLabel": true
+      },
+      {
+        "name": "Jewelry",
+        "value": 1,
+        "showLabel": false
+      },
+      {
+        "name": "Agriculture",
+        "value": 1,
+        "showLabel": false
+      }
+    ]
+  }
+]

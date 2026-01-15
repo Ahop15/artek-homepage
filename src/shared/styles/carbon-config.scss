@@ -1,0 +1,67 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+/**
+ *  █████╗ ██████╗  █████╗ ███████╗
+ * ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+ * ███████║██████╔╝███████║███████╗
+ * ██╔══██║██╔══██╗██╔══██║╚════██║
+ * ██║  ██║██║  ██║██║  ██║███████║
+ * ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *
+ * Copyright (C) 2025 Rıza Emre ARAS <r.emrearas@proton.me>
+ *
+ * This file is part of ARTEK Homepage.
+ *
+ * ARTEK Homepage is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Carbon Design System Configuration
+ */
+
+// Configure Carbon to use locally installed @ibm/plex packages
+@use '@carbon/styles/scss/config' with (
+  // Use npm packages instead of external CDN
+  $font-path: '~@ibm/plex',
+  // Ensure font-face declarations are included
+  $css--font-face: true,
+  // Use individual @ibm/plex-* packages
+  $use-per-family-plex: true,
+  // Disable Akamai CDN
+  $use-akamai-cdn: false,
+  // Use 'optional' to prevent layout shifts (CLS optimization)
+  $font-display: optional
+);
+
+// ===================================
+// GLOBAL FOUNDATION STYLES
+// ===================================
+// These are loaded globally to prevent duplication across lazy chunks
+// Using @forward for CSS output, @use for config with custom settings
+
+// Core foundation - @forward for CSS output
+@forward '@carbon/styles/scss/spacing';
+@forward '@carbon/styles/scss/colors' hide $white;
+@forward '@carbon/styles/scss/motion';
+@forward '@carbon/styles/scss/type';
+@forward '@carbon/styles/scss/themes';
+@forward '@carbon/styles/scss/theme';  // ← CRITICAL: CSS variables (--cds-*)
+
+@use '@carbon/styles/scss/reset';      // ← Reset mixin needs @use
+@forward '@carbon/styles/scss/fonts';
+@forward '@carbon/styles/scss/grid';
+@forward '@carbon/styles/scss/layer';
+@forward '@carbon/styles/scss/layout';
+@forward '@carbon/styles/scss/zone';
+
+

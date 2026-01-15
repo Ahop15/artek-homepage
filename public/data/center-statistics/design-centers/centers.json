@@ -1,0 +1,1717 @@
+[
+  {
+    "name": "Vanelli Tekstil Sanayi ve Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Cemer Kent Ekipmanları San. ve Tic. A.Ş.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Arçelik A.Ş.",
+    "city": "İstanbul",
+    "sector": "Dayanıklı Tüketim Malları"
+  },
+  {
+    "name": "Enka İnşaat ve Sanayi Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Çilek Mobilya Anonim Şirketi",
+    "city": "Bursa",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Hidropar İzmir Hidrolik Elektronik Makine Aksamı Donanımları Pazarlama Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Kadifeteks Mensucat San. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Çeksan Yol Süpürme Araçları Makina Sanayi ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Tron Elektronik Sistemler Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Telekomünikasyon"
+  },
+  {
+    "name": "Plascam Plastik Oto Cam Sanayi Ticaret A.Ş.",
+    "city": "Kocaeli",
+    "sector": "Otomotiv Tasarımı ve Mühendislik"
+  },
+  {
+    "name": "Aytek Soğutma İç ve Dış Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "İnova Koltuk Sistemleri Araç Tas. Otomotiv San. ve Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Deniz Tekstil San. ve Tic. A.Ş.",
+    "city": "Denizli",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Mdk Makina Dizayn Kalıp San. ve Tic. A.Ş.",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Vakko Tekstil ve Hazır Giyim Sanayi İşletmeleri A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Fatih Profil San. ve Tic. A.Ş.",
+    "city": "Denizli",
+    "sector": "Demir ve Demir Dışı Metaller"
+  },
+  {
+    "name": "Kasktaş Kayar Kalıp Altyapı Sondaj Kazık ve Tecrit Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Nesan Otomotiv Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Aisin Otomotiv Parçaları San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Akgün Elektrik Elektronik Mühendislik Taahhütlük San. Tic. Ltd. Şti.",
+    "city": "Denizli",
+    "sector": "Enerji"
+  },
+  {
+    "name": "Beyçelik Gestamp Otomotiv Sanayi A. Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Birim Makina Sanayi ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Arketipo Design İç Mimarlık Uyg. ve Dan. A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Denizli Rateks Tekstil San. Tic. A.Ş.",
+    "city": "Denizli",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Koton Mağazacılık Tekstil Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Tümsaş Teknolojik Endüstriyel Bilgisayar Ürünleri Mühendislik ve Pazarlama A.Ş.",
+    "city": "İstanbul",
+    "sector": "Bilgisayar ve İletişim Teknolojileri"
+  },
+  {
+    "name": "Norm Somun San. ve Tic. A.Ş.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Teğet Tasarım ve İç Mimari Sanayi Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Hd Kauçuk Sanayi ve Ticaret A.Ş.",
+    "city": "Denizli",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Hipaş Hidrolik ve Pnömatik San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Dizayn Optimum Mühendislik A.Ş.",
+    "city": "Manisa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Gönye Proje Tasarım Mim. İnş. San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "İpekyol Giyim San. Paz. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Rönesans Endüstri Tesisleri İnşaat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Ersa Mobilya Sanayi ve Ticaret A.Ş.",
+    "city": "Ankara",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Kiğılı Giyim Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Kıvanç Tekstil San. ve Tic. A.Ş.",
+    "city": "Adana",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Menderes Tekstil San. ve Tic. A.Ş.",
+    "city": "Denizli",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Alba Plastik Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Zorluteks Tekstil Ticaret ve Sanayi A.Ş. İstanbul",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Optima Mühendislik Anonim Şirketi",
+    "city": "Ankara",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "İllüzyon İstanbul Prodüksiyon Reklam ve Görüntü Ürünleri San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Jantsa Jant Sanayi ve Tic. A.Ş.",
+    "city": "Aydın",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Kasso Mühendislik A.Ş.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Doğanlar Mobilya Grubu İmalat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Kütahya Porselen Sanayi A.Ş.",
+    "city": "Kütahya",
+    "sector": "Seramik ve Refrakter"
+  },
+  {
+    "name": "Dogo Tasarım Sanayi ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Narkonteks Tekstil İhracat İthalat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Skipsteknisk Mühendislik A.Ş.",
+    "city": "İstanbul",
+    "sector": "Denizcilik"
+  },
+  {
+    "name": "Etkilab Ar-ge Kullanıcı Araştırmaları Danışmanlık ve Tasarım Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Bilgisayar ve İletişim Teknolojileri"
+  },
+  {
+    "name": "Kitoko Aydınlatma ve Mühendislik İnşaat A.Ş",
+    "city": "İstanbul",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Oğuz Tekstil Sanayi Ticaret Anonim Şirketi",
+    "city": "Adana",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Sirmersan Mermer San. A.Ş.",
+    "city": "Denizli",
+    "sector": "Madencilik"
+  },
+  {
+    "name": "Kodsan Isı Teknolojileri San. ve Tic. A.Ş.",
+    "city": "Ankara",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Tura Tasarım ve Mühendislik Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Atlas Kbs Mühendislik Sanayi ve Ticaret Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Sistemas Teknoloji Sistem Üretimi Temsilcilik Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Ykk Metal ve Plastik Ürünleri San. Tic. A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Arobus Araç İmalat San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Kaya Yapı İç Mimarlık Tasarım İnş. Deniz Taah. San. ve Tic. A.Ş.",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Güneş Plastik Kalıp Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "Dayanıklı Tüketim Malları"
+  },
+  {
+    "name": "Vakko Tekstil ve Hazır Giyim Sanayi İşletmeleri Anonim Şirketi (Nakkaştepe Moda Merkezi)",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Ünsa Madencilik Turizm Enerji Seramik Orman Ürünleri Elektrik Üretim San. ve Tic. A.Ş.",
+    "city": "Kütahya",
+    "sector": "Seramik ve Refrakter"
+  },
+  {
+    "name": "Koleksiyon Mobilya San. A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Netco Prodüksiyon Animasyon Organizasyon Bilgisayar Yazılım Elektrik Elektronik Kırtasiye Taah. Tic. Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Yazgan Tasarım Mimarlık İnş. San. ve Tic. A.Ş.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "UPK Otomotiv Yan San. ve Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Çağdaş Cam San. ve Tic. A.Ş.",
+    "city": "Aydın",
+    "sector": "Cam ve Cam Ürünleri"
+  },
+  {
+    "name": "Eksenal Alüminyum Ekstrüzyon Teknolojileri Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Anima İstanbul Film Yapım Sanayi ve Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Digital Panorama Bilgi ve İletişim Teknolojileri Sistem ve Hizmetleri A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Çukurova İnşaat Makinaları San. ve Tic. A.Ş.",
+    "city": "Mersin",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Metisafe Temiz Oda ve Biyogüvenlik Sistemleri İmalat ve San. Tic. A.Ş.",
+    "city": "Ankara",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Rönesans Proje Mühendislik Mimarlık Danışmanlık Yönetim Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Trima Otomasyon Sistemleri ve Müh. Hizm. Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Sanem Plastik Sanayi ve Ticaret Anonim Şirketi 1 Torbalı Şubesi",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Bomak Makina İmalatı Çelik Konstrüksiyon Mühendislik Metalurji İnşaat Taahhüt Sanayi ve Ticaret Ltd. Şti.",
+    "city": "Adana",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Erk Pazarlama ve Giyim San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Gürmen Giyim Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Sunparadise Alüminyum Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Sakarya",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Arnes Mekanik Makina San.ve Tic. Ltd. Şti.",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Esli Endüstriyel Ürünler Paz. San. ve Tic. Ltd. Şti.",
+    "city": "Antalya",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Şık Makas Giyim Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Eko Endüstri Kalıp Otomotiv Plastik ve Spor Aletleri Sanayi Dış. Tıc. Ltd. Şti.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Birikim Mühendislik Endüstriyel ve Yüklenim A.Ş.",
+    "city": "Ankara",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "1000 Volt Film Prodüksiyon ve Tasarım San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Ctn Makina Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Adana",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Emas Elektroteknik Makina San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Mimarlar İnşaat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Gad Mimarlık Danışmanlık Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Att Tekstil Sanayi ve Ticaret Anonim Şirketi Clothing Şubesi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Gülle Entegre Tekstil İşletmeleri Eml. Dan. San. ve Tic. A.Ş. Çorlu Şubesi İplikhane",
+    "city": "Tekirdağ",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Egemet Ege Metal Dövme San. Tic. Ltd. Şti.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Avrupa Tekstil Kozmetik A.Ş.",
+    "city": "İstanbul",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Atölye Yaratıcı Proje Geliştirme Eğt. Dan. Tasarım Hiz. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Eae Makina Sanayi ve Ticaret A.Ş",
+    "city": "Kocaeli",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Isrınghausen Oto Yan Sanayi Yedek Parça ve Koltuk Sistemleri Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Diyenem Kumaş Global San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Loft Mağazacılık A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Promeda Endüstri A.Ş.",
+    "city": "İzmir",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Rs Cta Tekstil Sanayi Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Smm Tekstil A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Ay Marka Mağazacılık A.Ş.",
+    "city": "İstanbul",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Boyner Büyük Mağazacılık A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Beymen Perakende ve Tekstil Yatırımları A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Siyahmartı Reklam Tanıtım Org. Tur. ve Film Yapım Hizm. San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
+    "city": "Kocaeli",
+    "sector": "Cam ve Cam Ürünleri"
+  },
+  {
+    "name": "Grafi2000 Prodüksiyon Reklamcılık Yay. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Kimteks Tekstil İnşaat Tic. ve San. A.Ş.",
+    "city": "Adana",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Çukurova Silo İşletmeciliği ve Mak. San. İnş. Tic. Ltd. Şti.",
+    "city": "Adana",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Step Tasarım Mühendislik ve Danışmanlık Hiz. Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Tasarımı ve Mühendislik"
+  },
+  {
+    "name": "Atasan Metal Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Sakarya",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Aster Tekstil San ve Dış Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "CNC İleri Teknoloji Mühendislik San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Tabanlıoğlu Mimarlık Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Lh Post Prodüksiyon Yapım Sanayi ve Ticaret Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Termo Isı Sistemleri Ticaret ve Sanayi Anonim Şirketi",
+    "city": "Tekirdağ",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Hidroser Hidrolik Pnömatik Ekip. San. Tic A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "ATM Isı Transfer San. ve Tic. A.Ş.",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Mudo Satış Mağazaları Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Özgüven Tasarım Mimarlık İnşaat San. ve Tic. A.Ş. İstanbul Şubesi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Durak Tekstil Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Fetih Tekstil San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Ünimetal Hassas Döküm Makina ve Yedek Parça San. ve Tic. A.Ş",
+    "city": "İstanbul",
+    "sector": "Dökümcülük"
+  },
+  {
+    "name": "Tav Tepe Akfen Yatırım İnşaat ve İşl. A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Tosunoğulları Mobilya Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Dizaynvip Otomotiv Mühendisliği Tasarımı ve Üretimi A.Ş.",
+    "city": "İstanbul",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Barış Endüstriyel Enerji Sistemleri A.Ş.",
+    "city": "Adana",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Ergün Mimarlık Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Domeks Makine Anonim Şirketi",
+    "city": "Tekirdağ",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Hps Hidrolik Proje Sistem Teknolojileri San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Simetrik Pro Üretim Sistem Çözümleri ve Endüstriyel Ekipman Teknolojileri San. ve Tic. Ltd. Şti.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Gelişim Tekstil San.ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Dentaş Ambalaj ve Kağıt Sanayi A.Ş.",
+    "city": "Denizli",
+    "sector": "Kağıt ve Kağıt Ürünleri"
+  },
+  {
+    "name": "Orakçı Makina İmalat İth. İht. San. ve Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Karaca Züccaciye Tic. San. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Seramik ve Refrakter"
+  },
+  {
+    "name": "Mesan Plastik ve Metal Sanayi A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Karyer Isı Transfer Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İklimlendirme"
+  },
+  {
+    "name": "Rönesans Stratejik ve Özellikli Yapılar İnşaat ve Taahhüt A.Ş.",
+    "city": "Ankara",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Manisa Kardan Cemmer Otomotiv Makine Aksamı San. ve Tic. A.Ş.",
+    "city": "Manisa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Kolt Mühendislik A.Ş.",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Mavi Giyim San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Öztuğ Endüstri ve Otomotiv Anonim Şirketi",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Med Yapım Televizyon ve Filmcilik A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Özer ve Ürger Mimarlık Mühendislik Müşavirlik İnşaat Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Erginoğlu Çalışlar Mimarlık İnş. Tic. ve Turizm A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Mertoğlu Kent Mobilyaları Anonim Şirketi",
+    "city": "Ankara",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Bosch Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Mertay Metal Saç Makina Sanayi ve Ticaret Limited Şirketi",
+    "city": "Bursa",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Dorçe Prefabrik Yapı ve İnşaat Sanayi Ticaret A.Ş.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Politeknik Elektronik San. Tic. Ltd. Şti.",
+    "city": "İzmir",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Era Elektronik San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Tosunoğlu Tekstil San. ve Tic. A. Ş.",
+    "city": "Denizli",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Rem Mimarlık Dek. Rest. Proje Taah. Hizm. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Hpp International Turkey Mimarlık ve Danışmanlık Hizmetleri Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Tago Mimarlık Müh. Müşv. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Hilmi Güner Mimarlık Mühendislik Müşavirlik Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Geoid Konsept ve Danışmanlık Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Zoom Mimari Tasarım Proje Uygulama Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Cemre Dizayn ve Mühendislik A.Ş.",
+    "city": "Yalova",
+    "sector": "Denizcilik"
+  },
+  {
+    "name": "Güven Pres Döküm San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Dökümcülük"
+  },
+  {
+    "name": "Önallar Tarım Makineleri Anonim Şirketi",
+    "city": "Konya",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Efe Endüstri ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Sigma Mühendislik Hizmetleri Dek. İnş. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Mk Aydınlatma Pazarlama Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Enerji"
+  },
+  {
+    "name": "Ddf Tanıtım Tasarım Danış ve Org İç ve Dış Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "İnka Yapı Bağlantı Elemanları Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Eroğlu Giyim San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Makinsan Treyler Ticaret ve Sanayi Anonim Şirketi",
+    "city": "Adana",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Rafineri Reklamcılık Hizm. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Mojo Prodüksiyon ve Görsel Teknoloji Ltd.şti.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Hünel Kalıp Sanayi ve Ticaret Ltd. Şti.",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Boytorun Mimarlık Mühendislik İnş. San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Evi Metal İnoks Yapı Çözümleri Ltd. Şti",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Şafak Döküm Makina Parça San. ve Tic. A.Ş.",
+    "city": "İzmir",
+    "sector": "Dökümcülük"
+  },
+  {
+    "name": "Özçelik Makina San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Nestle Türkiye Gıda Sanayi A.Ş.",
+    "city": "Bursa",
+    "sector": "Gıda Sanayi"
+  },
+  {
+    "name": "Milmast Yükseltme Sistemleri A.Ş.",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Teknomak İmalat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Ankara",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Ace Mimarlık Mühendislik Müşavirlik ve İnşaat Anonim Şirketi",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Toner Mimarlık İnşaat ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "A Tasarım Mimarlık Uygulama Danışmanlık İnş. San. ve Tic. Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Yps Otomotiv Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Merkad Makina Kalıp San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Cofle Tk Otomotiv Kontrol Sistemleri San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Yıltem Konfeksiyon San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Boğaziçi Hediyelik Eşya ve El Sanatları San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Kuyumculuk"
+  },
+  {
+    "name": "Tms Endüstriyel Soğutma Sanayi Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İklimlendirme"
+  },
+  {
+    "name": "Festo Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Valeo Otomotiv Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Urbanista Avcı Gayrimenkul Mimarlık Danışmanlık Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Ds Mimarlık Restorasyon Peyzaj Mimarlığı San. Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Askon Demir Çelik San. ve Tic. A.Ş.",
+    "city": "Denizli",
+    "sector": "Demir ve Demir Dışı Metaller"
+  },
+  {
+    "name": "Canlar Mekatronik Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Tekirdağ",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Gri Kreatif ve Dijital Teknolojiler A.Ş.",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Odak Kompozit Teknolojileri A.Ş.",
+    "city": "Ankara",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Yektamak Makina Mühendislik İmalat San. ve Tic. A.Ş.",
+    "city": "Sakarya",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Aygersan Aydınlatma Gereçleri Sanayi ve Ticaret A.Ş.",
+    "city": "Ankara",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Erciyas Çelik Boru San. A.Ş.",
+    "city": "Düzce",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "İSF Film Prodüksiyon Reklam Yayıncılık İnşaat Taahhüt Sanayi ve Ticaret Limited Şirketi",
+    "city": "Ankara",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Gökhan Aksoy Mimarlık Müh Müş İnş Taah Tic Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Orbit Mühendislik ve Makina San. Ltd. Şti.",
+    "city": "Ankara",
+    "sector": "Gıda Sanayi"
+  },
+  {
+    "name": "Timsan Taahhüt İmalat Montaj San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Havacılık"
+  },
+  {
+    "name": "Mf Turistik Tesisleri İşletmeciliği ve Tasarım Dekorasyon Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Nurdil Teknik Soğutma Ticaret A.Ş.",
+    "city": "Ankara",
+    "sector": "İklimlendirme"
+  },
+  {
+    "name": "Labris Maden ve Makina Sanayi A.Ş.",
+    "city": "Ankara",
+    "sector": "Madencilik"
+  },
+  {
+    "name": "Technopc Teknoloji San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Bilgisayar ve İletişim Teknolojileri"
+  },
+  {
+    "name": "Zf Sachs Süspansiyon Sistemleri Sanayi ve Ticaret A.Ş.",
+    "city": "Kocaeli",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Muse Görsel Sanatlar Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Kilim Mobilya A.Ş.",
+    "city": "Kayseri",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Deha Tech Makina San ve Tic A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Fibrobeton Yapı Elemanları San. İnş. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Br Mağazacılık Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Em Elektrik Malzemeleri Yüklenim Sanayi Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Tls Teknoloji Sistemleri San ve Dış Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Akın Tekstil A.Ş.",
+    "city": "Kırklareli",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Penti Giyim Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Devanlay - Eren Tekstil Sanayi Anonim Şirketi",
+    "city": "Tekirdağ",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Nsk Otomotiv Sanayi Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Mitaş Endüstri Sanayi Ticaret Anonim Şirketi - Poligon",
+    "city": "Ankara",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Masomo Oyun Teknolojileri Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Yazılım"
+  },
+  {
+    "name": "Almodo Altunlar Tekstil Sanayi ve Ticaret A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Kumkaya Makina Gıda Tekstil İnşaat San. ve Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Hascevher Metal Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kahramanmaraş",
+    "sector": "Demir ve Demir Dışı Metaller"
+  },
+  {
+    "name": "Dirinler Döküm Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Dökümcülük"
+  },
+  {
+    "name": "Timur Gayrimenkul Geliştirme Yapı ve Yatırım A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Link Yapı Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Mimsan Endüstri Kazanları Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Malatya",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Tayeks Dış Ticaret ve Tekstil Sanayi A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Altınyıldız Tekstil ve Konfeksiyon A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Doğanlar Mobilya Grubu İmalat Sanayi ve Ticaret Anonim Şirketi - Düzce",
+    "city": "Düzce",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Hasan Sözüneri Mimarlık Mühendislik Müş. Kont. İnş. San. ve Tic. Ltd. Şti",
+    "city": "Bursa",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Eaa Emre Arolat Mimarlık Mühendislik ve Danışmanlık Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Yataş Yatak ve Yorgan Sanayi Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Gürmen Giyim Sanayi ve Ticaret A.Ş. Safranbolu",
+    "city": "Karabük",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "İpekiş Mensucat Türk A.Ş.",
+    "city": "Bursa",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Ata Silah San. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Ykk Metal ve Plastik Ürünleri Sanayi Ticaret Anonim Şirketi Teknik Çözümler Şubesi",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Erdemir Mühendislik Yönetim ve Danışmanlık Hizmetleri Anonim Şirketi İskenderun",
+    "city": "Hatay",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Erdemir Mühendislik Yönetim ve Danışmanlık Hizmetleri Anonim Şirketi Ereğli",
+    "city": "Zonguldak",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "S2 Otomasyon Sanayi ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Simetrik Dizayn Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Bursa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Sanver Mühendislik Elektrik Elektronik Bilgisayar Sistemleri Makina Sanayi ve Ticaret Limited Şirketi",
+    "city": "Bursa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Bony Tekstil İşletmeleri San ve Tic A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Skyart Havacılık San. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Havacılık"
+  },
+  {
+    "name": "4a Elektrik Elektronik Teknoloji San. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Aydın Yazılım ve Elektronik Sanayi A.Ş.",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Tepta Aydınlatma San. ve Tic. Anonim Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Cdmtech Mühendislik Hizmetleri A.Ş.",
+    "city": "Ankara",
+    "sector": "Otomotiv Tasarımı ve Mühendislik"
+  },
+  {
+    "name": "Bora Çelik Eşya ve Mobilya İnşaat Malzemeleri Sanayi Tic. Ltd. Şti.",
+    "city": "Eskişehir",
+    "sector": "Demir ve Demir Dışı Metaller"
+  },
+  {
+    "name": "Ism Makine Elektrik Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Manisa",
+    "sector": "Dayanıklı Tüketim Malları"
+  },
+  {
+    "name": "Frenoks Endüstriyel Soğutma Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "İklimlendirme"
+  },
+  {
+    "name": "Kontrolmatik Teknoloji Enerji ve Mühendislik A.Ş.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Kaplam Otomotiv Plastik Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Yeşim Kozanlı İç Mimarlık A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Albayrak Branda Tente Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Ykc Plastik Ambalaj ve Kapak Sanayi Ticaret A.Ş.",
+    "city": "Ankara",
+    "sector": "Lastik-Plastik-Kauçuk"
+  },
+  {
+    "name": "Aslı Mimarlık Sanayi ve Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Formplast Yalıtım Ürünleri İnş. San. ve Tic. A.Ş.",
+    "city": "Bilecik",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Epsilon Solentek Raylı Sistemler Anonim Şirketi (Eskişehir Şb.)",
+    "city": "Eskişehir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Ay Sanat Prodüksiyon ve Yapım Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Secant Savunma ve Havacılık A.Ş.",
+    "city": "Eskişehir",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Flo Mağazacılık ve Pazarlama A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Med Marine Kılavuzluk ve Römorkör Hizmetleri İnşaat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Denizcilik"
+  },
+  {
+    "name": "Bosch Rexroth Otomasyon Sanayi ve Ticaret A.Ş.",
+    "city": "Bursa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Mondi Mobilya Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kayseri",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Türkiye Elektromekanik Sanayi A.Ş",
+    "city": "Ankara",
+    "sector": "Enerji"
+  },
+  {
+    "name": "A Raymond Bağlantı Elemanları Sanayi ve Ticaret Ltd. Şti.",
+    "city": "Kocaeli",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Aselsan Sivas Hassas Optik Sanayi ve Ticaret Anonim Şirketi (Ankara Yerleşkesi)",
+    "city": "Ankara",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "JMW Jant Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Aydın",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Proton Otomasyon Elektrik Makina İnşaat Taahhüt Sanayi ve Ticaret Limited Şirketi",
+    "city": "Denizli",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "On Tasarım Kentsel Tasarım Peyzaj Mimarlığı Mimarlık Mühendislik İnşaat Turizm Ticaret Limited Şirketi",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "MİB Mağazacılık Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Perakendecilik"
+  },
+  {
+    "name": "DeFacto Perakende Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Perakendecilik"
+  },
+  {
+    "name": "Iottech Bilişim Danışmanlık Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Yazılım"
+  },
+  {
+    "name": "SMS Sanayi Malzemeleri Üretim ve Satışı Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "I-AM Associates İstanbul Mimarlık Tasarım İnşaat Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Doğanlar Mobilya Grubu İmalat Sanayi ve Ticaret Anonim Şirketi - Çanakkale",
+    "city": "Çanakkale",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Onka Elektrik Malzemeleri Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Seger Ses ve Elektrikli Gereçler Sanayi Anonim Şirketi",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Kalyon İnşaat San. ve Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Bozdağ Film Yapım Prodüksiyon Reklam İnşaat Turizm Sanayi Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Medya ve İletişim"
+  },
+  {
+    "name": "Dokuteks Halı Tekstil Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Gaziantep",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Önder Grup Makine İthalat İhracat Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Manisa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Dagi Giyim Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "KM Kümsan Vinç Sistemleri Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kocaeli",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "KY Mimarlık İnşaat Sanayi ve Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "KNS Otomotiv Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Sakarya",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Canray Ulaşım Sistemleri Anonim Şirketi",
+    "city": "Bursa",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "ZKLD Aydınlatma Tasarım ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Şara Enerji İnşaat Ticaret ve Sanayi A. Ş.",
+    "city": "Ankara",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Hidkom Mühendislik Mümessillik Taahhüt Makina San. Tic. Ltd. Şti.",
+    "city": "Bursa",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Göker İş Makinaları Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Ankara",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "İston İstanbul Beton Elemanları ve Hazır Beton Fabrikaları Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Kaft Tasarım Tekstil Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Pilotcar Otomotiv San. ve Tic. A.Ş.",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "U.K. Cast Seramik Kalıp Döküm Tek. Araş. Gel. Mak. İmal. San. ve Tic. Ltd. Şti.",
+    "city": "İzmir",
+    "sector": "Seramik ve Refrakter"
+  },
+  {
+    "name": "Tigloos Games Teknoloji ve Yazılım Pazarlama A.Ş.",
+    "city": "İstanbul",
+    "sector": "Yazılım"
+  },
+  {
+    "name": "Aspilsan Enerji Sanayi ve Tic. A.Ş.",
+    "city": "Kayseri",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Tamsan Bağlantı Elemanları Yedek Parça ve Makine Ekipmanları Turizm İnşaat Sanayi ve Ticaret A.Ş.",
+    "city": "Kocaeli",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Yazaki Systems Technologies Turkey Otomotiv Sanayi ve Ticaret Limited Şirketi",
+    "city": "Bursa",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Almila Mobilya A.Ş.",
+    "city": "Kayseri",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Avrasya Taahhüt Lojistik A.Ş. Torbalı Şubesi",
+    "city": "İzmir",
+    "sector": "Mobilya"
+  },
+  {
+    "name": "Pimeks Alüminyum Pvc ve Metal San. Tic. A.Ş.",
+    "city": "Ankara",
+    "sector": "İnşaat"
+  },
+  {
+    "name": "Gizia Moda Tekstil Sanayi ve Dış Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Dinex Egzoz ve Emisyon Teknolojileri Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Tekirdağ",
+    "sector": "Otomotiv"
+  },
+  {
+    "name": "Dzine Tasarım Danışmanlık Sanayi ve Limited Şirketi",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Omurga Mimarlık İnş. Rest. ve Planlama San.Tic. Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Autoban Mimarlık İnş. Taah. Tic. A.Ş.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "FB Dış Ticaret Anonim Şirketi",
+    "city": "İzmir",
+    "sector": "Konfeksiyon ve Hazır Giyim"
+  },
+  {
+    "name": "Vestel Ticaret A.Ş.",
+    "city": "Manisa",
+    "sector": "Dayanıklı Tüketim Malları"
+  },
+  {
+    "name": "Çelsan Ziraat Aletleri Sanayi ve Ticaret Anonim Şirketi Manisa Osb Şubesi",
+    "city": "Manisa",
+    "sector": "Tarım"
+  },
+  {
+    "name": "Segula Technologies Turkey Mühendislik Anonim Şirketi Bursa Şubesi",
+    "city": "Bursa",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Feltouch Yapı Tasarım San Tic A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Tusaş Motor Sanayii Anonim Şirketi Kartal Şubesi",
+    "city": "İstanbul",
+    "sector": "Havacılık"
+  },
+  {
+    "name": "Gürok Turizm ve Madencilik Anonim Şirketi",
+    "city": "Kütahya",
+    "sector": "Cam ve Cam Ürünleri"
+  },
+  {
+    "name": "Ekinler Endüstri Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Manisa",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Çgs Çetinkaya Giyim San ve Tic A.Ş.",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Yalın Tan İç Mimarlık Tasarım Uygulama Ltd. Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Tezmaksan Robot ve Otomasyon Teknolojileri Sanayi Ticaret Anonim Şirket",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Tibet Makina Sanayi ve Ticaret A.Ş.",
+    "city": "İzmir",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Putzmeister Makine San. Tic. A.Ş.",
+    "city": "Tekirdağ",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Teknopro Mühendislik ve Endüstri Tesisleri Üretimi A.Ş.",
+    "city": "Yalova",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "EHM Mağazacılık Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Perakendecilik"
+  },
+  {
+    "name": "S.İ.F.F. Elektromekanik San. ve Tic. Ltd. Şti.",
+    "city": "Bursa",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Betapak Makine A.Ş",
+    "city": "İstanbul",
+    "sector": "Makine ve Teçhizat İmalatı"
+  },
+  {
+    "name": "Escuturco Elektrik Sanayi ve Ticaret A.Ş.",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "Conrad Mühendislik Sanayi ve Ticaret Limited Şirketi",
+    "city": "İstanbul",
+    "sector": "Elektronik"
+  },
+  {
+    "name": "Döktaş Dökümcülük Ticaret ve Sanayi A.Ş. Manisa Jant Döküm Tesisleri Şubesi",
+    "city": "Manisa",
+    "sector": "Dökümcülük"
+  },
+  {
+    "name": "Arkipod Tasarım Sanayi Tic.Ltd.Şti.",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Frea Mimarlık Limited Şirketi",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Aksan Kalıp Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "İmalat Sanayi"
+  },
+  {
+    "name": "İntem Triko Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Aydın Pelin-Can Binzet Müşavir Mühendislik A.Ş.",
+    "city": "Ankara",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  },
+  {
+    "name": "Orsav Ordu Savunma Sanayi Yatırımları A.Ş. Ulubey Şubesi",
+    "city": "Ordu",
+    "sector": "Savunma Sanayi"
+  },
+  {
+    "name": "Klisef İnşaat Makina Havalandırma Sanayi Ticaret Limited Şirketi",
+    "city": "Ankara",
+    "sector": "İklimlendirme"
+  },
+  {
+    "name": "Çelikiş Dişli Otomotiv Sanayi Ve Ticaret A.ş.",
+    "city": "İzmir",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Atölye Kostüm Tekstil Sanayi ve Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Arken Jeneratör Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Enerji"
+  },
+  {
+    "name": "Otm Plastik Otomotiv Yan San. Ve Tic. Ltd. Şti.",
+    "city": "Bursa",
+    "sector": "Otomotiv Yan Sanayi"
+  },
+  {
+    "name": "Doqu Ev Tekstili Sanayi ve Ticaret Anonim Şirketi",
+    "city": "Kayseri",
+    "sector": "Tekstil"
+  },
+  {
+    "name": "Eureka Yachts Turizm Ticaret Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Denizcilik"
+  },
+  {
+    "name": "Bestimage Reklam Tanıtım ve Danışmanlık Anonim Şirketi",
+    "city": "İstanbul",
+    "sector": "Mühendislik/Mimarlık Faaliyetleri"
+  }
+]
