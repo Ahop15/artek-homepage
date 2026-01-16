@@ -40,6 +40,7 @@ import { fileURLToPath } from 'url';
 import { spawn } from 'child_process';
 import yaml from 'js-yaml';
 import pLimit from 'p-limit';
+import prettier from 'prettier';
 
 // Setup paths
 const __filename = fileURLToPath(import.meta.url);
@@ -179,6 +180,29 @@ async function prerenderRoute(page, route, locale, theme, config) {
 
   log.info(`Rendering ${route} [${locale}] [${theme}]`);
 
+  // Track resources loaded during page render (network-based detection)
+  const resources = {
+    css: new Set(),
+    js: new Set(),
+  };
+
+  // Monitor network responses for assets
+  page.on('response', async (response) => {
+    const url = response.url();
+    if (!response.ok() || !url.includes('/assets/')) return;
+
+    const relativePath = url.replace(config.production_url, '');
+
+    // Track CSS chunks
+    if (url.endsWith('.css')) {
+      resources.css.add(relativePath);
+    }
+    // Track JS chunks (excluding main entry point to avoid duplication)
+    else if (url.endsWith('.js') && !relativePath.includes('/assets/index-')) {
+      resources.js.add(relativePath);
+    }
+  });
+
   try {
     // Navigate to production URL (DNS override routes to localhost)
     await page.goto(renderUrl, {
@@ -200,12 +224,45 @@ async function prerenderRoute(page, route, locale, theme, config) {
     await page.waitForTimeout(config.additional_wait * 1000);
 
     // Get rendered HTML
-    const html = await page.content();
+    let html = await page.content();
 
     if (html.length < 1000) {
       log.error(`Empty HTML for ${route}`);
       return false;
     }
+
+    // Inject resource preload hints for faster loading
+    const preloadHints = [];
+
+    // CSS preload links (with crossorigin for CORS compatibility)
+    if (resources.css.size > 0) {
+      Array.from(resources.css).forEach((href) => {
+        preloadHints.push(`  <link rel="preload" href="${href}" as="style" crossorigin>`);
+      });
+    }
+
+    // JS modulepreload links (for lazy chunks, with crossorigin)
+    if (resources.js.size > 0) {
+      Array.from(resources.js).forEach((href) => {
+        preloadHints.push(`  <link rel="modulepreload" href="${href}" crossorigin>`);
+      });
+    }
+
+    // Inject all preload hints before </head>
+    if (preloadHints.length > 0) {
+      html = html.replace('</head>', `\n${preloadHints.join('\n')}\n  </head>`);
+      log.info(
+        `  → ${resources.css.size} CSS + ${resources.js.size} JS preload(s) injected (${preloadHints.length} total)`
+      );
+    }
+
+    // Beautify HTML for debugging (optional, can be disabled for production)
+    const beautifiedHtml = await prettier.format(html, {
+      parser: 'html',
+      printWidth: 120,
+      tabWidth: 2,
+      useTabs: false,
+    });
 
     // Save HTML
     const outputDir = dirname(outputPath);
@@ -213,7 +270,7 @@ async function prerenderRoute(page, route, locale, theme, config) {
       mkdirSync(outputDir, { recursive: true });
     }
 
-    writeFileSync(outputPath, html, 'utf-8');
+    writeFileSync(outputPath, beautifiedHtml, 'utf-8');
 
     log.info(`Success: ${route}`);
     return true;
