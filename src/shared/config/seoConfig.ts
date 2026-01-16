@@ -78,7 +78,7 @@ export const getSiteConfig = (locale: 'tr' | 'en' = 'tr'): SiteConfig => {
   return {
     ...config,
     url: isClient ? window.location.origin : config.url,
-    href: isClient ? window.location.href : config.url,
+    href: isClient ? `${window.location.origin}${window.location.pathname}` : config.url,
   };
 };
 
