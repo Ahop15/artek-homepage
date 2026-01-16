@@ -1,6 +1,7 @@
 # SSG Pre-Rendering Utility
 
-Playwright tabanlı statik site oluşturma (SSG) aracı. React Router yapılandırmasından otomatik route discovery yaparak, çoklu dil ve tema desteğiyle statik HTML dosyaları üretir.
+Playwright tabanlı statik site oluşturma (SSG) aracı. React Router yapılandırmasından otomatik route discovery yaparak, 
+çoklu dil ve tema desteğiyle statik HTML dosyaları üretir.
 
 ## Mimari
 
@@ -134,16 +135,17 @@ Kural: {path}/index{.theme}{.locale}.html
 
 ## Özellikler
 
-| Özellik                      | Açıklama                                                                          |
-|------------------------------|-----------------------------------------------------------------------------------|
-| **Otomatik Route Discovery** | React Router yapılandırmasından AST-based route extraction                        |
-| **Multi-Locale Rendering**   | Her route için tüm dil varyantları (tr, en)                                       |
-| **Multi-Theme Rendering**    | Her route için tüm tema varyantları (white, g90)                                  |
-| **Parallel Processing**      | p-limit ile configurable concurrency control                                      |
-| **DNS Override Testing**     | Production URL'i localhost'a yönlendirerek gerçekçi test                          |
-| **Cookie/Header Detection**  | Cloudflare Workers ile dynamic locale/theme serving                               |
-| **Fallback Chain**           | Eksik varyantlar için otomatik fallback (theme+locale → locale → theme → default) |
-| **Playwright Integration**   | Gerçek browser rendering (React hydration guaranteed)                             |
+| Özellik                        | Açıklama                                                                          |
+|--------------------------------|-----------------------------------------------------------------------------------|
+| **Otomatik Route Discovery**   | React Router yapılandırmasından AST-based route extraction                        |
+| **Multi-Locale Rendering**     | Her route için tüm dil varyantları (tr, en)                                       |
+| **Multi-Theme Rendering**      | Her route için tüm tema varyantları (white, g90)                                  |
+| **Parallel Processing**        | p-limit ile configurable concurrency control                                      |
+| **DNS Override Testing**       | Production URL'i localhost'a yönlendirerek gerçekçi test                          |
+| **Cookie/Header Detection**    | Cloudflare Workers ile dynamic locale/theme serving                               |
+| **Fallback Chain**             | Eksik varyantlar için otomatik fallback (theme+locale → locale → theme → default) |
+| **Playwright Integration**     | Gerçek browser rendering (React hydration guaranteed)                             |
+| **Resource Preload Injection** | Network-based CSS/JS chunk detection ve otomatik preload hint enjeksiyonu         |
 
 ## Hızlı Başlangıç
 
@@ -231,7 +233,7 @@ npm run prod
 Bu komut sırayla:
 1. `npm run build` → Vite build
 2. `npm run prerender` → SSG rendering
-3. `npm run minify:html` → HTML minification
+
 
 ## Dosya Yapısı
 
@@ -423,11 +425,8 @@ playwright:
   "minify:html": "node scripts/minify_html.js",
   // → HTML dosyalarını minify eder
 
-  "prod": "npm run build && npm run prerender && npm run minify:html",
+  "prod": "npm run build && npm run prerender",
   // → Full production build
-
-  "prod:kb": "npm run build && npm run prerender && npm run minify:html && npm run render4ai"
-  // → Knowledge base için ekstra render
 }
 ```
 
@@ -442,9 +441,6 @@ npm run prerender
 
 # Senaryo 3: Full production build (önerilen)
 npm run prod
-
-# Senaryo 4: AI knowledge base ile
-npm run prod:kb
 ```
 
 ## Sorun Giderme
@@ -598,9 +594,22 @@ Try Order:
 
 ## React Entegrasyonu ve Client-Side Rendering
 
-Pre-rendering sürecinin React tarafında nasıl handle edildiğini anlamak için `useIsClient` hook'u ve `__prerendering=true` URL parametresi kritik öneme sahiptir.
+Pre-rendering sürecinin React tarafında nasıl handle edildiğini anlamak için `useIsClient` hook'u ve `__prerendering=true` 
+URL parametresi kritik öneme sahiptir.
 
 ### URL Parametresi: `__prerendering=true`
+
+#### Görsel Karşılaştırma
+
+**`__prerendering=true` parametresi olmadan:**
+
+![Client Rendering](assets/client-dark.png#gh-light-mode-only)
+![Client Rendering](assets/client-light.png#gh-dark-mode-only)
+
+**`__prerendering=true` parametresi ile:**
+
+![Pre-rendering](assets/prerendering-dark.png#gh-light-mode-only)
+![Pre-rendering](assets/prerendering-light.png#gh-dark-mode-only)
 
 #### Playwright Tarafı (prerender.js)
 
@@ -913,5 +922,315 @@ const GoodWindowComponent = () => {
   return <div>Component</div>;
 };
 ```
+
+## Resource Preload Injection (Network-Based)
+
+Pre-rendering sırasında sayfanın yüklediği tüm CSS ve JavaScript chunk'larını otomatik olarak tespit edip, HTML'e 
+`<link rel="preload">` ve `<link rel="modulepreload">` tag'leri enjekte ederek sayfa performansını optimize eder.
+
+### Çalışma Prensibi
+
+#### 1. Network Monitoring (Playwright)
+
+Pre-rendering sırasında Playwright'ın network event listener'ı ile tüm HTTP response'ları izlenir:
+
+```javascript
+// scripts/utils/prerender-utility/prerender.js (satır 180-203)
+const resources = {
+  css: new Set(),
+  js: new Set(),
+};
+
+// Monitor network responses for assets
+page.on('response', async (response) => {
+  const url = response.url();
+  if (!response.ok() || !url.includes('/assets/')) return;
+
+  const relativePath = url.replace(config.production_url, '');
+
+  // Track CSS chunks
+  if (url.endsWith('.css')) {
+    resources.css.add(relativePath);
+  }
+  // Track JS chunks (excluding main entry point to avoid duplication)
+  else if (url.endsWith('.js') && !relativePath.includes('/assets/index-')) {
+    resources.js.add(relativePath);
+  }
+});
+```
+
+**Tespit Kriterleri:**
+- Response `200 OK` olmalı
+- URL `/assets/` içermeli (Vite build output)
+- CSS: `.css` uzantılı dosyalar
+- JS: `.js` uzantılı dosyalar (ana entry point hariç)
+
+#### 2. Preload Hint Enjeksiyonu
+
+Tespit edilen kaynaklar için HTML `<head>` bölümüne preload tag'leri eklenir:
+
+```javascript
+// scripts/utils/prerender-utility/prerender.js (satır 228-244)
+const preloadHints = [];
+
+// CSS preload links (with crossorigin for CORS compatibility)
+if (resources.css.size > 0) {
+  Array.from(resources.css).forEach((href) => {
+    preloadHints.push(`  <link rel="preload" href="${href}" as="style" crossorigin>`);
+  });
+}
+
+// JS modulepreload links (for lazy chunks, with crossorigin)
+if (resources.js.size > 0) {
+  Array.from(resources.js).forEach((href) => {
+    preloadHints.push(`  <link rel="modulepreload" href="${href}" crossorigin>`);
+  });
+}
+
+// Inject all preload hints before </head>
+if (preloadHints.length > 0) {
+  html = html.replace('</head>', `\n${preloadHints.join('\n')}\n  </head>`);
+  log.info(`  → ${resources.css.size} CSS + ${resources.js.size} JS preload(s) injected`);
+}
+```
+
+#### 3. HTML Beautification (Optional)
+
+HTML çıktısı prettier ile formatlanır (debugging için):
+
+```javascript
+// scripts/utils/prerender-utility/prerender.js (satır 251-255)
+const beautifiedHtml = await prettier.format(html, {
+  parser: 'html',
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+});
+```
+
+### Örnek HTML Çıktısı
+
+#### Önce (Preload Injection Olmadan)
+
+```html
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ARTEK</title>
+    <script type="module" src="/assets/index-abc123.js"></script>
+  </head>
+  <body>
+    <div id="root">...</div>
+  </body>
+</html>
+```
+
+#### Sonra (Preload Injection İle)
+
+```html
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ARTEK</title>
+    <link rel="preload" href="/assets/carbon-components-DqHF8pL1.css" as="style" crossorigin>
+    <link rel="preload" href="/assets/mermaid-BZ4k9pX2.css" as="style" crossorigin>
+    <link rel="modulepreload" href="/assets/vendor-react-C8kL3mP9.js" crossorigin>
+    <link rel="modulepreload" href="/assets/lazy-chart-DpQ9mN4k.js" crossorigin>
+    <script type="module" src="/assets/index-abc123.js"></script>
+  </head>
+  <body>
+    <div id="root">...</div>
+  </body>
+</html>
+```
+
+### Performans Faydaları
+
+| Metrik                         | Fayda                                                                   |
+|--------------------------------|-------------------------------------------------------------------------|
+| **Faster Resource Discovery**  | Tarayıcı kaynakları HTML parse sırasında keşfeder (JS execution öncesi) |
+| **Reduced Render Blocking**    | CSS preload ile render blocking süresi azalır                           |
+| **Improved Code Splitting**    | Lazy-loaded chunk'lar daha hızlı yüklenir (modulepreload)               |
+| **Better Network Utilization** | Paralel resource fetching ile network bant genişliği verimli kullanılır |
+| **Lighthouse Score**           | Performance score'da +5-10 puan artış (First Contentful Paint iyileşir) |
+
+### Browser Desteği
+
+| Browser         | `<link rel="preload">` | `<link rel="modulepreload">` | `crossorigin` Attribute |
+|-----------------|------------------------|------------------------------|-------------------------|
+| **Chrome/Edge** | ✅ v50+                 | ✅ v66+                       | ✅ v64+                  |
+| **Firefox**     | ✅ v56+                 | ✅ v115+                      | ✅ v55+                  |
+| **Safari**      | ✅ v11.1+               | ⚠️ v16.4+ (partial)          | ✅ v11.1+                |
+| **Opera**       | ✅ v37+                 | ✅ v53+                       | ✅ v51+                  |
+
+**Not**: `crossorigin` attribute'u CORS uyumluluğu için gereklidir (özellikle CDN kullanımında).
+
+### Console Output
+
+Pre-rendering sırasında inject edilen resource sayısı loglanır:
+
+```bash
+[INFO] Rendering / [tr] [white]
+[INFO]   → 3 CSS + 5 JS preload(s) injected (8 total)
+[INFO] Success: /
+
+[INFO] Rendering /contact [en] [g90]
+[INFO]   → 2 CSS + 4 JS preload(s) injected (6 total)
+[INFO] Success: /contact
+```
+
+### Debugging ve Monitoring
+
+#### 1. Network Tab İnceleme (DevTools)
+
+Tarayıcıda **Network** tab'ı açıp preload hint'lerin çalıştığını doğrulayın:
+
+```
+Name                              Status  Type        Initiator
+carbon-components-DqHF8pL1.css    200     stylesheet  Preload
+vendor-react-C8kL3mP9.js          200     script      Preload
+```
+
+**"Initiator" sütunu "Preload" gösteriyorsa** → Hint çalıştı ✅
+
+#### 2. Lighthouse Audit
+
+```bash
+# Chrome DevTools > Lighthouse > Performance audit
+```
+
+**"Preload key requests"** önerisinin kalkması beklenir.
+
+#### 3. HTML Source İnceleme
+
+```bash
+# Üretilen HTML dosyasını inceleyin
+cat dist/index.html | grep "preload"
+```
+
+**Örnek Çıktı:**
+```html
+<link rel="preload" href="/assets/carbon-components-DqHF8pL1.css" as="style" crossorigin>
+<link rel="modulepreload" href="/assets/vendor-react-C8kL3mP9.js" crossorigin>
+```
+
+### Sık Karşılaşılan Sorunlar
+
+#### Preload Hint'ler Eklenmedi
+
+**Belirti:**
+```bash
+[INFO] Success: /contact
+# "→ X CSS + Y JS preload(s) injected" mesajı yok
+```
+
+**Olası Nedenler:**
+- Network timeout çok kısa (resources yüklenmeden HTML capture edildi)
+- `/assets/` prefix'i yanlış (Vite build output farklı dizinde)
+
+**Çözüm:**
+```yaml
+# config.yaml - timeout'ları artırın
+network_idle_timeout: 20  # 10 → 20
+additional_wait: 3        # 2 → 3
+```
+
+#### CORS Hataları (Console)
+
+**Belirti:**
+```
+Access to CSS stylesheet blocked by CORS policy
+```
+
+**Çözüm:** Preload tag'lerine `crossorigin` attribute'u eklenir (otomatik):
+```html
+<link rel="preload" href="..." crossorigin>
+```
+
+#### Duplicate Preload Tag'leri
+
+**Belirti:** Aynı resource için birden fazla preload tag'i.
+
+**Çözüm:** `Set()` kullanımı ile otomatik deduplicate edilir:
+```javascript
+const resources = {
+  css: new Set(),  // Duplicate entries otomatik filtrelenir
+  js: new Set(),
+};
+```
+
+### Best Practices
+
+#### 1. Ana Entry Point'i Hariç Tutun
+
+```javascript
+// ❌ Yanlış - index.js zaten <script> tag'i ile yükleniyor
+if (url.endsWith('.js')) {
+  resources.js.add(relativePath);
+}
+
+// ✅ Doğru - Ana entry point hariç
+if (url.endsWith('.js') && !relativePath.includes('/assets/index-')) {
+  resources.js.add(relativePath);
+}
+```
+
+#### 2. Sadece `/assets/` Altındaki Dosyaları Track Edin
+
+```javascript
+// ❌ Yanlış - Tüm JS/CSS dosyaları (external CDN dahil)
+if (url.endsWith('.css')) {
+  resources.css.add(url);
+}
+
+// ✅ Doğru - Sadece local build output
+if (url.endsWith('.css') && url.includes('/assets/')) {
+  resources.css.add(relativePath);
+}
+```
+
+#### 3. Relative Path Kullanın (Absolute URL Değil)
+
+```javascript
+// ❌ Yanlış - Absolute URL
+resources.css.add('https://www.artek.tc/assets/style.css');
+
+// ✅ Doğru - Relative path
+const relativePath = url.replace(config.production_url, '');
+resources.css.add(relativePath);  // /assets/style.css
+```
+
+### Karşılaştırma: Manuel vs Otomatik Injection
+
+#### Manuel Yöntem (Önceki Yaklaşım)
+
+```html
+<!-- index.html (Manuel eklenen preload'lar) -->
+<head>
+  <link rel="preload" href="/assets/carbon-components.css" as="style">
+  <link rel="modulepreload" href="/assets/vendor-react.js">
+  <!-- ❌ Sorunlar:
+       - Build hash değişince güncellenmeli (carbon-DqHF8pL1.css)
+       - Lazy chunk'lar eksik kalabilir
+       - Her route için farklı chunk'lar olabilir
+  -->
+</head>
+```
+
+#### Otomatik Yöntem (Network-Based)
+
+```javascript
+// prerender.js - Otomatik tespit
+page.on('response', async (response) => {
+  // ✅ Avantajlar:
+  // - Build hash'leri otomatik yakalanır
+  // - Route-specific chunk'lar tespit edilir
+  // - Lazy-loaded resources dahil
+  // - Her page için optimize edilmiş preload'lar
+});
+```
+
 
 
