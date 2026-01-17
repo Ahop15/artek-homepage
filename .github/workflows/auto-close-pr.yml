@@ -29,7 +29,7 @@ jobs:
         if: steps.check.outputs.external == 'true'
         id: template
         run: |
-          TEMPLATE=$(cat .github/pull_request_template.md)
+          TEMPLATE=$(cat .github/external_pull_request_template.md)
           echo "content<<EOF" >> $GITHUB_OUTPUT
           echo "$TEMPLATE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
