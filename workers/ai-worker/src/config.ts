@@ -143,27 +143,40 @@ export const CONFIG = {
 
 	/**
 	 * AI Search / AutoRAG Settings
+	 * @see https://developers.cloudflare.com/ai-search/
 	 */
 	aisearch: {
 		/**
 		 * LLM model for AI Search response generation
 		 * This model generates the final answer after retrieval
+		 *
+		 * Options:
+		 * - @cf/meta/llama-3.3-70b-instruct-fp8-fast (recommended - better quality)
+		 * - @cf/meta/llama-3.1-8b-instruct-fast (faster, lower cost)
+		 *
 		 * @example model: CONFIG.aisearch.model
-		 * @see https://developers.cloudflare.com/workers-ai/models/
+		 * @see https://developers.cloudflare.com/ai-search/configuration/models/
 		 */
 		model: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
 
 		/**
 		 * Enable query rewriting for better search results
-		 * Note: Query rewriting is technically handled by Claude's understanding,
-		 * but this flag enables AI Search's built-in query optimization
+		 * Transforms user queries into search-optimized queries using an LLM
+		 * Example: "how do i fix api errors?" → "API error troubleshooting authentication timeout"
+		 *
+		 * Recommended: true for conversational queries
 		 * @example rewrite_query: CONFIG.aisearch.rewriteQuery
+		 * @see https://developers.cloudflare.com/ai-search/configuration/query-rewriting/
 		 */
 		rewriteQuery: true,
 
 		/**
 		 * Maximum number of search results to return (1-50)
+		 * Higher values = more context but higher latency and cost
+		 *
+		 * Recommended: 15-20 for balanced results
 		 * @example max_num_results: CONFIG.aisearch.maxResults
+		 * @see https://developers.cloudflare.com/ai-search/configuration/retrieval-configuration/
 		 */
 		maxResults: 20,
 
@@ -178,14 +191,26 @@ export const CONFIG = {
 		 * Semantic reranking configuration
 		 * Reranks search results using specialized reranking models for improved relevance
 		 * How it works: Retrieve results → Pass through reranker → Return reordered results
+		 *
+		 * Highly recommended for better result quality, especially with large datasets
 		 * @example reranking: CONFIG.aisearch.reranking
+		 * @see https://developers.cloudflare.com/ai-search/configuration/reranking/
 		 */
 		reranking: {
 			/**
 			 * Enable semantic reranking
 			 * When enabled, uses BGE reranker to reorder results by semantic relevance
+			 * Default: false (recommended: true)
 			 */
 			enabled: true,
+
+			/**
+			 * Reranking model to use
+			 * @cf/baai/bge-reranker-base: Balanced performance (recommended)
+			 *
+			 * @see https://developers.cloudflare.com/ai-search/configuration/models/supported-models/
+			 */
+			model: '@cf/baai/bge-reranker-base',
 		},
 
 		/**
@@ -195,10 +220,35 @@ export const CONFIG = {
 			/**
 			 * Minimum score threshold for search results (0-1 range)
 			 * Results with scores below this threshold will be filtered out
-			 * Recommended: 0.4-0.5 for balanced precision/recall
+			 *
+			 * Tuning guide:
+			 * - 0.3-0.4: Higher recall (more results, some may be less relevant)
+			 * - 0.4-0.5: Balanced precision/recall (recommended)
+			 * - 0.5-0.6: Higher precision (fewer but more relevant results)
+			 *
 			 * @example score_threshold: 0.45 means only results with 45%+ match score
+			 * @see https://developers.cloudflare.com/ai-search/configuration/retrieval-configuration/
 			 */
 			scoreThreshold: 0.4,
 		},
+
+		/**
+		 * Indexing Configuration (set at AI Search instance level, not runtime)
+		 *
+		 * These settings are configured in Cloudflare Dashboard > AI Search > Settings
+		 * or during instance creation:
+		 *
+		 * Chunk Size (64-512 tokens):
+		 * - 128-192: Best for FAQ-style content (recommended for ARTEK)
+		 * - 256-384: Good for technical documentation
+		 * - 384-512: Best for narrative content
+		 *
+		 * Chunk Overlap (0-30%):
+		 * - 15-20%: Balanced (recommended for ARTEK)
+		 * - 20-30%: Better for flowing narrative content
+		 * - 0-10%: Faster indexing, lower cost
+		 *
+		 * @see https://developers.cloudflare.com/ai-search/configuration/chunking/
+		 */
 	},
 } as const;

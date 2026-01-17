@@ -64,6 +64,7 @@ export async function executeKnowledgeSearch(query: string, env: Env, locale: Lo
 				},
 				reranking: {
 					enabled: CONFIG.aisearch.reranking.enabled,
+					model: CONFIG.aisearch.reranking.model,
 				},
 				// Multitenancy: Locale-aware folder filtering
 				// Ensures Turkish queries only return Turkish content, English only English
